@@ -1,0 +1,234 @@
+.navbar {
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #114d3c; /* Fondo oscuro */
+    padding: 10px 80px 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que el navbar se superponga al contenido */
+  }
+  
+  .navContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Izquierda: Selector de idioma */
+  .leftContent {
+    flex: 0 0 auto;
+  }
+  
+  /* Centro: Logo */
+  .centerContent {
+    flex: 0 0 auto;
+    margin: 0 20px;
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  /* Derecha: Menú y botón hamburguesa */
+  .rightContent {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  /* Menú */
+  .menu {
+    display: flex;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  /* BOTÓN DEL NAVBAR */
+  .navItem button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navItem button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  
+  /* LINK DEL NAVBAR */
+  .navItem a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navItem a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  
+  /* CUANDO SE HACE CLIC (O SE ENFOCA CON TECLADO) */
+  .navItem button:active,
+  .navItem button:focus,
+  .navItem a:active,
+  .navItem a:focus {
+    background-color: #0D3B2F; /* Verde más oscuro */
+    border-radius: 4px;
+    outline: none; /* Quita el contorno por defecto */
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 200;
+    min-width: 220px; /* Ajusta este valor para controlar el ancho mínimo */
+    border-radius: 5px;
+  }
+  
+  /* Asegura que el texto no se parta en varias líneas */
+  .dropdown li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap; /* Evita saltos de línea */
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Verde claro al pasar el cursor */
+  .dropdown li a:hover {
+    background-color: #c8eccf; /* Verde claro */
+    color: #114d3c; /* Texto en verde oscuro para contraste */
+  }
+  
+  /* Botón Hamburguesa: visible en móvil */
+  .hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    margin-left: 20px;
+  }
+  
+  /* Responsive para pantallas menores a 768px */
+  @media (max-width: 768px) {
+    .navContent {
+      flex-wrap: wrap;
+    }
+  
+    .centerContent {
+      margin: 10px 0;
+    }
+  
+    .menu {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .navList {
+      flex-direction: column;
+    }
+  
+    .navItem {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .dropdown {
+      position: static;
+      box-shadow: none;
+      border: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  /* Ajustes adicionales para dispositivos con pantallas muy pequeñas (ej. Galaxy S20) */
+  @media (max-width: 600px) {
+    .navbar {
+      padding: 8px 15px;
+    }
+  
+    .navContent {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .leftContent,
+    .centerContent,
+    .rightContent {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .logo {
+      height: 35px; /* Reducir ligeramente el logo */
+    }
+  
+    .menu {
+      width: 100%;
+    }
+  
+    .navList {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navItem {
+      margin-bottom: 8px;
+      width: 100%;
+    }
+  
+    .navItem button,
+    .navItem a {
+      width: 100%;
+      text-align: left;
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    .hamburger {
+      font-size: 28px; /* Puede hacerse más grande para mayor facilidad en pantallas táctiles */
+      margin-left: 0;
+    }
+  }
+  

@@ -1,0 +1,439 @@
+/* ================================
+   PRINCIPAL.MODULE.CSS
+   ================================ */
+
+/* Contenedor General */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 70px;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  /* ================================
+     COLUMNA IZQUIERDA (Group Services)
+     ================================ */
+  .leftColumn {
+    width: 25%;
+    background: #f0eeee;
+    padding: 20px 10px 0px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 60px;
+    text-align: center;
+    margin-left: 30px;
+  }
+  
+  .groupServices h3 {
+    font-size: 25px;
+    color: #114d3c;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+  
+  .bigIcon {
+    font-size: 32px;
+    color: #b8860b;
+  }
+  
+  .bookButton {
+    background: #b8860b;
+    color: #114d3c;
+    font-size: 1.3rem;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+  }
+  
+  .bookButton:hover {
+    background: rgb(187, 159, 2);
+  }
+  
+  .quote {
+    margin: 30px 0 5px;
+    font-size: 1.2rem;
+    color: #114d3c;
+    font-weight: bold;
+  }
+  
+  /* ================================
+     ACORDEÓN IZQUIERDA (Group Services)
+     ================================ */
+  .leftAccordionContainer {
+    margin-top: 0;
+  }
+  
+  .leftAccordionItem {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f4f4f4;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .leftAccordionHeader {
+    width: 100%;
+    padding: 0px 15px;
+    font-size: 1.10rem;
+    font-weight: 600;
+    background: #114d3c;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .leftAccordionHeader:hover {
+    background: #0d3a2d;
+  }
+  
+  .leftArrowIcon {
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .leftArrowIconOpen {
+    transform: rotate(180deg);
+  }
+  
+  .leftAccordionContent {
+    background: #ffffff;
+    text-align:left;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .leftAccordionItem.open .leftAccordionContent {
+    max-height: 2000px;
+  }
+  
+  .leftAccordionText {
+    line-height: 1.6;
+  }
+  
+  /* ================================
+     COLUMNA DERECHA (Contenido Principal)
+     ================================ */
+  .rightColumn {
+    width: 75%;
+  }
+  
+  .entradaContainer h1 {
+    font-size: 2rem;
+    color: #114d3c;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* ================================
+     GRID DE IMÁGENES
+     ================================ */
+  /* La imagen principal ocupa las celdas (1,1), (1,2), (2,1), (2,2).
+     Las demás imágenes se ubican en (1,3), (2,3), (3,1), (3,2) y (3,3). */
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .mapImageWrapper {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .mapImage,
+  .imagePosition1 img,
+  .imagePosition2 img,
+  .imagePosition3 img,
+  .imagePosition4 img,
+  .imagePosition5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Si deseas activar el efecto hover en imágenes, descomenta la siguiente regla */
+  /*
+  .mapImage:hover,
+  .imageGrid img:hover {
+    transform: scale(1.05);
+  }
+  */
+  
+  /* Ubicación de imágenes adicionales */
+  .imagePosition1 { grid-column: 3 / 4; grid-row: 1 / 2; }
+  .imagePosition2 { grid-column: 3 / 4; grid-row: 2 / 3; }
+  .imagePosition3 { grid-column: 1 / 2; grid-row: 3 / 4; }
+  .imagePosition4 { grid-column: 2 / 3; grid-row: 3 / 4; }
+  .imagePosition5 { grid-column: 3 / 4; grid-row: 3 / 4; }
+  
+  /* ================================
+     INFORMACIÓN GENERAL
+     ================================ */
+  .infoContainer {
+    margin-top: 20px;
+  }
+  
+  .sectionSubtitleInfo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #114d3c;
+  }
+  
+  .itineraryHeaderTitle {
+    font-size: 1.8rem;
+    color: #114d3c;
+    margin: 20px 0;
+  }
+  
+  /* ================================
+     ACORDEÓN (Diseño Moderno y Profesional) - Principal
+     ================================ */
+  .accordionContainer {
+    margin-top: 20px;
+  }
+  
+  .accordionItem {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f4f4f4;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .accordionItem:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .accordionHeader {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    background: #114d3c;
+    color: #fff;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .accordionHeader:hover {
+    background: #0d3a2d;
+  }
+  
+  .accordionContent {
+    background: #fff;
+    padding: 0 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .accordionItem.open .accordionContent {
+    max-height: 1000px;
+  }
+  
+  .accordionText {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .accordionServices h4 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    color: #114d3c;
+  }
+  
+  .accordionServices ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .accordionServices ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .icon {
+    color: #114d3c;
+  }
+  
+  .arrowIcon {
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+  }
+  
+  .arrowIconOpen {
+    transform: rotate(180deg);
+  }
+  
+  /* ================================
+     TIMELINE (Diseño Vertical)
+     ================================ */
+  .timelineContainer {
+    background: #fff;
+    padding-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .sectionSubtitleTimeLine {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #114d3c;
+  }
+  
+  /* Línea vertical en el lado izquierdo */
+  .timelineLine {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #007bff;
+    border-radius: 2px;
+  }
+  
+  /* Contenido de la timeline, a la derecha de la línea */
+  .timelineContent {
+    margin-left: 30px;
+  }
+  
+  /* Cada día es un “nodo” en la línea vertical */
+  .timelineDay {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  /* Título del día */
+  .timelineDay h3 {
+    font-size: 1.4rem;
+    color: #114d3c;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  /* Pasos dentro de cada día */
+  .timelineStep {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Indicador circular (si se usa un elemento .stepIndicator) */
+  .stepIndicator {
+    width: 14px;
+    height: 14px;
+    background: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+    top: 5px;
+  }
+  
+  /* ================================
+     RESPONSIVE
+     ================================ */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding-top: 100px;
+    }
+    .leftColumn,
+    .rightColumn {
+      width: 100%;
+    }
+    .imageGrid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 150px);
+      gap: 10px;
+    }
+    .mapImageWrapper {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+    .imagePosition1 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .imagePosition2 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .imagePosition3 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .imagePosition4 {
+      grid-column: 2;
+      grid-row: 3;
+    }
+    .imagePosition5 {
+      grid-column: 1 / 3;
+      grid-row: 4;
+    }
+    .timelineContainer {
+      padding: 20px;
+    }
+    .timelineLine {
+      left: 15px;
+    }
+    .timelineContent {
+      margin-left: 50px;
+    }
+    .timelineDay h3 {
+      font-size: 1.2rem;
+    }
+    .timelineStep {
+      font-size: 0.95rem;
+      padding-left: 25px;
+    }
+    .stepIndicator {
+      left: -25px;
+    }
+  }
+  
