@@ -28,7 +28,7 @@ import slide3 from "@/public/images/ValleStantar/valle-sagrado.jpg";
 import slide4 from "@/public/images/Machu Picchu/machupicchu_portada_datos.jpg";
 import slide5 from "@/public/images/Machu-Valle/sacred-valley-new-1.jpg";
 
-// 🔹 Interfaz de Traducciones
+/** Interfaz de Traducciones */
 interface TranslationContent {
   mission: {
     title: string;
@@ -47,7 +47,7 @@ interface TranslationContent {
   };
 }
 
-// 🔹 Definición de traducciones para cada idioma
+/** Definición de traducciones para cada idioma */
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     mission: {
@@ -97,11 +97,31 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     slider: {
       slides: [
-        { src: slide1, description: "Valle Sagrado VIP", route: "/es/one-day/city-tour-cusco" },
-        { src: slide2, description: "Machu Picchu Full Day", route: "/es/one-day/siete-colores" },
-        { src: slide3, description: "City Tour Cusco", route: "/es/one-day/siete-lagunas" },
-        { src: slide4, description: "Laguna Humantay", route: "/es/one-day/tour-mistico" },
-        { src: slide5, description: "Montaña de 7 Colores", route: "/es/one-day/humantay" },
+        {
+          src: slide1,
+          description: "Valle Sagrado VIP",
+          route: "/es/one-day/city-tour-cusco",
+        },
+        {
+          src: slide2,
+          description: "Machu Picchu Full Day",
+          route: "/es/one-day/siete-colores",
+        },
+        {
+          src: slide3,
+          description: "City Tour Cusco",
+          route: "/es/one-day/siete-lagunas",
+        },
+        {
+          src: slide4,
+          description: "Laguna Humantay",
+          route: "/es/one-day/tour-mistico",
+        },
+        {
+          src: slide5,
+          description: "Montaña de 7 Colores",
+          route: "/es/one-day/humantay",
+        },
       ],
     },
   },
@@ -153,17 +173,37 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     slider: {
       slides: [
-        { src: slide1, description: "Sacred Valley VIP", route: "/en/one-day/city-tour-cusco" },
-        { src: slide2, description: "Machu Picchu Full Day", route: "/en/one-day/siete-colores" },
-        { src: slide3, description: "City Tour Cusco", route: "/en/one-day/siete-lagunas" },
-        { src: slide4, description: "Humantay Lagoon", route: "/en/one-day/tour-mistico" },
-        { src: slide5, description: "Mountain of 7 Colors", route: "/en/one-day/humantay" },
+        {
+          src: slide1,
+          description: "Sacred Valley VIP",
+          route: "/en/one-day/city-tour-cusco",
+        },
+        {
+          src: slide2,
+          description: "Machu Picchu Full Day",
+          route: "/en/one-day/siete-colores",
+        },
+        {
+          src: slide3,
+          description: "City Tour Cusco",
+          route: "/en/one-day/siete-lagunas",
+        },
+        {
+          src: slide4,
+          description: "Humantay Lagoon",
+          route: "/en/one-day/tour-mistico",
+        },
+        {
+          src: slide5,
+          description: "Mountain of 7 Colors",
+          route: "/en/one-day/humantay",
+        },
       ],
     },
   },
 };
 
-// Mapeo de íconos para los valores (en orden)
+/** Mapeo de íconos para los valores (en orden) */
 const valueIcons = [
   FaLeaf,
   FaStar,
@@ -175,7 +215,7 @@ const valueIcons = [
 
 export default function LandingPage() {
   const pathname = usePathname();
-  // Extrae el idioma de la URL, asumiendo que la ruta es /{locale}/landing
+  // Extrae el idioma de la URL
   const locale = (pathname.split("/")[1] as "es" | "en") || "es";
   const t = translations[locale];
 
@@ -186,7 +226,7 @@ export default function LandingPage() {
   const [showMission, setShowMission] = useState(true);
   const [showVision, setShowVision] = useState(true);
 
-  // Funciones para cambiar de slide
+  /** Funciones para cambiar de slide */
   const nextSlide = () => {
     setCurrentSlide((prev) =>
       prev === t.slider.slides.length - 1 ? 0 : prev + 1
@@ -247,6 +287,7 @@ export default function LandingPage() {
               )}
             </div>
           </div>
+
           {/* Tarjeta de Visión */}
           <div
             className={styles.card}
@@ -278,6 +319,7 @@ export default function LandingPage() {
           <button onClick={prevSlide} className={styles.sliderButton}>
             &#10094;
           </button>
+
           <div className={styles.slide}>
             <Image
               src={t.slider.slides[currentSlide].src}
@@ -291,7 +333,7 @@ export default function LandingPage() {
               <span className={styles.bestSeller}>
                 <FaCrown className={styles.crownIcon} /> Best Seller
               </span>
-               {t.slider.slides[currentSlide].description}
+              {t.slider.slides[currentSlide].description}
             </p>
             <Link href={t.slider.slides[currentSlide].route}>
               <button className={styles.slideButton}>
@@ -299,6 +341,7 @@ export default function LandingPage() {
               </button>
             </Link>
           </div>
+
           <button onClick={nextSlide} className={styles.sliderButton}>
             &#10095;
           </button>
