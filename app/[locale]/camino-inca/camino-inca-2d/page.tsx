@@ -1,12 +1,13 @@
+"use client"
 // src/app/[locale]/camino-inca/camino-inca-2d/page.tsx
 import React from "react";
 import ComponentePrincipal from "@/app/components/principal/pricipal";
-
-import img1 from "@/public/images/ValleVIP//Pisac-donde-crece-y-florece-todo.jpg";
-import img2 from "@/public/images/ValleVIP//ollantaytambo-cusco-peru.jpg";
-import img3 from "@/public/images/ValleVIP//moray.jpg";
-import img4 from "@/public/images/ValleVIP//SALINERAS-DE-MARAS.jpeg";
-import img5 from "@/public/images/ValleVIP//iglesia-chinchero-full.jpg";
+import img1 from "@/public/images/ValleVIP/Pisac-donde-crece-y-florece-todo.jpg";
+import img2 from "@/public/images/ValleVIP/ollantaytambo-cusco-peru.jpg";
+import img3 from "@/public/images/ValleVIP/moray.jpg";
+import img4 from "@/public/images/ValleVIP/SALINERAS-DE-MARAS.jpeg";
+import img5 from "@/public/images/ValleVIP/iglesia-chinchero-full.jpg";
+import { useParams } from "next/navigation";
 
 interface TranslationContent {
   generalTitle: string;
@@ -200,9 +201,10 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
   },
 };
 
-export default async function CaminoInca2D({ params }: { params: { locale: string } }) {
-  const localeValue = params.locale === "en" ? "en" : "es";
-  const content = { ...translations[localeValue], ...globalImages };
-
-  return <ComponentePrincipal {...content} />;
-}
+export default function CaminoInca2D() {
+    const params = useParams();
+    const localeValue = params.locale === "en" ? "en" : "es";
+    const content = { ...translations[localeValue], ...globalImages };
+  
+    return <ComponentePrincipal {...content} />;
+  }

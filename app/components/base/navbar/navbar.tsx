@@ -1,10 +1,8 @@
-"use client"
-
 import { useState, useEffect, useRef } from "react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import { translations } from "../../../lib/i18n";
-import LanguageSwitcher from "../switch/switch";
+import LanguageSwitcher from "@/app/components/base/switcher/switch";
 import Image from "next/image";
 
 export default function Navbar({ locale }: { locale: string }) {

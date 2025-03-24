@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,15 +18,15 @@ import {
 import styles from "./landing.module.css";
 
 // Importar imágenes para misión y visión
-import imgMission from "../../../../public/images/Landing/Mision.jpeg";
-import imgVision from "../../../../public/images/Landing/Vision.jpeg";
+import imgMission from "@/public/images/Landing/Mision.jpeg";
+import imgVision from "@/public/images/Landing/Vision.jpeg";
 
 // Importar imágenes para el slider
-import slide1 from "../../../../public/images/ValleVIP/andenes-chinchero-full.jpg";
-import slide2 from "../../../../public/images/CityTour/qenqo-cusco2.jpg";
-import slide3 from "../../../../public/images/ValleStantar/valle-sagrado.jpg";
-import slide4 from "../../../../public/images/Machu Picchu/machupicchu_portada_datos.jpg";
-import slide5 from "../../../../public/images/Machu-Valle/sacred-valley-new-1.jpg";
+import slide1 from "@/public/images/ValleVIP/andenes-chinchero-full.jpg";
+import slide2 from "@/public/images/CityTour/qenqo-cusco2.jpg";
+import slide3 from "@/public/images/ValleStantar/valle-sagrado.jpg";
+import slide4 from "@/public/images/Machu Picchu/machupicchu_portada_datos.jpg";
+import slide5 from "@/public/images/Machu-Valle/sacred-valley-new-1.jpg";
 
 // 🔹 Interfaz de Traducciones
 interface TranslationContent {
