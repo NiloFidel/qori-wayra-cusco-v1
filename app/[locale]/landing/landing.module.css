@@ -4,21 +4,28 @@
 
 /* Contenedor Principal */
 .container {
+  position: relative;         /* Permite que elementos superpuestos (dropdown) queden por encima si tienen mayor z-index */
+  z-index: 0;                 /* Asegura que el navbar (con z-index mayor) se muestre sobre este contenedor */
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;            /* Ajuste automático sin overflow horizontal */
   gap: 20px;
+  width: 100%;
   max-width: 1300px;
-  margin: 70px auto;
+  margin: 70px auto;          /* Centrado horizontal y espacio superior/inferior */
   padding: 0 20px;
   background: #f8f8f8;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;         /* Evita scroll horizontal */
+  /* overflow-y: visible;     // Si el contenido interno generara scroll vertical, podrías usar auto o visible */
 }
 
 /* Columnas Principales */
 .columnValues,
 .columnMissionVision {
-  flex: 1;
+  flex: 1;                    /* Ambas columnas se reparten el espacio */
+  min-width: 0;              /* Evita que el contenido fuerce scroll horizontal */
 }
 
 /* ================================
@@ -75,7 +82,7 @@
 .valueText {
   font-size: 1rem;
   color: #333;
-  line-height: 1.2;
+  line-height: 1.4;
   margin: 0;
 }
 
@@ -91,25 +98,28 @@
 /* Grid para Misión y Visión */
 .gridMissionVision {
   display: flex;
+  flex-wrap: wrap;     /* Para que se ajuste en pantallas pequeñas */
   gap: 20px;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Tarjeta para Misión y Visión */
 .card {
   flex: 1;
+  max-width: 350px;    /* Ancho máximo para evitar que crezca demasiado */
+  margin: 0 auto;      /* Centra la tarjeta */
   position: relative;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor de la imagen y overlay */
 .imageContainer {
   position: relative;
   width: 100%;
 }
 
-/* Imagen responsiva */
 .image {
   width: 100%;
   height: auto;
@@ -117,13 +127,10 @@
   border-radius: 12px;
 }
 
-/* Overlay para el texto */
+/* Overlay para Misión/Visión */
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;                       /* top:0, left:0, right:0, bottom:0 */
   background: rgba(255, 255, 255, 0.85);
   display: flex;
   flex-direction: column;
@@ -138,7 +145,7 @@
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #114d3c;
   margin-bottom: 10px;
@@ -162,6 +169,7 @@
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Previene scroll horizontal en el slider */
 }
 
 .sliderButton {
@@ -176,6 +184,7 @@
   position: relative;
   text-align: center;
   flex: 1;
+  min-width: 0;       /* Evita forzar ancho y scroll horizontal */
 }
 
 .slideImage {
@@ -189,20 +198,23 @@
 .slideDescription {
   font-size: 1rem;
   color: #b8860b;
-  
   margin-top: 10px;
   font-weight: bold;
 }
 
+/* “Best Seller” + icono corona */
 .bestSeller {
   display: flex;
+  align-items: center;
   font-size: 1.7rem;
   font-weight: bold;
-  color: #114d3c; /* Color dorado */
-  margin-right: 5px;
+  color: #114d3c;
+  gap: 5px;
 }
-.crownIcon{
-  margin-top: 0px;
+
+.crownIcon {
+  color: gold;
+  font-size: 1.3rem;
 }
 
 .slideButton {
@@ -213,44 +225,68 @@
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
+  transition: opacity 0.2s;
+}
+
+.slideButton:hover {
+  opacity: 0.9;
 }
 
 /* ================================
    RESPONSIVE
    ================================ */
+
+/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     margin: 20px auto;
     padding: 20px 10px;
   }
-  
+
   .gridMissionVision {
     flex-direction: column;
   }
-  
+
   .overlay {
     padding: 15px;
   }
-  
+
   .title {
     font-size: 1.6rem;
   }
-  
+
   .text {
     font-size: 0.95rem;
   }
-  
+
   .slider {
     flex-direction: column;
   }
-  
+
   .sliderButton {
     font-size: 1.5rem;
   }
-  
+
   .slideImage {
     width: 200px;
     height: 200px;
+  }
+}
+
+/* Móviles pequeños (max-width: 480px) */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .slideImage {
+    width: 180px;
+    height: 180px;
+  }
+
+  .slideButton {
+    width: 100%;
+    padding: 1rem;
   }
 }

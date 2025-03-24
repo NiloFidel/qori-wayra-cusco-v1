@@ -22,14 +22,14 @@ export default function LanguageSwitcher({ locale }: { locale: string }) {
         onClick={() => switchLanguage("es")}
         disabled={locale === "es"}
       >
-        Español
+        Es
       </button>
       <button
         className={`${styles.languageButton} ${locale === "en" ? styles.active : ""}`}
         onClick={() => switchLanguage("en")}
         disabled={locale === "en"}
       >
-        English
+        En
       </button>
     </div>
   );
