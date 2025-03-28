@@ -136,11 +136,9 @@ export default function ComponentePrincipal({
   useEffect(() => {
     contentRefs.current.forEach((el, i) => {
       if (el) {
-        if (openAccordions.includes(i)) {
-          el.style.maxHeight = el.scrollHeight + "px";
-        } else {
-          el.style.maxHeight = "0px";
-        }
+        el.style.maxHeight = openAccordions.includes(i)
+          ? el.scrollHeight + "px"
+          : "0px";
       }
     });
   }, [openAccordions]);
@@ -149,11 +147,9 @@ export default function ComponentePrincipal({
   useEffect(() => {
     leftContentRefs.current.forEach((el, i) => {
       if (el) {
-        if (openLeftAccordions.includes(i)) {
-          el.style.maxHeight = el.scrollHeight + "px";
-        } else {
-          el.style.maxHeight = "0px";
-        }
+        el.style.maxHeight = openLeftAccordions.includes(i)
+          ? el.scrollHeight + "px"
+          : "0px";
       }
     });
   }, [openLeftAccordions]);
@@ -231,6 +227,68 @@ export default function ComponentePrincipal({
           <h1 className={styles.mainTitle}>{generalTitle}</h1>
         </div>
 
+        {/* Sección de imágenes: se ubican POR ENCIMA del resumen (Trip Overview) */}
+        <div className={styles.imageContainerBelow}>
+          <div className={styles.imageGrid}>
+            {/* Mapa principal ocupa las posiciones (1,2), (1,3), (2,2) y (2,3) */}
+            <div className={styles.mapImageWrapper}>
+              <Image
+                src={mapImage}
+                alt="Mapa del tour"
+                fill
+                style={{ objectFit: "cover" }}
+                className={styles.mapImage}
+              />
+            </div>
+            {/* Las imágenes pequeñas se colocan en (1,1), (2,1), (3,1), (3,2) y (3,3) */}
+            <div className={styles.imagePosition1}>
+              <Image
+                src={smallImages[0]}
+                alt="Imagen 1"
+                fill
+                style={{ objectFit: "cover" }}
+                className={styles.smallImage}
+              />
+            </div>
+            <div className={styles.imagePosition2}>
+              <Image
+                src={smallImages[1]}
+                alt="Imagen 2"
+                fill
+                style={{ objectFit: "cover" }}
+                className={styles.smallImage}
+              />
+            </div>
+            <div className={styles.imagePosition3}>
+              <Image
+                src={smallImages[2]}
+                alt="Imagen 3"
+                fill
+                style={{ objectFit: "cover" }}
+                className={styles.smallImage}
+              />
+            </div>
+            <div className={styles.imagePosition4}>
+              <Image
+                src={smallImages[3]}
+                alt="Imagen 4"
+                fill
+                style={{ objectFit: "cover" }}
+                className={styles.smallImage}
+              />
+            </div>
+            <div className={styles.imagePosition5}>
+              <Image
+                src={smallImages[4]}
+                alt="Imagen 5"
+                fill
+                style={{ objectFit: "cover" }}
+                className={styles.smallImage}
+              />
+            </div>
+          </div>
+        </div>
+
         {/* INFORMACIÓN GENERAL */}
         <div className={styles.infoContainer}>
           {tripOverview && (
@@ -303,34 +361,6 @@ export default function ComponentePrincipal({
               </div>
             </div>
           )}
-        </div>
-
-        {/* Sección de imágenes (mapa + imágenes pequeñas) */}
-        <div className={styles.imageContainerBelow}>
-          <div className={styles.imageGrid}>
-            {/* Mapa principal */}
-            <div className={styles.mapImageWrapper}>
-              <Image
-                src={mapImage}
-                alt="Mapa del tour"
-                fill
-                style={{ objectFit: "cover" }}
-                className={styles.mapImage}
-              />
-            </div>
-            {/* Imágenes pequeñas */}
-            {smallImages.map((src, index) => (
-              <div key={index} className={styles[`imagePosition${index + 1}`]}>
-                <Image
-                  src={src}
-                  alt={`Imagen ${index + 1}`}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  className={styles.smallImage}
-                />
-              </div>
-            ))}
-          </div>
         </div>
       </main>
     </div>
