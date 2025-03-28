@@ -1,14 +1,14 @@
 "use client";
 
 import React from "react";
-import { FaWhatsapp, FaFacebook, FaTiktok } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 import styles from "./social.module.css";
 
 export default function SocialButtons() {
   return (
     <div className={styles.socialContainer}>
       <a
-        href="https://wa.me/51932568914"
+        href="https://wa.me/51924377454"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.socialButton}
@@ -17,7 +17,7 @@ export default function SocialButtons() {
         <FaWhatsapp />
       </a>
       <a
-        href="https://www.facebook.com/YourPage"
+        href="https://www.facebook.com/profile.php?id=61565691627315"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.socialButton}
@@ -26,13 +26,13 @@ export default function SocialButtons() {
         <FaFacebook />
       </a>
       <a
-        href="https://www.tiktok.com/@YourProfile"
+        href="https://www.facebook.com/profile.php?id=61565691627315"
         target="_blank"
         rel="noopener noreferrer"
-        className={styles.socialButton}
-        aria-label="Visit our TikTok"
+        className={`${styles.socialButton} ${styles.instagram}`}
+        aria-label="Visit our Instagram"
       >
-        <FaTiktok />
+        <FaInstagram />
       </a>
     </div>
   );

@@ -1,59 +1,203 @@
 /* Footer.module.css */
 
-/* Contenedor principal del footer */
+/* Footer principal */
 .footer {
-    background-color: #114d3c;
-    color: #fff;
-    padding: 20px 40px;
-    display: flex;
+  background-color: #114d3c;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactColumn,
+.linksColumn,
+.logosColumn {
+  flex: 1;
+  margin: 10px;
+}
+
+.header {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text {
+  font-size: 1rem;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Enlaces en columna (vertical) */
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.linkButton {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  padding: 8px 15px;
+  background-color: #fff;
+  color: #114d3c;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.linkButton:hover {
+  background-color: #e6e6e6;
+}
+
+/* Logos */
+.logosColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.logoGroup {
+  width: 100%;
+  text-align: center;
+}
+
+.groupTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.logoItems {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logoItem {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 10px;
+  /*border: 2px solid #fff;*/
+}
+
+.roundImage {
+  border-radius: 10px;
+}
+
+/* Derechos reservados */
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+/* Modal para imagen "No Trata de Personas" */
+.modalContent {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  max-width: 1200px;
+  max-height: 800px;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 4px 8px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10001;
+  border-radius: 4px;
+}
+
+/* Modal para texto de política de privacidad */
+.modalContentText {
+  position: relative;
+  max-width: 600px;
+  max-height: 80vh;
+  background-color: #fff;
+  color: #114d3c;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.modalTitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  color: #114d3c;
+}
+
+.modalText {
+  white-space: pre-line;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .footerContainer {
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
   }
-  
-  /* Contenedor de columnas */
-  .footerContent {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+
+  .modalContentText {
+    width: 90%;
+    max-width: 90%;
   }
-  
-  /* Aplicar anchos específicos a cada columna usando nth-child */
-  .footerContent > .column:nth-child(1) {
-    flex: 0 0 20%;
-    text-align: center;
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.3rem;
   }
-  
-  .footerContent > .column:nth-child(2),
-  .footerContent > .column:nth-child(3) {
-    flex: 0 0 40%;
-    text-align: center;
-  }
-  
-  /* Estilo para el texto de cada columna */
   .text {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  /* Área de derechos reservados */
-  .copy {
-    text-align: center;
     font-size: 0.9rem;
   }
-  
-  /* Responsive: apilar columnas en pantallas pequeñas */
-  @media (max-width: 768px) {
-    .footerContent {
-      flex-direction: column;
-    }
-    .column {
-      width: 100% !important;
-      margin-bottom: 15px;
-    }
+  .linkButton {
+    padding: 6px 12px;
+    font-size: 0.9rem;
   }
-  
+  .modalTitle {
+    font-size: 1.3rem;
+  }
+}

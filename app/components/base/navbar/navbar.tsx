@@ -69,41 +69,11 @@ export default function Navbar({ locale }: { locale: string }) {
             </Link>
           </div>
         </div>
+
         {/* Menú principal */}
         <div className={`${styles.menu} ${mobileMenuOpen ? styles.active : ""}`}>
           <ul className={styles.navList}>
-            {/* Camino Inca */}
-            <li className={styles.navItem}>
-              <button onClick={() => toggleDropdown("inca")}>
-                {t.incaTrail}
-              </button>
-              {openDropdown === "inca" && (
-                <ul className={styles.dropdown}>
-                  <li>
-                    <Link
-                      href={`/${locale}/camino-inca/camino-inca-2d`}
-                      onClick={() => {
-                        closeDropdown();
-                        setMobileMenuOpen(false);
-                      }}
-                    >
-                      {t.incaTrail2d}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={`/${locale}/camino-inca/camino-inca-4d`}
-                      onClick={() => {
-                        closeDropdown();
-                        setMobileMenuOpen(false);
-                      }}
-                    >
-                      {t.incaTrail4d}
-                    </Link>
-                  </li>
-                </ul>
-              )}
-            </li>
+
             {/* Tour a Machu Picchu */}
             <li className={styles.navItem}>
               <button onClick={() => toggleDropdown("machupicchu")}>
@@ -133,20 +103,11 @@ export default function Navbar({ locale }: { locale: string }) {
                       {t.machupicchuByCar}
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href={`/${locale}/tour-a-machupicchu/mapi-by-salkantay`}
-                      onClick={() => {
-                        closeDropdown();
-                        setMobileMenuOpen(false);
-                      }}
-                    >
-                      {t.machupicchuBySalkantay}
-                    </Link>
-                  </li>
+                  {/* Eliminamos Machu Picchu por Salkantay de aquí */}
                 </ul>
               )}
             </li>
+
             {/* Valle Sagrado */}
             <li className={styles.navItem}>
               <button onClick={() => toggleDropdown("valle")}>
@@ -190,6 +151,7 @@ export default function Navbar({ locale }: { locale: string }) {
                 </ul>
               )}
             </li>
+
             {/* Tour de un día */}
             <li className={styles.navItem}>
               <button onClick={() => toggleDropdown("oneday")}>
@@ -277,10 +239,56 @@ export default function Navbar({ locale }: { locale: string }) {
                 </ul>
               )}
             </li>
-            {/* Best Packages */}
+
+            {/* Camino Inca (Penúltimo) */}
+            <li className={styles.navItem}>
+              <button onClick={() => toggleDropdown("inca")}>
+                {t.incaTrail}
+              </button>
+              {openDropdown === "inca" && (
+                <ul className={styles.dropdown}>
+                  <li>
+                    <Link
+                      href={`/${locale}/camino-inca/camino-inca-2d`}
+                      onClick={() => {
+                        closeDropdown();
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {t.incaTrail2d}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`/${locale}/camino-inca/camino-inca-4d`}
+                      onClick={() => {
+                        closeDropdown();
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {t.incaTrail4d}
+                    </Link>
+                  </li>
+                  {/* Movemos Machu Picchu por Salkantay aquí */}
+                  <li>
+                    <Link
+                      href={`/${locale}/camino-inca/mapi-by-salkantay`}
+                      onClick={() => {
+                        closeDropdown();
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {t.salkantayTrek}
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
+
+            {/* Paquetes Completos (Último) */}
             <li className={styles.navItem}>
               <button onClick={() => toggleDropdown("bestPackages")}>
-                Best Packages
+              {t.packages}
               </button>
               {openDropdown === "bestPackages" && (
                 <ul className={styles.dropdown}>

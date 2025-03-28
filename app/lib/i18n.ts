@@ -4,19 +4,19 @@ export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "es";
 
 export const translations = {
-  en: {
-    welcome: "Welcome to Qori Wayra",
-    incaTrail: "Inca Trail",
+  en: {        
     machuPicchuTour: "Machu Picchu Tour",
     sacredValley: "Sacred Valley",
     oneDayTour: "One Day Tour",
+    incaTrail: "Inca Trail",
+    packages: "Complete Packages",
     // Dropdown Camino Inca
     incaTrail2d: "Inca Trail 2 Days",
     incaTrail4d: "Inca Trail 4 Days",
+    salkantayTrek: "Trek Salkantay to Machu Picchu",
     // Dropdown Machu Picchu Tour
     machupicchuFullDay: "Machupicchu Full Day",
-    machupicchuByCar: "Machupicchu by Car",
-    machupicchuBySalkantay: "Machupicchu by Salkantay",
+    machupicchuByCar: "Machupicchu by Car",    
     // Dropdown Sacred Valley
     sacredValleyLite: "South Valley Tour",
     sacredValleyVip: "Sacred Valley VIP",
@@ -30,19 +30,19 @@ export const translations = {
     lagunaHumantay: "Laguna Humantay",
     montana7Colores: "Seven Colors Mountain",
   },
-  es: {
-    welcome: "Bienvenido a Qori Wayra",
-    incaTrail: "Camino Inca",
+  es: {    
     machuPicchuTour: "Tour a Machu Picchu",
     sacredValley: "Valle Sagrado",
     oneDayTour: "Tour de un día",
+    incaTrail: "Camino Inca",
+    packages: "Paquetes Completos",
     // Dropdown Camino Inca
     incaTrail2d: "Camino Inca 2 Días",
     incaTrail4d: "Camino Inca 4 Días",
+    salkantayTrek: "Salkantay hacia Machu Picchu",
     // Dropdown Machu Picchu Tour
     machupicchuFullDay: "Machupicchu Día Completo",
     machupicchuByCar: "Machupicchu en Coche",
-    machupicchuBySalkantay: "Machupicchu por Salkantay",
     // Dropdown Valle Sagrado
     sacredValleyLite: "Tour del Valle Sur",
     sacredValleyVip: "Valle Sagrado VIP",

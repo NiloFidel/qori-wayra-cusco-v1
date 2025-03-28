@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -13,22 +13,96 @@ import {
   FaHandshake,
   FaHeart,
   FaLightbulb,
-  FaCrown,
 } from "react-icons/fa";
 import styles from "./landing.module.css";
 
-// Importar imágenes para misión y visión
+// Imágenes Misión y Visión
 import imgMission from "@/public/images/Landing/Mision.jpeg";
 import imgVision from "@/public/images/Landing/Vision.jpeg";
 
-// Importar imágenes para el slider
+// Imágenes para el slider antiguo (valores)
 import slide1 from "@/public/images/ValleVIP/andenes-chinchero-full.jpg";
 import slide2 from "@/public/images/CityTour/qenqo-cusco2.jpg";
 import slide3 from "@/public/images/ValleStantar/valle-sagrado.jpg";
 import slide4 from "@/public/images/Machu Picchu/machupicchu_portada_datos.jpg";
 import slide5 from "@/public/images/Machu-Valle/sacred-valley-new-1.jpg";
 
-/** Interfaz de Traducciones */
+// Imágenes del hero slider
+import hero1 from "@/public/images/ValleVIP/andenes-chinchero-full.jpg";
+import hero2 from "@/public/images/CityTour/qenqo-cusco2.jpg";
+import hero3 from "@/public/images/ValleStantar/valle-sagrado.jpg";
+import hero4 from "@/public/images/Machu Picchu/machupicchu_portada_datos.jpg";
+import hero5 from "@/public/images/Machu-Valle/sacred-valley-new-1.jpg";
+
+const heroSlides = [
+  {
+    image: hero1,
+    es: {
+      title: "Machu Picchu Full Day",
+      buttonText: "Ver más",
+      link: "/es/one-day/machupicchu-full-day",
+    },
+    en: {
+      title: "Machu Picchu Full Day",
+      buttonText: "View more",
+      link: "/en/one-day/machupicchu-full-day",
+    },
+  },
+  {
+    image: hero2,
+    es: {
+      title: "Valle Sagrado VIP",
+      buttonText: "Ver más",
+      link: "/es/one-day/valle-sagrado-vip",
+    },
+    en: {
+      title: "Sacred Valley VIP",
+      buttonText: "View more",
+      link: "/en/one-day/valle-sagrado-vip",
+    },
+  },
+  {
+    image: hero3,
+    es: {
+      title: "City Tour",
+      buttonText: "Ver más",
+      link: "/es/one-day/city-tour-cusco",
+    },
+    en: {
+      title: "City Tour",
+      buttonText: "View more",
+      link: "/en/one-day/city-tour-cusco",
+    },
+  },
+  {
+    image: hero4,
+    es: {
+      title: "Camino Inca 2D/1N",
+      buttonText: "Ver más",
+      link: "/es/one-day/camino-inca-2d",
+    },
+    en: {
+      title: "Inca Trail 2D/1N",
+      buttonText: "View more",
+      link: "/en/one-day/inca-trail-2d",
+    },
+  },
+  {
+    image: hero5,
+    es: {
+      title: "Laguna Humantay",
+      buttonText: "Ver más",
+      link: "/es/one-day/laguna-humantay",
+    },
+    en: {
+      title: "Humantay Lagoon",
+      buttonText: "View more",
+      link: "/en/one-day/humantay-lagoon",
+    },
+  },
+];
+
+/** Interfaz de traducciones */
 interface TranslationContent {
   mission: {
     title: string;
@@ -45,9 +119,13 @@ interface TranslationContent {
   slider: {
     slides: { src: StaticImageData; description: string; route: string }[];
   };
+  about: {
+    title: string;
+    content: string;
+  };
 }
 
-/** Definición de traducciones para cada idioma */
+/** Definición de traducciones para el resto */
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     mission: {
@@ -123,6 +201,14 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           route: "/es/one-day/humantay",
         },
       ],
+    },
+    about: {
+      title: "Nosotros",
+      content: `Somos una agencia de viajes comprometida con brindar experiencias inolvidables en Cusco y sus alrededores. Nuestro enfoque se centra en el turismo responsable y sostenible, conectando a los viajeros con la riqueza cultural y natural de la región.
+
+Nuestra misión es ofrecer servicios de calidad, adaptados a las necesidades de cada cliente, garantizando seguridad y excelencia en cada viaje.
+
+Con un equipo apasionado y profesional, nos esforzamos por ser el puente entre el mundo y el Perú, transformando cada aventura en una experiencia única y enriquecedora.`,
     },
   },
   en: {
@@ -200,151 +286,142 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         },
       ],
     },
+    about: {
+      title: "About Us",
+      content: `We are a travel agency committed to providing unforgettable experiences in Cusco and its surroundings. Our focus is on responsible and sustainable tourism, connecting travelers with the cultural and natural richness of the region.
+
+Our mission is to offer quality services, tailored to the needs of each client, ensuring safety and excellence in every journey.
+
+With a passionate and professional team, we strive to be the bridge between the world and Peru, turning every adventure into a unique and enriching experience.`,
+    },
   },
 };
 
-/** Mapeo de íconos para los valores (en orden) */
-const valueIcons = [
-  FaLeaf,
-  FaStar,
-  FaRecycle,
-  FaHandshake,
-  FaHeart,
-  FaLightbulb,
-];
-
 export default function LandingPage() {
   const pathname = usePathname();
-  // Extrae el idioma de la URL
   const locale = (pathname.split("/")[1] as "es" | "en") || "es";
   const t = translations[locale];
 
-  // Estado para el slider: índice del slide actual
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentHero, setCurrentHero] = useState(0);
 
-  // Estados para mostrar/ocultar overlay en Misión y Visión
-  const [showMission, setShowMission] = useState(true);
-  const [showVision, setShowVision] = useState(true);
-
-  /** Funciones para cambiar de slide */
-  const nextSlide = () => {
-    setCurrentSlide((prev) =>
-      prev === t.slider.slides.length - 1 ? 0 : prev + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) =>
-      prev === 0 ? t.slider.slides.length - 1 : prev - 1
-    );
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentHero((prev) => (prev + 1) % heroSlides.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className={styles.container}>
-      {/* Columna 1: Valores */}
-      <div className={styles.columnValues}>
-        <h2 className={styles.subtitle}>{t.values.title}</h2>
-        <ul className={styles.valuesList}>
-          {t.values.list.map((value, index) => {
-            const IconComponent = valueIcons[index];
-            return (
-              <li key={index} className={styles.valueItem}>
-                <div className={styles.valueHeader}>
-                  <IconComponent className={styles.valueIcon} />
-                  <h3 className={styles.valueTitle}>{value.title}</h3>
-                </div>
-                <p className={styles.valueText}>{value.description}</p>
-              </li>
-            );
-          })}
-        </ul>
+      {/* Hero Slider */}
+      <div className={styles.heroSlider}>
+        {heroSlides.map((slide, index) => (
+          <div
+            key={index}
+            className={`${styles.heroSlide} ${
+              index === currentHero ? styles.activeSlide : ""
+            }`}
+          >
+            <Image
+              src={slide.image}
+              alt={`Slide ${index + 1}`}
+              fill
+              className={styles.heroImage}
+            />
+            <div className={styles.heroTopLeft}>
+              <span className={styles.bestSeller}>Best Seller</span>
+            </div>
+            <div className={styles.heroOverlay}>
+              <h2 className={styles.heroTitle}>{slide[locale].title}</h2>
+              <Link href={slide[locale].link}>
+                <button className={styles.heroButton}>
+                  {slide[locale].buttonText}
+                </button>
+              </Link>
+            </div>
+          </div>
+        ))}
       </div>
 
-      {/* Columna 2: Misión, Visión y Slider */}
-      <div className={styles.columnMissionVision}>
-        <div className={styles.gridMissionVision}>
-          {/* Tarjeta de Misión */}
-          <div
-            className={styles.card}
-            onClick={() => setShowMission((prev) => !prev)}
-          >
-            <div className={styles.imageContainer}>
-              <Image
-                src={imgMission}
-                alt="Misión"
-                width={1000}
-                height={1000}
-                quality={100}
-                className={styles.image}
-              />
-              {showMission ? (
-                <div className={styles.overlay}>
-                  <h2 className={styles.title}>{t.mission.title}</h2>
-                  <p className={styles.text}>{t.mission.content}</p>
-                </div>
-              ) : (
-                <div className={styles.overlayHidden}></div>
-              )}
+      {/* Contenedor principal */}
+      <div className={styles.contentContainer}>
+        {/* Columna Izquierda: Nosotros, Misión y Visión */}
+        <div className={styles.leftColumn}>
+          {/* Sección Nosotros */}
+          <div className={styles.aboutSection}>
+            <h2 className={styles.aboutTitle}>{t.about.title}</h2>
+            {t.about.content.split("\n").map((para, i) => (
+              <p key={i} className={styles.aboutText}>
+                {para}
+              </p>
+            ))}
+          </div>
+
+          {/* Misión y Visión en 100% de ancho */}
+          <div className={styles.missionVisionContainer}>
+            {/* Tarjeta de Misión */}
+            <div className={styles.card}>
+              <div className={styles.imageContainer}>
+                <Image
+                  src={imgMission}
+                  alt="Misión"
+                  width={1000}
+                  height={1000}
+                  quality={100}
+                  className={styles.image}
+                />
+              </div>
+              <div className={styles.cardContent}>
+                <h2 className={styles.title}>{t.mission.title}</h2>
+                <p className={styles.text}>{t.mission.content}</p>
+              </div>
+            </div>
+
+            {/* Tarjeta de Visión */}
+            <div className={styles.card}>
+              <div className={styles.imageContainer}>
+                <Image
+                  src={imgVision}
+                  alt="Visión"
+                  width={1000}
+                  height={1000}
+                  quality={100}
+                  className={styles.image}
+                />
+              </div>
+              <div className={styles.cardContent}>
+                <h2 className={styles.title}>{t.vision.title}</h2>
+                <p className={styles.text}>{t.vision.content}</p>
+              </div>
             </div>
           </div>
 
-          {/* Tarjeta de Visión */}
-          <div
-            className={styles.card}
-            onClick={() => setShowVision((prev) => !prev)}
-          >
-            <div className={styles.imageContainer}>
-              <Image
-                src={imgVision}
-                alt="Visión"
-                width={1000}
-                height={1000}
-                quality={100}
-                className={styles.image}
-              />
-              {showVision ? (
-                <div className={styles.overlay}>
-                  <h2 className={styles.title}>{t.vision.title}</h2>
-                  <p className={styles.text}>{t.vision.content}</p>
-                </div>
-              ) : (
-                <div className={styles.overlayHidden}></div>
-              )}
-            </div>
-          </div>
         </div>
 
-        {/* Slider de Imágenes */}
-        <div className={styles.slider}>
-          <button onClick={prevSlide} className={styles.sliderButton}>
-            &#10094;
-          </button>
-
-          <div className={styles.slide}>
-            <Image
-              src={t.slider.slides[currentSlide].src}
-              alt={`Slide ${currentSlide + 1}`}
-              width={1000}
-              height={1000}
-              quality={100}
-              className={styles.slideImage}
-            />
-            <p className={styles.slideDescription}>
-              <span className={styles.bestSeller}>
-                <FaCrown className={styles.crownIcon} /> Best Seller
-              </span>
-              {t.slider.slides[currentSlide].description}
-            </p>
-            <Link href={t.slider.slides[currentSlide].route}>
-              <button className={styles.slideButton}>
-                {locale === "es" ? "Ver más" : "View more"}
-              </button>
-            </Link>
-          </div>
-
-          <button onClick={nextSlide} className={styles.sliderButton}>
-            &#10095;
-          </button>
+        {/* Columna Derecha: Valores */}
+        <div className={styles.rightColumn}>
+          <h2 className={styles.subtitle}>{t.values.title}</h2>
+          <ul className={styles.valuesList}>
+            {t.values.list.map((value, index) => {
+              const IconComponent = [
+                FaLeaf,
+                FaStar,
+                FaRecycle,
+                FaHandshake,
+                FaHeart,
+                FaLightbulb,
+              ][index];
+              return (
+                <li key={index} className={styles.valueItem}>
+                  <div className={styles.valueHeader}>
+                    <IconComponent className={styles.valueIcon} />
+                    <h3 className={styles.valueTitle}>{value.title}</h3>
+                  </div>
+                  <p className={styles.valueText}>{value.description}</p>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </div>
