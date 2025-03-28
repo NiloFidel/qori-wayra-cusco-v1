@@ -16,7 +16,7 @@ export const translations = {
     salkantayTrek: "Trek Salkantay to Machu Picchu",
     // Dropdown Machu Picchu Tour
     machupicchuFullDay: "Machupicchu Full Day",
-    machupicchuByCar: "Machupicchu by Car",    
+    machupicchuByCar: "Machupicchu 2D/1N",    
     // Dropdown Sacred Valley
     sacredValleyLite: "South Valley Tour",
     sacredValleyVip: "Sacred Valley VIP",
@@ -42,7 +42,7 @@ export const translations = {
     salkantayTrek: "Salkantay hacia Machu Picchu",
     // Dropdown Machu Picchu Tour
     machupicchuFullDay: "Machupicchu Día Completo",
-    machupicchuByCar: "Machupicchu en Coche",
+    machupicchuByCar: "Machupicchu 2D/1N",
     // Dropdown Valle Sagrado
     sacredValleyLite: "Tour del Valle Sur",
     sacredValleyVip: "Valle Sagrado VIP",

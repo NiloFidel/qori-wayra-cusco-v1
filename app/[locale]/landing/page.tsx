@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { StaticImageData } from "next/image";
 
 import {
   FaLeaf,
@@ -20,19 +19,12 @@ import styles from "./landing.module.css";
 import imgMission from "@/public/images/Landing/Mision.jpeg";
 import imgVision from "@/public/images/Landing/Vision.jpeg";
 
-// Imágenes para el slider antiguo (valores)
-import slide1 from "@/public/images/ValleVIP/andenes-chinchero-full.jpg";
-import slide2 from "@/public/images/CityTour/qenqo-cusco2.jpg";
-import slide3 from "@/public/images/ValleStantar/valle-sagrado.jpg";
-import slide4 from "@/public/images/Machu Picchu/machupicchu_portada_datos.jpg";
-import slide5 from "@/public/images/Machu-Valle/sacred-valley-new-1.jpg";
-
 // Imágenes del hero slider
-import hero1 from "@/public/images/ValleVIP/andenes-chinchero-full.jpg";
-import hero2 from "@/public/images/CityTour/qenqo-cusco2.jpg";
-import hero3 from "@/public/images/ValleStantar/valle-sagrado.jpg";
-import hero4 from "@/public/images/Machu Picchu/machupicchu_portada_datos.jpg";
-import hero5 from "@/public/images/Machu-Valle/sacred-valley-new-1.jpg";
+import hero1 from "@/public/images/Macchu Picchu/Machu Picchu - Full day/machupichu.jpg";
+import hero2 from "@/public/images/Valle/ValleStantar/vallesagradodelosincas.jpg";
+import hero3 from "@/public/images/OneDayTour/CityTour/Qorikancha-Cusco.jpg";
+import hero4 from "@/public/images/CaminoInca/camino2D/main.jpg";
+import hero5 from "@/public/images/OneDayTour/Humantay/main.jpg";
 
 const heroSlides = [
   {
@@ -116,9 +108,6 @@ interface TranslationContent {
     title: string;
     list: { title: string; description: string }[];
   };
-  slider: {
-    slides: { src: StaticImageData; description: string; route: string }[];
-  };
   about: {
     title: string;
     content: string;
@@ -173,35 +162,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         },
       ],
     },
-    slider: {
-      slides: [
-        {
-          src: slide1,
-          description: "Valle Sagrado VIP",
-          route: "/es/one-day/city-tour-cusco",
-        },
-        {
-          src: slide2,
-          description: "Machu Picchu Full Day",
-          route: "/es/one-day/siete-colores",
-        },
-        {
-          src: slide3,
-          description: "City Tour Cusco",
-          route: "/es/one-day/siete-lagunas",
-        },
-        {
-          src: slide4,
-          description: "Laguna Humantay",
-          route: "/es/one-day/tour-mistico",
-        },
-        {
-          src: slide5,
-          description: "Montaña de 7 Colores",
-          route: "/es/one-day/humantay",
-        },
-      ],
-    },
+    
     about: {
       title: "Nosotros",
       content: `Somos una agencia de viajes comprometida con brindar experiencias inolvidables en Cusco y sus alrededores. Nuestro enfoque se centra en el turismo responsable y sostenible, conectando a los viajeros con la riqueza cultural y natural de la región.
@@ -257,35 +218,7 @@ Con un equipo apasionado y profesional, nos esforzamos por ser el puente entre e
         },
       ],
     },
-    slider: {
-      slides: [
-        {
-          src: slide1,
-          description: "Sacred Valley VIP",
-          route: "/en/one-day/city-tour-cusco",
-        },
-        {
-          src: slide2,
-          description: "Machu Picchu Full Day",
-          route: "/en/one-day/siete-colores",
-        },
-        {
-          src: slide3,
-          description: "City Tour Cusco",
-          route: "/en/one-day/siete-lagunas",
-        },
-        {
-          src: slide4,
-          description: "Humantay Lagoon",
-          route: "/en/one-day/tour-mistico",
-        },
-        {
-          src: slide5,
-          description: "Mountain of 7 Colors",
-          route: "/en/one-day/humantay",
-        },
-      ],
-    },
+    
     about: {
       title: "About Us",
       content: `We are a travel agency committed to providing unforgettable experiences in Cusco and its surroundings. Our focus is on responsible and sustainable tourism, connecting travelers with the cultural and natural richness of the region.

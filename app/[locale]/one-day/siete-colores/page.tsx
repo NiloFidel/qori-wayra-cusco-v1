@@ -2,11 +2,11 @@
 // src/app/[locale]/camino-inca/camino-inca-2d/page.tsx
 import React from "react";
 import ComponentePrincipal from "@/app/components/utils/principal/pricipal";
-import img1 from "@/public/images/ValleVIP/Pisac-donde-crece-y-florece-todo.jpg";
-import img2 from "@/public/images/ValleVIP/ollantaytambo-cusco-peru.jpg";
-import img3 from "@/public/images/ValleVIP/moray.jpg";
-import img4 from "@/public/images/ValleVIP/SALINERAS-DE-MARAS.jpeg";
-import img5 from "@/public/images/ValleVIP/iglesia-chinchero-full.jpg";
+import img1 from "@/public/images/OneDayTour/Siete Colores/color1.jpg";
+import img2 from "@/public/images/OneDayTour/Siete Colores/color2.jpg";
+import img3 from "@/public/images/OneDayTour/Siete Colores/color3.jpg";
+import img4 from "@/public/images/OneDayTour/Siete Colores/color4.jpg";
+import img5 from "@/public/images/OneDayTour/Siete Colores/color5.jpg";
 import { useParams } from "next/navigation";
 
 /* 🔹 Definir la Interfaz */

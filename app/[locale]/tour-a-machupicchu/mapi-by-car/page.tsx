@@ -2,11 +2,11 @@
 // src/app/[locale]/camino-inca/camino-inca-2d/page.tsx
 import React from "react";
 import ComponentePrincipal from "@/app/components/utils/principal/pricipal";
-import img1 from "@/public/images/ValleVIP/Pisac-donde-crece-y-florece-todo.jpg";
-import img2 from "@/public/images/ValleVIP/ollantaytambo-cusco-peru.jpg";
-import img3 from "@/public/images/ValleVIP/moray.jpg";
-import img4 from "@/public/images/ValleVIP/SALINERAS-DE-MARAS.jpeg";
-import img5 from "@/public/images/ValleVIP/iglesia-chinchero-full.jpg";
+import img1 from "@/public/images/Macchu Picchu/MachuCar/car1.jpg";
+import img2 from "@/public/images/Macchu Picchu/MachuCar/car2.jpg";
+import img3 from "@/public/images/Macchu Picchu/MachuCar/car3.jpg";
+import img4 from "@/public/images/Macchu Picchu/MachuCar/car4.jpg";
+import img5 from "@/public/images/Macchu Picchu/MachuCar/car5.jpg";
 import { useParams } from "next/navigation";
 
 /* 🔹 Definir la Interfaz */
@@ -63,7 +63,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Experimenta una aventura única viajando hacia Machu Picchu a través de Hidroeléctrica. Disfruta de un recorrido de 2 días y 1 noche que combina transporte terrestre, caminata (o taxi) y un tour guiado en Machu Picchu.",
+        "Experimenta una aventura única viajando hacia Machu Picchu a través de Hidroeléctrica. Disfruta de un recorrido de 2 días y 1 noche que combina transporte terrestre, caminata y un tour guiado en Machu Picchu.",
     },
     itinerarySummary: {
       title: "Resumen del Itinerario",
@@ -95,7 +95,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
               Salida temprana desde Cusco en autobús hacia Hidroeléctrica. Durante el trayecto, disfrutarás de paisajes impresionantes del Valle Sagrado.
             </p>
             <p>
-              Al llegar a Hidroeléctrica, tendrás la opción de caminar (aproximadamente 1 hora) o tomar un taxi hasta Aguas Calientes, donde te espera tu alojamiento.
+              Al llegar a Hidroeléctrica, tendrás la opción de caminar (aproximadamente 1 hora) hasta Aguas Calientes, donde te espera tu alojamiento.
             </p>
           </>
         ),
@@ -168,7 +168,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
               Depart early from Cusco by bus to Hidroeléctrica. Enjoy breathtaking views of the Sacred Valley along the way.
             </p>
             <p>
-              Upon arrival at Hidroeléctrica, choose between a scenic walk (about 1 hour) or a taxi ride to Aguas Calientes, where your overnight stay begins.
+              Upon arrival at Hidroeléctrica, choose between a scenic walk (about 1 hour) to Aguas Calientes, where your overnight stay begins.
             </p>
           </>
         ),
