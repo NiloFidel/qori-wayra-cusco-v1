@@ -72,6 +72,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           title: "Día Único: Cusco - Laguna Humantay - Cusco",
           steps: [
             { iconType: "bus", text: "Salida desde Cusco en bus" },
+            { iconType: "lunch", text: "Desayuno" },
             { iconType: "walk", text: "Caminata por senderos andinos" },
             { iconType: "lake", text: "Llegada a la Laguna Humantay" },
             { iconType: "lunch", text: "Almuerzo en ruta" },
@@ -90,10 +91,10 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           </>
         ),
         services: [
-          "Transporte redondo",
+          "Transporte turístico",
           "Guía profesional bilingüe",
-          "Almuerzo buffet",
-          "Entrada al área natural",
+          "Desayuno",
+          "Almuerzo",
         ],
       },
     ],
@@ -102,7 +103,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Moderada",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Propinas", "Bebidas adicionales"],
+    notIncluded: ["Propinas", "Bebidas adicionales", "Entrada al área natural",],
     recommendations: [
       "Llevar ropa cómoda y abrigada",
       "Calzado adecuado para trekking",
@@ -131,6 +132,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           title: "Single Day: Cusco - Laguna Humantay - Cusco",
           steps: [
             { iconType: "bus", text: "Departure from Cusco by bus" },
+            { iconType: "lunch", text: "Break Fast" },
             { iconType: "walk", text: "Trek through Andean trails" },
             { iconType: "lake", text: "Arrival at Laguna Humantay" },
             { iconType: "lunch", text: "Lunch on route" },
@@ -149,10 +151,10 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           </>
         ),
         services: [
-          "Round-trip transportation",
+          "Turistic transportation",
           "Professional bilingual guide",
-          "Buffet lunch",
-          "Entrance fee to the natural area",
+          "Break Fast",
+          "Lunch",
         ],
       },
     ],
@@ -161,7 +163,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Moderate",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Tips", "Additional beverages"],
+    notIncluded: ["Tips", "Additional beverages", "Entrance fee to the natural area"],
     recommendations: [
       "Wear comfortable and warm clothing",
       "Use proper trekking shoes",

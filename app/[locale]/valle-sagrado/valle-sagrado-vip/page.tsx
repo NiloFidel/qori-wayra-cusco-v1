@@ -63,7 +63,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Disfruta de un tour VIP por el Valle Sagrado, recorriendo Chinchero, Moray, las Salineras de Maras, Ollantaytambo y Pisac en un día lleno de historia, cultura y paisajes impresionantes.",
+        "Tour VIP por el Valle Sagrado de los Incas, una experiencia inolvidable que te permitirá descubrir la magia y el esplendor de este valle sagrado de una manera única y personalizada.",
     },
     itinerarySummary: {
       title: "Resumen del Itinerario",
@@ -86,13 +86,19 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         text: (
           <>
             <p>
-              Comenzamos nuestro tour en Chinchero, donde exploramos ruinas incas, una iglesia colonial y un vibrante mercado de artesanías.
+            Nuestro viaje comienza en Chinchero, un pintoresco pueblo andino conocido por su impresionante complejo arqueológico y su vibrante mercado de artesanías. Aquí, exploraremos las ruinas incas, admiraremos la iglesia colonial y disfrutaremos de una demostración de tejidos tradicionales.
             </p>
             <p>
-              Luego nos dirigimos a Moray para admirar sus inusuales terrazas agrícolas circulares, seguidas de una visita a las impresionantes Salineras de Maras.
+            Continuaremos hacia Moray, un sitio arqueológico fascinante que presenta terrazas circulares concéntricas utilizadas por los incas como laboratorio agrícola. Nos maravillaremos con la ingeniería inca y aprenderemos sobre sus innovadoras técnicas de cultivo.
             </p>
             <p>
-              Finalizamos el recorrido en Ollantaytambo y Pisac, donde descubrimos antiguas fortificaciones y el encanto de los mercados locales.
+            Nuestra siguiente parada será las Salineras de Maras, un paisaje impresionante de miles de pozas de sal que se extienden por la ladera de la montaña. Observaremos el proceso de extracción de sal y capturaremos fotografías espectaculares.
+            </p>
+            <p>
+            Llegaremos a Ollantaytambo, una antigua fortaleza inca que ofrece vistas panorámicas del valle. Exploraremos sus impresionantes templos, terrazas y canales, y nos sumergiremos en la historia de este importante centro administrativo y religioso.
+            </p>
+            <p>
+            Finalmente, visitaremos Pisac, otro complejo arqueológico impresionante con terrazas agrícolas, templos y un cementerio inca. Exploraremos el mercado de artesanías de Pisac, donde podremos adquirir recuerdos únicos.
             </p>
           </>
         ),
@@ -120,8 +126,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     ],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $450",
-      quote: "Información adicionales",
+      price: "USD $25",
+      quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
     },
@@ -131,7 +137,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Trip Overview",
       content:
-        "Enjoy a VIP tour of the Sacred Valley, visiting Chinchero, Moray, the Salineras de Maras, Ollantaytambo and Pisac in a full day of rich history, culture, and breathtaking landscapes.",
+        "VIP Tour of the Sacred Valley of the Incas, an unforgettable experience that will allow you to discover the magic and splendor of this sacred valley in a unique and personalized way.",
     },
     itinerarySummary: {
       title: "Itinerary Overview",
@@ -154,13 +160,19 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         text: (
           <>
             <p>
-              Our tour begins in Chinchero, where we explore Inca ruins, a colonial church, and a vibrant local market.
+            VIP Tour of the Sacred Valley of the Incas, an unforgettable experience that will allow you to discover the magic and splendor of this sacred valley in a unique and personalized way.
             </p>
             <p>
-              Next, we visit Moray to admire its unique circular terraces, followed by a stop at the breathtaking Salineras de Maras.
+            Our journey begins in Chinchero, a picturesque Andean town known for its impressive archaeological complex and vibrant handicraft market. Here, we will explore the Inca ruins, admire the colonial church, and enjoy a demonstration of traditional weaving.
             </p>
             <p>
-              The journey concludes with visits to Ollantaytambo and Pisac, where you’ll discover ancient fortifications and charming local markets.
+            We will continue to Moray, a fascinating archaeological site featuring concentric circular terraces used by the Incas as an agricultural laboratory. We will marvel at Inca engineering and learn about their innovative cultivation techniques.
+            </p>
+            <p>
+            Our next stop will be the Salt Mines of Maras, an impressive landscape of thousands of salt pans spread across the mountainside. We will observe the salt extraction process and capture spectacular photographs.
+            </p>
+            <p>
+            We will arrive at Ollantaytambo, an ancient Inca fortress that offers panoramic views of the valley. We will explore its impressive temples, terraces, and canals, and immerse ourselves in the history of this important administrative and religious center.
             </p>
           </>
         ),
@@ -188,8 +200,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     ],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $450",
-      quote: "Additional information",
+      price: "USD $25",
+      quote: "Additional Info",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",
     },
