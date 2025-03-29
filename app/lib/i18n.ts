@@ -23,12 +23,12 @@ export const translations = {
     marasMoray: "Maras Moray - Salt Mines",
     // Dropdown One Day Tour (Aventuras)
     cityTourCusco: "City Tour - Cusco",
-    sieteLagunas: "Siete Lagunas",
+    sieteLagunas: "7 Lakes",
     tourMistico: "Mystical Tour (4 in 1)",
     waqraPucara: "Waqra Pucara",
     tourPallcoyo: "Tour Pallcoyo",
-    lagunaHumantay: "Laguna Humantay",
-    montana7Colores: "Seven Colors Mountain",
+    lagunaHumantay: "Humantay Lake",
+    montana7Colores: "7 Colors Mountain",
   },
   es: {    
     machuPicchuTour: "Tour a Machu Picchu",
@@ -49,7 +49,7 @@ export const translations = {
     marasMoray: "Maras Moray - Salineras",
     // Dropdown Tour de un día (Aventuras)
     cityTourCusco: "City Tour - Cusco",
-    sieteLagunas: "Siete Lagunas",
+    sieteLagunas: "7 Lagunas",
     tourMistico: "Tour Místico (4 en 1)",
     waqraPucara: "Waqra Pucara",
     tourPallcoyo: "Tour Pallcoyo",

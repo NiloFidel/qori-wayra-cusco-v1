@@ -60,11 +60,11 @@ const globalImages = {
 /* 🔹 Definir objeto de traducciones para el tour completo del Valle Sagrado VIP */
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
-    generalTitle: "Tour Valle Sagrado VIP (Full Day)",
+    generalTitle: "Maras - Moray - Salineras",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Disfruta de un tour VIP por el Valle Sagrado, recorriendo Chinchero, Moray, las Salineras de Maras, Ollantaytambo y Pisac en un día lleno de historia, cultura y paisajes impresionantes.",
+        "Disfruta de un tour VIP por el Valle Sagrado, recorriendo Moray, las Salineras de Maras en un día lleno de historia, cultura y paisajes impresionantes.",
     },
     itinerarySummary: {
       title: "Resumen del Itinerario",
@@ -72,11 +72,10 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Itinerario del Tour Valle Sagrado VIP",
           steps: [
-            { iconType: "bus", text: "Recojo en el hotel y traslado a Chinchero" },
-            { iconType: "walk", text: "Visita a Chinchero: ruinas, iglesia y mercado" },
+            { iconType: "bus", text: "Recojo en el hotel y traslado a Maras" },
             { iconType: "walk", text: "Recorrido por Moray y sus terrazas circulares" },
             { iconType: "walk", text: "Parada en las Salineras de Maras" },
-            { iconType: "bus", text: "Visita a Ollantaytambo y Pisac" },
+            { iconType: "bus", text: "Retorno a Cusco" },
           ],
         },
       ],
@@ -115,43 +114,42 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       "Boleto Turístico General",
     ],
     recommendations: [
-      "Llevar ropa cómoda y abrigada",
-      "Usar zapatos adecuados y protector solar",
-      "Llevar agua y snacks",
+      "Llevar ropa cómoda",
+      "Usar zapatos adecuados",
+      "Agua, snacks y protector solar",
     ],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $450",
-      quote: "Información adicionales",
+      price: "USD $20",
+      quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
     },
   },
   en: {
-    generalTitle: "Sacred Valley VIP Tour (Full Day)",
+    generalTitle: "Maras - Moray - Salineras",
     tripOverview: {
       title: "Trip Overview",
       content:
-        "Enjoy a VIP tour of the Sacred Valley, visiting Chinchero, Moray, the Salineras de Maras, Ollantaytambo and Pisac in a full day of rich history, culture, and breathtaking landscapes.",
+        "Enjoy a VIP tour of the Sacred Valley, visiting Moray, the Salineras of Maras City and a rich history of the Inkas, culture, and breathtaking landscapes.",
     },
     itinerarySummary: {
       title: "Itinerary Overview",
       days: [
         {
-          title: "Sacred Valley VIP Tour Itinerary",
+          title: "Moray - Salineras",
           steps: [
-            { iconType: "bus", text: "Hotel pickup and transfer to Chinchero" },
-            { iconType: "walk", text: "Visit Chinchero: ruins, church, and market" },
+            { iconType: "bus", text: "Hotel pickup and transfer to Maras City" },
             { iconType: "walk", text: "Explore Moray and its circular terraces" },
             { iconType: "walk", text: "Stop at the Salineras de Maras" },
-            { iconType: "bus", text: "Tour of Ollantaytambo and Pisac" },
+            { iconType: "bus", text: "Return to Cusco City" },
           ],
         },
       ],
     },
     itinerary: [
       {
-        title: "Sacred Valley VIP Tour Itinerary",
+        title: "Moray - Salineras",
         text: (
           <>
             <p>
@@ -183,14 +181,14 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       "General Tourist Ticket",
     ],
     recommendations: [
-      "Wear comfortable, warm clothing",
-      "Bring proper walking shoes and sunscreen",
-      "Carry water and snacks",
+      "Wear comfortable clothing",
+      "Proper walking shoes",
+      "Water, snacks and sunscreen",
     ],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $450",
-      quote: "Additional information",
+      price: "USD $20",
+      quote: "Additional Info",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",
     },

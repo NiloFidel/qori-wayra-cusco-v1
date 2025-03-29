@@ -58,7 +58,7 @@ const globalImages = {
 /* 🔹 Definir objeto de traducciones */
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
-    generalTitle: "Tour Waqrapukara (1D)",
+    generalTitle: "Tour Waqrapukara (Full Day)",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
@@ -87,7 +87,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
             <p>Al finalizar el recorrido, regresarás a Cusco con recuerdos inolvidables.</p>
           </>
         ),
-        services: ["Transporte", "Guía profesional", "Entrada al sitio"],
+        services: ["Transporte", "Guía profesional"],
       },
     ],
     additionalInfo: {
@@ -95,18 +95,18 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Baja",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Boleto de entrada (si aplica)", "Propinas"],
-    recommendations: ["Llevar ropa cómoda y abrigada", "Calzado adecuado", "Protector solar y agua"],
+    notIncluded: ["Boleto de entrada", "Propinas"],
+    recommendations: ["Llevar ropa cómoda", "Calzado adecuado", "Protector solar y agua"],
     groupServices: {
       daysAndNights: "1D",
-      price: "USD $120",
-      quote: "Información adicionales",
+      price: "USD $45",
+      quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
     },
   },
   en: {
-    generalTitle: "Waqrapukara Tour (1D)",
+    generalTitle: "Waqrapukara Tour (Full Day)",
     tripOverview: {
       title: "Trip Overview",
       content:
@@ -135,7 +135,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
             <p>After the tour, you will return to Cusco with unforgettable memories.</p>
           </>
         ),
-        services: ["Transport", "Professional guide", "Entrance fee"],
+        services: ["Transport", "Professional guide"],
       },
     ],
     additionalInfo: {
@@ -143,12 +143,12 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Low",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Entrance ticket (if applicable)", "Tips"],
-    recommendations: ["Wear comfortable and warm clothing", "Wear appropriate footwear", "Bring sunscreen and water"],
+    notIncluded: ["Entrance ticket", "Tips"],
+    recommendations: ["Wear comfortable clothing", "Wear appropriate shoes", "Sunscreen and water"],
     groupServices: {
       daysAndNights: "1D",
-      price: "USD $120",
-      quote: "Additional information",
+      price: "USD $45",
+      quote: "Additional Info",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",
     },

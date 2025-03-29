@@ -59,7 +59,7 @@ const globalImages = {
 /* 🔹 Definir objeto de traducciones */
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
-    generalTitle: "Tour Montaña de Colores Palccoyo (1D)",
+    generalTitle: "Tour Montaña de Colores Palccoyo (Full Day)",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
@@ -103,24 +103,24 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Servicios Incluidos:",
     notIncluded: [
-      "Entrada a sitios adicionales (si aplica)",
+      "Entrada a sitios adicionales",
       "Propinas",
     ],
     recommendations: [
-      "Usa ropa cómoda y zapatos de trekking",
+      "Usa ropa cómoda",
+      "Zapatos de trekking",
       "Lleva protector solar, agua y snacks",
-      "No olvides tu cámara",
     ],
     groupServices: {
       daysAndNights: "1D",
-      price: "USD $120",
-      quote: "Tour en grupo reducido",
+      price: "USD $30",
+      quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Es este tour para mí?",
     },
   },
   en: {
-    generalTitle: "Palccoyo Color Mountain Tour (1D)",
+    generalTitle: "Palccoyo Color Mountain Tour (Full Day)",
     tripOverview: {
       title: "Trip Overview",
       content:
@@ -164,18 +164,18 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Included Services:",
     notIncluded: [
-      "Additional site entry (if applicable)",
+      "Additional site entry",
       "Tips",
     ],
     recommendations: [
-      "Wear comfortable clothing and trekking shoes",
+      "Wear comfortable clothing",
+      "Trekking shoes",
       "Bring sunscreen, water, and snacks",
-      "Do not forget your camera",
     ],
     groupServices: {
       daysAndNights: "1D",
-      price: "USD $120",
-      quote: "Small group tour",
+      price: "USD $30",
+      quote: "Additional Info",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",
     },

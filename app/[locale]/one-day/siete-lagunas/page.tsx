@@ -86,10 +86,11 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         text: (
           <>
             <p>El tour inicia temprano en Cusco con el recojo en el hotel. Tras un corto traslado en vehículo, iniciamos nuestra caminata hacia las lagunas, atravesando senderos con vistas panorámicas y paisajes andinos.</p>
-            <p>Durante la jornada, visitaremos siete lagunas, cada una con características únicas, donde podrás disfrutar de la tranquilidad del agua y el impresionante entorno natural.</p>
+            <p>Nuestras vistas serán: <strong>Laguna Azulcocha</strong>, <strong>Laguna Otorongo</strong>, <strong>Laguna Pucacocha</strong>, <strong>Laguna Alqacocha</strong>, <strong>Laguna Qqomercocha</strong>, <strong>Laguna Orqo Otorongo</strong>, <strong>Laguna China Otorongo</strong> y <strong>Aguas Termales de Pacchanta</strong> </p>
+            <p>Durante el día, visitaremos estas siete lagunas, cada una con características únicas, donde podrás disfrutar de la tranquilidad del agua y el impresionante entorno natural.</p>
           </>
         ),
-        services: ["Recojo en el hotel", "Transporte turístico", "Guía profesional bilingüe", "Almuerzo buffet"],
+        services: ["Recojo en el hotel", "Transporte turístico", "Guía profesional bilingüe", "Desayuno", "Almuerzo", "Primeros Auxilios", "Balon de Oxigeno"],
       },
     ],
     additionalInfo: {
@@ -97,16 +98,17 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Baja a Moderada",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Ingreso a lagunas (pago local)", "Gastos personales"],
+    notIncluded: ["Ingreso a las lagunas", "Gastos personales"],
     recommendations: [
-      "Llevar ropa cómoda y abrigada",
-      "Protector solar, gorra y agua",
-      "Calzado adecuado para caminatas"
+      "Llevar ropa cómoda",
+      "Protector solar",
+      "Gorra y agua",
+      "Calzado para caminatas"
     ],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $120",
-      quote: "Tour 7 Lagunas",
+      price: "USD $30",
+      quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
     },
@@ -139,10 +141,12 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         text: (
           <>
             <p>The tour begins early with hotel pickup in Cusco. After a short drive, we start our hike towards the lagoons, traversing scenic Andean trails.</p>
-            <p>Throughout the day, you will visit seven unique lagoons where you can relax and admire the serene beauty of the high Andes.</p>
+            <p>We will visit: <strong>Azulcocha Lake</strong>, <strong>Otorongo Lake</strong>, <strong>Pucacocha Lake</strong>, <strong>Alqacocha Lake</strong>, <strong>Qqomercocha Lake</strong>, <strong>Orqo Otorongo Lake</strong>, <strong>China Otorongo Lake</strong> y <strong>Medicinal Water of Pacchanta</strong> </p>
+            
+            <p>Throughout the day, we will visit these seven unique lagoons where you can relax and admire the serene beauty of the high Andes.</p>
           </>
         ),
-        services: ["Hotel pickup", "Tour transportation", "Professional bilingual guide", "Buffet lunch"],
+        services: ["Hotel pickup", "Tour transportation", "Professional bilingual guide", "Break Fast", "Lunch", "First Aid", "Oxygen Cylinder"],
       },
     ],
     additionalInfo: {
@@ -152,14 +156,15 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     includedServices: "Included Services:",
     notIncluded: ["Local entrance fees", "Personal expenses"],
     recommendations: [
-      "Wear comfortable, layered clothing",
-      "Bring sunscreen, hat, and water",
-      "Wear appropriate hiking shoes"
+      "Wear comfortable clothing",
+      "Bring sunscreen",
+      "Hat and water",
+      "Wear hiking shoes"
     ],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $120",
-      quote: "7 Lagoons Tour",
+      price: "USD $30",
+      quote: "Additional Info",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",
     },
