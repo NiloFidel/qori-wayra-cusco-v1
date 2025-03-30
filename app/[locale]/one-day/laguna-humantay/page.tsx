@@ -7,6 +7,7 @@ import img2 from "@/public/images/OneDayTour/Humantay/humantay2.jpg";
 import img3 from "@/public/images/OneDayTour/Humantay/humantay3.jpg";
 import img4 from "@/public/images/OneDayTour/Humantay/humantay4.jpg";
 import img5 from "@/public/images/OneDayTour/Humantay/humantay5.jpg";
+import mainImg from "@/public/images/OneDayTour/Humantay/humantay main.jpg";
 import { useParams } from "next/navigation";
 
 /* 🔹 Definir la Interfaz */
@@ -46,7 +47,7 @@ interface TranslationContent {
 
 /* 🔹 Imágenes globales */
 const globalImages = {
-    mapImage: "https://guru-almacen.s3.us-east-1.amazonaws.com/quechua/mapa.jpg",
+    mapImage: mainImg.src,
   smallImages: [
     img1.src,
     img2.src,

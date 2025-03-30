@@ -2,11 +2,12 @@
 // src/app/[locale]/camino-inca/camino-inca-2d/page.tsx
 import React from "react";
 import ComponentePrincipal from "@/app/components/utils/principal/pricipal";
-import img1 from "@/public/images/Valle/ValleStantar/valle1.jpg";
-import img2 from "@/public/images/Valle/ValleStantar/valle2.jpg";
-import img3 from "@/public/images/Valle/ValleStantar/valle3.jpg";
-import img4 from "@/public/images/Valle/ValleStantar/valle4.jpg";
-import img5 from "@/public/images/Valle/ValleStantar/valle5.jpg";
+import img1 from "@/public/images/Valle/ValleMaras/maras1.jpg";
+import img2 from "@/public/images/Valle/ValleMaras/maras2.jpg";
+import img3 from "@/public/images/Valle/ValleMaras/maras3.jpg";
+import img4 from "@/public/images/Valle/ValleMaras/maras4.jpg";
+import img5 from "@/public/images/Valle/ValleMaras/maras5.jpg";
+import mainImg from "@/public/images/Valle/ValleMaras/maras main.jpg";
 import { useParams } from "next/navigation";
 
 /* 🔹 Definir la Interfaz */
@@ -46,8 +47,7 @@ interface TranslationContent {
 
 /* 🔹 Imágenes globales */
 const globalImages = {
-  mapImage:
-    "https://guru-almacen.s3.us-east-1.amazonaws.com/quechua/mapa.jpg",
+  mapImage: mainImg.src,
   smallImages: [
     img1.src,
     img2.src,

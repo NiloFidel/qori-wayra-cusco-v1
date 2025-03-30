@@ -21,7 +21,7 @@ import imgVision from "@/public/images/Landing/Vision.jpeg";
 
 // Imágenes del hero slider
 import hero1 from "@/public/images/Macchu Picchu/Machu Picchu - Full day/machupichu.jpg";
-import hero2 from "@/public/images/Valle/ValleStantar/vallesagradodelosincas.jpg";
+import hero2 from "@/public/images/Valle/ValleVIP/valle main.jpg";
 import hero3 from "@/public/images/OneDayTour/CityTour/Qorikancha-Cusco.jpg";
 import hero4 from "@/public/images/CaminoInca/camino2D/main.jpg";
 import hero5 from "@/public/images/OneDayTour/Humantay/main.jpg";

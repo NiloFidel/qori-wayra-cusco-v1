@@ -7,6 +7,7 @@ import img2 from "@/public/images/OneDayTour/Tour Mistico/mistico2.jpg";
 import img3 from "@/public/images/OneDayTour/Tour Mistico/mistico3.jpg";
 import img4 from "@/public/images/OneDayTour/Tour Mistico/mistico4.jpg";
 import img5 from "@/public/images/OneDayTour/Tour Mistico/mistico5.jpg";
+import mainImg from "@/public/images/OneDayTour/Tour Mistico/mistico main.jpg";
 import { useParams } from "next/navigation";
 
 /* 🔹 Definir la Interfaz */
@@ -47,7 +48,7 @@ interface TranslationContent {
 /* 🔹 Imágenes globales */
 const globalImages = {
   // Usamos una imagen de mapa genérica, puede ser ajustada según el destino
-  mapImage: "https://guru-almacen.s3.us-east-1.amazonaws.com/quechua/mapa.jpg",
+  mapImage: mainImg.src,
   smallImages: [
     img1.src,
     img2.src,
