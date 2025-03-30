@@ -63,7 +63,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Explora los tesoros del Valle Sagrado Sur en un tour VIP. Visita el Parque Arqueológico de Tipón, el Parque Arqueológico de Pikillacta y la histórica iglesia de San Pedro Apóstol de Andahuaylillas.",
+        "El tour al Valle Sur de Cusco es ideal para quienes desean explorar rutas menos concurridas, pero ricas en historia, cultura y paisajes. Este circuito combina el legado incaico, colonial y preincaico, acompañado de impresionantes vistas del Valle del Vilcanota y sus pueblos tradicionales.",
     },
     itinerarySummary: {
       title: "Resumen del Itinerario",
@@ -71,12 +71,12 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Itinerario del Tour Valle Sagrado Sur",
           steps: [
-            { iconType: "bus", text: "Recojo en el hotel y traslado a Tipón" },
-            { iconType: "walk", text: "Recorrido por el Parque Arqueológico de Tipón" },
-            { iconType: "bus", text: "Traslado a Pikillacta" },
-            { iconType: "walk", text: "Visita al Parque Arqueológico de Pikillacta" },
-            { iconType: "bus", text: "Traslado a Andahuaylillas" },
-            { iconType: "walk", text: "Visita a la iglesia de San Pedro Apóstol" },
+            { iconType: "walk", text: "08:30 hrs – Recojo del hotel y salida hacia el Valle Sur" },
+            { iconType: "bus", text: "Tipón – Complejo Hidráulico Inca (a 25 km de Cusco)" },
+            { iconType: "walk", text: "Pikillaqta – Ciudad Preinca Wari" },
+            { iconType: "bus", text: "Andahuaylillas – “La Capilla Sixtina de América”" },
+            { iconType: "walk", text: "2 p.m – Retorno a Cusco. Llegada aproximada al centro de Cusco." },
+                        
           ],
         },
       ],
@@ -86,21 +86,17 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Tour Valle Sagrado Sur",
         text: (
           <>
-            <p>
-              Iniciamos nuestro recorrido en el Parque Arqueológico de Tipón, famoso por sus ingeniosos acueductos y terrazas incas.
-            </p>
-            <p>
-              A continuación, nos dirigimos al Parque Arqueológico de Pikillacta, donde descubrimos vestigios de una antigua civilización preincaica.
-            </p>
-            <p>
-              El tour culmina en Andahuaylillas, hogar de la imponente iglesia de San Pedro Apóstol, un ejemplo destacado del arte colonial.
-            </p>
+            <p>Iniciamos el recorrido dirigiéndonos hacia el sureste de Cusco a las 8:30AM.</p>
+            <p>Un impresionante conjunto arqueológico que demuestra la avanzada ingeniería hidráulica de los incas. Canales, andenes y fuentes de agua que aún funcionan perfectamente, rodeados de paisajes verdes y armoniosos.</p>
+            <p>Una antigua ciudad construida por la cultura Wari, con calles rectas, murallas y numerosas edificaciones. Es un ejemplo único de urbanismo preincaico en los Andes.</p>
+            <p>Templo colonial del siglo XVII, famoso por su extraordinaria decoración barroca: murales, retablos dorados y una valiosa colección de arte religioso. El interior está lleno de detalles que deslumbran a todos los visitantes.</p>
+            <p>Retorno a Cusco. Llegada aproximada al centro de Cusco, a las 2:00PM</p>
           </>
         ),
         services: [
-          "Recojo en el hotel",
           "Transporte turístico",
           "Guía profesional bilingüe",
+          "Asistencia permanente",
         ],
       },
     ],
@@ -110,16 +106,19 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Servicios Incluidos:",
     notIncluded: [
+      "Boleto Turístico Parcial",
+      "Ingreso a la Capilla",
       "Alimentación",
-      "Boleto Turístico General",
+      "Propinas",
+      "Otros gastos no mencionados"
     ],
     recommendations: [
-      "Llevar ropa cómoda",
-      "Usar calzado adecuado",
-      "Agua, snacks y protector solar",
+      "Llevar ropa ligera y abrigo (clima variable)",
+      "Protector solar, sombrero y agua",
+      "Cámara fotográfica",
     ],
     groupServices: {
-      daysAndNights: "Full Day",
+      daysAndNights: "Part Time",
       price: "USD $20",
       quote: "Info Adicional",
       bookNow: "Reservar Ahora",
@@ -131,7 +130,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Trip Overview",
       content:
-        "Discover the treasures of the Southern Sacred Valley on a VIP tour. Visit the Archaeological Park of Tipón, the Archaeological Park of Pikillacta, and the historic Church of San Pedro Apóstol de Andahuaylillas.",
+        "The South Valley tour of Cusco is ideal for those who want to explore less crowded routes rich in history, culture, and landscapes. This circuit combines Inca, colonial, and pre-Inca heritage, accompanied by breathtaking views of the Vilcanota Valley and its traditional villages.",
     },
     itinerarySummary: {
       title: "Itinerary Overview",
@@ -139,12 +138,11 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Sacred Valley South Tour Itinerary",
           steps: [
-            { iconType: "bus", text: "Hotel pickup and transfer to Tipón" },
-            { iconType: "walk", text: "Visit the Archaeological Park of Tipón" },
-            { iconType: "bus", text: "Transfer to Pikillacta" },
-            { iconType: "walk", text: "Explore the Archaeological Park of Pikillacta" },
-            { iconType: "bus", text: "Transfer to Andahuaylillas" },
-            { iconType: "walk", text: "Visit the Church of San Pedro Apóstol" },
+            { iconType: "bus", text: "08:30 hrs – Hotel pickup and departure to the South Valley" },
+            { iconType: "walk", text: "Tipón – Inca Hydraulic Complex (25 km from Cusco)" },
+            { iconType: "bus", text: "Pikillaqta – Pre-Inca Wari City" },
+            { iconType: "walk", text: "Andahuaylillas – The Sistine Chapel of America" },
+            { iconType: "bus", text: "2:00 p.m – Return to Cusco. Approximate arrival at Cusco’s city center." },
           ],
         },
       ],
@@ -154,21 +152,17 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Sacred Valley South Tour",
         text: (
           <>
-            <p>
-              Our tour begins at the Archaeological Park of Tipón, renowned for its impressive aqueducts and Inca terraces.
-            </p>
-            <p>
-              Next, we head to the Archaeological Park of Pikillacta, a pre-Inca site offering a glimpse into an ancient civilization.
-            </p>
-            <p>
-              Finally, we conclude the tour in Andahuaylillas, home to the magnificent Church of San Pedro Apóstol, a highlight of colonial history.
-            </p>
+            <p>We begin the journey heading southeast from Cusco at 8:30AM</p>
+            <p>An impressive archaeological complex that showcases the Incas’ advanced hydraulic engineering. Canals, terraces, and water fountains that still function perfectly, surrounded by lush green landscapes.</p>
+            <p>An ancient city built by the Wari culture, featuring straight streets, walls, and numerous buildings. It is a unique example of pre-Inca urban planning in the Andes.</p>
+            <p>A 17th-century colonial church, famous for its extraordinary Baroque decoration: murals, golden altarpieces, and a valuable collection of religious art. The interior is filled with details that amaze all visitors.</p>
+
           </>
         ),
         services: [
-          "Hotel pickup",
-          "Tour transportation",
+          "Tourist transportation",
           "Professional bilingual guide",
+          "Permanent assistance",
         ],
       },
     ],
@@ -178,13 +172,16 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Included Services:",
     notIncluded: [
-      "Foods",
-      "General Tourist Ticket",
+      "Partial Tourist Ticket",
+      "Entrance to the Chapel",
+      "Meals",
+      "Tips",
+      "Other expenses not mentioned"
     ],
     recommendations: [
-      "Wear comfortable clothing",
-      "Proper walking shoes",
-      "Water, snacks and sunscreen",
+      "Bring light clothing and a jacket (variable weather)",
+      "Sunscreen, hat, and water",
+      "Camera",
     ],
     groupServices: {
       daysAndNights: "Full Day",

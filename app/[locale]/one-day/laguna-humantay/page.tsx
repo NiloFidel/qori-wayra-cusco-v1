@@ -63,7 +63,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Descubre la magia de la Laguna Humantay, un lago de aguas turquesas enclavado en la Cordillera Vilcabamba. Disfruta de una caminata en la naturaleza andina y maravíllate con las impresionantes vistas de montañas nevadas.",
+        "Embárcate en una aventura inolvidable hacia la impresionante Laguna Humantay, un paraíso natural enclavado en el corazón de los Andes peruanos. Este tour de un día te llevará a través de paisajes de montaña espectaculares, pueblos pintorescos y te permitirá experimentar la majestuosidad de una de las lagunas más hermosas del mundo. \nLa altitud de la Laguna Humantay es de aproximadamente 4,200 metros sobre el nivel del mar.",
     },
     itinerarySummary: {
       title: "Resumen del Itinerario",
@@ -75,7 +75,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
             { iconType: "lunch", text: "Desayuno" },
             { iconType: "walk", text: "Caminata por senderos andinos" },
             { iconType: "lake", text: "Llegada a la Laguna Humantay" },
-            { iconType: "lunch", text: "Almuerzo en ruta" },
+            { iconType: "lunch", text: "Almuerzo" },
             { iconType: "bus", text: "Regreso a Cusco en bus" },
           ],
         },
@@ -86,15 +86,24 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Itinerario Completo",
         text: (
           <>
-            <p>El tour inicia temprano en Cusco, donde un vehículo te recogerá para trasladarte al inicio de la caminata. Durante el trayecto, disfrutarás de paisajes andinos únicos.</p>
-            <p>La caminata te llevará a través de senderos rodeados de vegetación, hasta llegar a la imponente Laguna Humantay, famosa por sus aguas turquesas y su entorno montañoso. Después de disfrutar de este mágico lugar y tomarte un tiempo para fotos, iniciarás el regreso a Cusco.</p>
+            <p>Recojo en su hotel en Cusco. Nuestro transporte privado y guía bilingüe lo recogerán temprano para aprovechar al máximo el día.</p>
+            <p>Viaje en autobús hacia el pueblo de Mollepata. Disfrute de un desayuno andino tradicional en un restaurante local para recargar energías.</p>
+            <p>Continuación del viaje en autobús hasta el campamento base de Soraypampa.</p>
+            <p>Caminata escénica de ascenso a la Laguna Humantay (3 km aproximadamente). Admire las vistas panorámicas de las montañas nevadas, los valles verdes y la flora y fauna local.</p>
+            <p>Tiempo libre en la Laguna Humantay. Maravíllese con el color turquesa intenso de la laguna, tome fotografías impresionantes y disfrute de la tranquilidad del entorno.</p>
+            <p>Descenso de regreso al campamento base de Soraypampa.</p>
+            <p>Almuerzo en Mollepata. Pruebe los sabores auténticos de la cocina peruana en un ambiente acogedor.</p>
+            <p>Regreso a Cusco. Relájese y disfrute del paisaje mientras lo llevamos de vuelta a su hotel.</p>
+              
           </>
         ),
         services: [
-          "Transporte turístico",
-          "Guía profesional bilingüe",
-          "Desayuno",
-          "Almuerzo",
+          "Recojo del hotel",
+          "Transporte turístico de ida y vuelta.",
+          "Guía profesional.",
+          "Desayuno y almuerzo Buffet.",
+          "Equipo de primeros auxilios.",
+          "Bastones artesanales",
         ],
       },
     ],
@@ -112,8 +121,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     ],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $120",
-      quote: "Más información",
+      price: "USD $25",
+      quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
     },
@@ -123,7 +132,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Trip Overview",
       content:
-        "Experience the magic of Laguna Humantay, a turquoise lake nestled in the Vilcabamba Range. Enjoy a day of trekking through the Andean wilderness and be captivated by the breathtaking snowy mountain views.",
+        "Embark on an unforgettable adventure to the stunning Humantay Lagoon, a natural paradise nestled in the heart of the Peruvian Andes. This full-day tour will take you through breathtaking mountain landscapes, picturesque villages, and allow you to experience the majesty of one of the most beautiful lagoons in the world. \nThe altitude of Humantay Lagoon is approximately 4,200 meters above sea level.",
     },
     itinerarySummary: {
       title: "Itinerary Overview",
@@ -135,7 +144,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
             { iconType: "lunch", text: "Break Fast" },
             { iconType: "walk", text: "Trek through Andean trails" },
             { iconType: "lake", text: "Arrival at Laguna Humantay" },
-            { iconType: "lunch", text: "Lunch on route" },
+            { iconType: "lunch", text: "Lunch" },
             { iconType: "bus", text: "Return to Cusco by bus" },
           ],
         },
@@ -146,15 +155,23 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Full Day Itinerary",
         text: (
           <>
-            <p>The tour begins early in Cusco with a pickup that takes you to the trailhead. Along the way, you will enjoy unique Andean landscapes.</p>
-            <p>The trek leads you through scenic trails until you reach the magnificent Laguna Humantay, known for its turquoise waters and stunning mountainous backdrop. After spending time taking in the views and photos, you will head back to Cusco.</p>
+            <p>Pickup from your hotel in Cusco. Our private transport and bilingual guide will pick you up early to make the most of the day.</p>
+            <p>Bus trip to the town of Mollepata. Enjoy a traditional Andean breakfast at a local restaurant to recharge your energy.</p>
+            <p>Continue the bus journey to the Soraypampa base camp.</p>
+            <p>Scenic hike up to Humantay Lagoon (approximately 3 km). Admire the panoramic views of the snow-capped mountains, green valleys, and local flora and fauna.</p>
+            <p>Free time at Humantay Lagoon. Marvel at the deep turquoise color of the lagoon, take stunning photographs, and enjoy the tranquility of the surroundings.</p>
+            <p>Descent back to the Soraypampa base camp.</p>
+            <p>Lunch in Mollepata. Taste the authentic flavors of Peruvian cuisine in a cozy setting.</p>
+            <p>Return to Cusco. Relax and enjoy the scenery as we take you back to your hotel.</p>
           </>
         ),
         services: [
-          "Turistic transportation",
-          "Professional bilingual guide",
-          "Break Fast",
-          "Lunch",
+          "Pickup at hotel",
+          "Round-trip tourist transportation.",
+          "Professional guide.",
+          "Buffet breakfast and lunch.",
+          "First aid kit.",
+          "Handmade walking sticks.",
         ],
       },
     ],

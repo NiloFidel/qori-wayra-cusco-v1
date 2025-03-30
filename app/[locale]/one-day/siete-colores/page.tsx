@@ -63,7 +63,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Embárcate en una aventura única hacia Vinicunca, donde la naturaleza despliega un vibrante espectáculo de colores. Este tour te llevará desde Cusco por impresionantes paisajes hasta la cima, para disfrutar de una vista panorámica inigualable.",
+        "La altitud máxima del tour es de 5,036 metros sobre el nivel del mar, por lo que es fundamental estar bien aclimatado.",
     },
     itinerarySummary: {
       title: "Itinerario del Tour",
@@ -71,9 +71,12 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Día Único: Cusco - Vinicunca - Cusco",
           steps: [
-            { iconType: "bus", text: "Traslado desde Cusco a la base del tour" },
-            { iconType: "walk", text: "Inicio de la caminata hacia Vinicunca" },
-            { iconType: "sun", text: "Disfruta del espectáculo de colores en la cima" },
+            { iconType: "bus", text: "Salida desde Cusco" },
+            { iconType: "walk", text: "Desayuno en Cusipata" },
+            { iconType: "sun", text: "Inicio de la caminata" },
+            { iconType: "bus", text: "Ascenso a la Montaña de 7 Colores" },
+            { iconType: "walk", text: "Llegada a Vinicunca" },
+            { iconType: "sun", text: "Descenso y almuerzo" },
             { iconType: "bus", text: "Regreso a Cusco" },
           ],
         },
@@ -84,11 +87,22 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Tour de la Montaña de 7 Colores",
         text: (
           <>
-            <p>Partida desde Cusco en transporte privado. Comenzamos una caminata moderada hacia Vinicunca, enfrentando terrenos y altitudes que desafían, pero que te recompensan con una vista espectacular de la montaña de 7 colores.</p>
-            <p>En la cima, disfrutarás de un paisaje natural único y vibrante. Tras disfrutar del momento, regresamos a Cusco en el mismo vehículo.</p>
+            <p>Nuestro día comienza temprano, alrededor de las 5:00 a.m., con el recojo desde tu hotel en Cusco. Nos dirigiremos en transporte privado hacia el sur, atravesando pintorescos pueblos andinos.</p>
+            <p>Haremos una parada en el pueblo de Cusipata para disfrutar de un delicioso desayuno, que nos dará la energía necesaria para la caminata.</p>
+            <p>Continuaremos hasta el punto de inicio de la caminata (4,650 msnm). Desde aquí, comenzaremos nuestro ascenso hacia la Montaña de 7 Colores.</p>
+            <p>La caminata tiene una duración aproximada de 1 hora, con un nivel de dificultad moderado a exigente debido a la altitud. Durante el trayecto, disfrutaremos de paisajes andinos espectaculares, con la presencia de llamas y alpacas.</p>
+            <p>Al llegar a la cima (5,036 msnm), seremos recompensados con una vista impresionante de la Montaña de 7 Colores, un espectáculo visual único en el mundo. Tendremos tiempo para tomar fotografías y disfrutar del paisaje.</p>
+            <p>Iniciaremos el descenso de regreso al punto de partida, donde nos espera nuestro transporte para regresar a Cusipata. Ahí disfrutaremos de un almuerzo.</p>
+            <p>Después del almuerzo, emprenderemos el viaje de regreso a Cusco, llegando aproximadamente a las 5:00 p.m.</p>
           </>
         ),
-        services: ["Transporte ida y vuelta", "Guía profesional", "Entrada al tour", "Snacks y bebidas"],
+        services: ["Recojo del hotel", 
+          "Transporte turístico de ida y vuelta desde su hotel en Cusco.", 
+          "Guía profesional.", 
+          "Desayuno y almuerzo Buffet.",
+           "Equipo de primeros auxilios.",
+           "Bastones artesanales." 
+        ],
       },
     ],
     additionalInfo: {
@@ -96,17 +110,17 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Moderado",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Almuerzo (opcional)", "Propinas"],
+    notIncluded: ["Ingreso a la montaña (cobro por parte de la comunidad)"],
     recommendations: [
-      "Llevar ropa cómoda y ligera",
-      "Protector solar y gorra",
-      "Calzado adecuado para caminatas",
-      "Agua y snacks",
+      "Llevar ropa cómoda y abrigadora (capas), ya que el clima puede variar.",
+      "Usar calzado de tracking adecuado.",
+      "Protector solar, sombrero y gafas de sol.",
+      "Dinero en efectivo para gastos personales.",
     ],
     groupServices: {
       daysAndNights: "1D",
-      price: "USD $120",
-      quote: "Información adicionales",
+      price: "USD $25",
+      quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
     },
@@ -116,7 +130,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Trip Overview",
       content:
-        "Embark on a unique adventure to Vinicunca, where nature unfolds a vibrant display of colors. This tour takes you from Cusco through breathtaking landscapes to the summit for an unparalleled panoramic view.",
+        "The maximum altitude of the tour is 5,036 meters above sea level, so it is essential to be well acclimated.",
     },
     itinerarySummary: {
       title: "Tour Itinerary",
@@ -124,9 +138,12 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Single Day: Cusco - Vinicunca - Cusco",
           steps: [
-            { iconType: "bus", text: "Transport from Cusco to the tour base" },
-            { iconType: "walk", text: "Start the hike to Vinicunca" },
-            { iconType: "sun", text: "Enjoy the colorful summit view" },
+            { iconType: "bus", text: "Departure from Cusco" },
+            { iconType: "walk", text: "Breakfast in Cusipata" },
+            { iconType: "sun", text: "Start of the hike" },
+            { iconType: "bus", text: "Ascent to Rainbow Mountain" },
+            { iconType: "walk", text: "Arrival at Vinicunca" },
+            { iconType: "sun", text: "Descent and lunch" },
             { iconType: "bus", text: "Return to Cusco" },
           ],
         },
@@ -137,11 +154,21 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "7 Color Mountain Tour",
         text: (
           <>
-            <p>Depart from Cusco in private transport. We begin a moderate hike to Vinicunca, where challenging terrains and altitudes are rewarded with a spectacular view of the vibrant 7 Color Mountain.</p>
-            <p>At the summit, take in the unique natural panorama before returning to Cusco.</p>
+            <p>Our day begins early, around 5:00 a.m., with pickup from your hotel in Cusco. We will head south in private transportation, passing through picturesque Andean villages.</p>
+            <p>We will stop in the town of Cusipata to enjoy a delicious breakfast, giving us the necessary energy for the hike.</p>
+            <p>We will continue to the starting point of the hike (4,650 meters above sea level). From here, we will begin our ascent to the Rainbow Mountain.</p>
+            <p>The hike takes approximately 1 hour, with a moderate to challenging difficulty level due to the altitude. Along the way, we will enjoy spectacular Andean landscapes, with the presence of llamas and alpacas.</p>
+            <p>Upon reaching the summit (5,036 meters above sea level), we will be rewarded with an impressive view of Rainbow Mountain, a unique visual spectacle in the world. We will have time to take photos and enjoy the scenery.</p>
+            <p>We will begin the descent back to the starting point, where our transportation will be waiting to take us back to Cusipata. There, we will enjoy lunch.</p>
+          <p>After lunch, we will begin our journey back to Cusco, arriving at approximately 5:00 p.m.</p>
           </>
         ),
-        services: ["Round-trip transport", "Professional guide", "Tour entrance", "Snacks and drinks"],
+        services: ["Hotel pickup",
+          "Round-trip tourist transportation from your hotel in Cusco.", 
+          "Professional guide.", 
+          "Buffet breakfast and lunch.",
+          "First aid equipment.",
+          "Handmade trekking poles"],
       },
     ],
     additionalInfo: {
@@ -149,16 +176,16 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Moderate",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Lunch (optional)", "Tips"],
+    notIncluded: ["Entrance to the mountain (charged by the local community)"],
     recommendations: [
-      "Wear comfortable, light clothing",
-      "Bring sunscreen and a cap",
-      "Wear proper hiking shoes",
-      "Carry water and snacks",
+      "Wear comfortable and warm clothing (layers), as the weather can change.",
+      "Wear proper trekking shoes.",
+      "Sunscreen, hat, and sunglasses.",
+      "Cash for personal expenses.",
     ],
     groupServices: {
       daysAndNights: "1D",
-      price: "USD $120",
+      price: "USD $25",
       quote: "Additional Information",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",

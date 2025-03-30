@@ -63,7 +63,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Descubre los tesoros históricos y culturales de Cusco en un tour de un día. Visita el Qoricancha, la Catedral, Sacsayhuamán y el vibrante Mercado de San Pedro para vivir una experiencia auténtica.",
+        "City Tour por la majestuosa ciudad de Cusco, la antigua capital del Imperio Inca.\nPrepárate para un viaje lleno de historia, cultura y paisajes impresionantes. \nPara iniciar el tour, el punto de encuentro será a las 8:30 a.m. o 12:30 p.m. en la Plaza de Armas de Cusco. Este tour tiene una duración aproximada de 5 horas.\nRecorre los 5 lugares turísticos más importantes de Cusco, revelando el fascinante legado inca y colonial.",
     },
     itinerarySummary: {
       title: "Resumen del Itinerario",
@@ -71,11 +71,11 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Día 1: Recorrido por Cusco",
           steps: [
-            { iconType: "bus", text: "Traslado desde el hotel al centro histórico" },
-            { iconType: "walk", text: "Visita al Qoricancha" },
-            { iconType: "walk", text: "Recorrido por la Catedral y Plaza de Armas" },
-            { iconType: "walk", text: "Exploración de Sacsayhuamán" },
-            { iconType: "market", text: "Paseo por el Mercado de San Pedro" },
+            { iconType: "bus", text: "QORICANCHA (Templo del Sol)" },
+            { iconType: "walk", text: "SACSAYHUAMÁN" },
+            { iconType: "walk", text: "QENQO" },
+            { iconType: "walk", text: "PUCA PUCARA" },
+            { iconType: "market", text: "TAMBOMACHAY" },
           ],
         },
       ],
@@ -85,11 +85,15 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Día 1: Recorrido por Cusco",
         text: (
           <>
-            <p>Tu día comienza con el traslado desde tu hotel al centro histórico de Cusco. Iniciaremos con una visita al Qoricancha, el templo del sol inca, y luego descubriremos la imponente Catedral y la vibrante Plaza de Armas.</p>
-            <p>Continuaremos hacia Sacsayhuamán, donde disfrutarás de impresionantes vistas panorámicas de la ciudad, y finalizaremos con una visita al tradicional Mercado de San Pedro, donde podrás experimentar la auténtica vida cusqueña.</p>
+            <p>A pocos pasos de la plaza, visitaremos el Qoricancha, el templo más importante del Imperio Inca, dedicado al dios Inti (Sol). Bajo el convento de Santo Domingo, aún se pueden apreciar los muros de oro y las finas piedras labradas que alguna vez cubrieron este recinto sagrado.</p>
+            <p>A las afueras de la ciudad, nos maravillaremos con la fortaleza de Sacsayhuamán, una obra maestra de la ingeniería inca. Sus enormes bloques de piedra, algunos de hasta 120 toneladas, encajan a la perfección, creando muros ciclópeos que dominan el valle del Cusco.</p>
+            <p>Continuaremos nuestro recorrido hacia el complejo arqueológico de Qenqo, un laberinto de rocas talladas con altares, canales y nichos, donde los incas realizaban rituales y ceremonias religiosas.</p>
+            <p>Nuestra siguiente parada será Puca Pucara, una fortaleza roja que sirvió como puesto de control militar y tambo (lugar de descanso) para los viajeros que ingresaban a Cusco.</p>
+            <p>Finalmente, llegaremos a Tambomachay, conocido como el Baño del Inca, un complejo de fuentes y canales de agua que demuestran la maestría de los incas en ingeniería hidráulica.</p>
+          
           </>
         ),
-        services: ["Traslado", "Guía profesional", "Entradas a sitios", "Visita al mercado"],
+        services: ["Bus turístico", "Guía profesional"],
       },
     ],
     additionalInfo: {
@@ -97,12 +101,12 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Fácil",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Propinas", "Gastos personales"],
-    recommendations: ["Ropa cómoda", "Calzado adecuado", "Protector solar"],
+    notIncluded: ["Ticket de ingreso a Qoricancha.", "PTP. Boleto Turístico Parcial."],
+    recommendations: ["Protector solar.", "Sombrero.", "Protector solar", "Poncho de lluvia por temporada."],
     groupServices: {
       daysAndNights: "1D",
-      price: "USD $90",
-      quote: "Consulta disponibilidad y horarios",
+      price: "USD $20",
+      quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
     },
@@ -112,7 +116,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Trip Overview",
       content:
-        "Discover the historical and cultural treasures of Cusco in a one-day tour. Visit Qoricancha, the Cathedral, Sacsayhuamán, and the lively San Pedro Market for an authentic experience.",
+        "City Tour through the majestic city of Cusco, the ancient capital of the Inca Empire.\nGet ready for a journey full of history, culture, and breathtaking landscapes.\nTo start the tour, the meeting point will be at 8:30 a.m. or 12:30 p.m. in Cusco’s Plaza de Armas. This tour lasts approximately 5 hours.\nExplore the 5 most important tourist sites in Cusco, unveiling the fascinating Inca and colonial legacy.",
     },
     itinerarySummary: {
       title: "Itinerary Overview",
@@ -120,11 +124,11 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Day 1: Cusco City Tour",
           steps: [
-            { iconType: "bus", text: "Transport from your hotel to the historic center" },
-            { iconType: "walk", text: "Visit to Qoricancha" },
-            { iconType: "walk", text: "Tour of the Cathedral and Plaza de Armas" },
-            { iconType: "walk", text: "Exploration of Sacsayhuamán" },
-            { iconType: "market", text: "Visit to San Pedro Market" },
+            { iconType: "bus", text: "QORICANCHA (Temple of the Sun)" },
+            { iconType: "walk", text: "SACSAYHUAMÁN" },
+            { iconType: "walk", text: "QENQO" },
+            { iconType: "walk", text: "PUCA PUCARA" },
+            { iconType: "market", text: "TAMBOMACHAY" },
           ],
         },
       ],
@@ -134,11 +138,14 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Day 1: Cusco City Tour",
         text: (
           <>
-            <p>Your day begins with transport from your hotel to Cuscos historic center. Start with a visit to Qoricancha, the Inca temple of the sun, followed by a tour of the impressive Cathedral and the vibrant Plaza de Armas.</p>
-            <p>Next, explore Sacsayhuamán, an Incan fortress offering panoramic views of the city, and conclude with a visit to the traditional San Pedro Market, where you can experience authentic Cusco life.</p>
+            <p>Just a few steps from the square, we will visit Qoricancha, the most important temple of the Inca Empire, dedicated to the god Inti (Sun). Beneath the Santo Domingo convent, you can still admire the golden walls and finely carved stones that once covered this sacred site.</p>
+            <p>Just outside the city, we will marvel at the Sacsayhuamán fortress, a masterpiece of Inca engineering. Its massive stone blocks, some weighing up to 120 tons, fit perfectly together, creating cyclopean walls that dominate the Cusco valley.</p>
+            <p>We will continue our tour to the Qenqo archaeological complex, a labyrinth of carved rocks with altars, channels, and niches, where the Incas performed rituals and religious ceremonies.</p>
+            <p>Our next stop will be Puca Pucara, a red fortress that served as a military checkpoint and tambo (resting place) for travelers entering Cusco.</p>
+            <p>Finally, we will arrive at Tambomachay, known as the Of Inca Bath, a complex of fountains and water channels that showcase the of Inca mastery of hydraulic engineering.</p>
           </>
         ),
-        services: ["Transport", "Professional guide", "Entrance fees", "Market visit"],
+        services: ["Tourist bus", "Professional guide"],
       },
     ],
     additionalInfo: {
@@ -146,8 +153,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Easy",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Tips", "Personal expenses"],
-    recommendations: ["Comfortable clothing", "Suitable footwear", "Sunscreen"],
+    notIncluded: ["Entrance ticket to Qoricancha.", "PTP. Partial Tourist Ticket."],
+    recommendations: ["Sunscreen.", "Hat.", "Sunglasses.", "Rain poncho (seasonal)."],
     groupServices: {
       daysAndNights: "1D",
       price: "USD $90",

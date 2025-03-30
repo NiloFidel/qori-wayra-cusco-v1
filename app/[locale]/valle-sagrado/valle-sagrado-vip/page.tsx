@@ -71,11 +71,11 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Itinerario del Tour Valle Sagrado VIP",
           steps: [
-            { iconType: "bus", text: "Recojo en el hotel y traslado a Chinchero" },
-            { iconType: "walk", text: "Visita a Chinchero: ruinas, iglesia y mercado" },
-            { iconType: "walk", text: "Recorrido por Moray y sus terrazas circulares" },
-            { iconType: "walk", text: "Parada en las Salineras de Maras" },
-            { iconType: "bus", text: "Visita a Ollantaytambo y Pisac" },
+            { iconType: "bus", text: "CHINCHERO" },
+            { iconType: "walk", text: "MORAY" },
+            { iconType: "walk", text: "SALINERAS DE MARAS" },
+            { iconType: "walk", text: "OLLANTAYTAMBO" },
+            { iconType: "bus", text: "PISAC" },
           ],
         },
       ],
@@ -145,11 +145,11 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Sacred Valley VIP Tour Itinerary",
           steps: [
-            { iconType: "bus", text: "Hotel pickup and transfer to Chinchero" },
-            { iconType: "walk", text: "Visit Chinchero: ruins, church, and market" },
-            { iconType: "walk", text: "Explore Moray and its circular terraces" },
-            { iconType: "walk", text: "Stop at the Salineras de Maras" },
-            { iconType: "bus", text: "Tour of Ollantaytambo and Pisac" },
+            { iconType: "bus", text: "CHINCHERO" },
+            { iconType: "walk", text: "MORAY" },
+            { iconType: "walk", text: "SALINERAS DE MARAS" },
+            { iconType: "walk", text: "OLLANTAYTAMBO" },
+            { iconType: "bus", text: "PISAC" },
           ],
         },
       ],

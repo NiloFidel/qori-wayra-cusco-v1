@@ -63,7 +63,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Disfruta de un tour único por la Montaña de Colores Palccoyo. Descubre los vibrantes matices de la tierra mientras recorres senderos andinos, y vive una experiencia inolvidable en contacto directo con la naturaleza.",
+        "La Montaña de Colores Palcoyo es una alternativa menos concurrida a la famosa Vinicunca, ideal para quienes buscan disfrutar paisajes espectaculares sin largas caminatas. Palcoyo sorprende con su belleza natural: tres montañas de colores, el Bosque de Piedras y vistas panorámicas de los Andes, todo accesible con una caminata suave y placentera.",
     },
     itinerarySummary: {
       title: "Resumen del Itinerario",
@@ -71,11 +71,11 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Día Único: Cusco - Palccoyo - Cusco",
           steps: [
-            { iconType: "bus", text: "Recogida en el hotel en Cusco" },
-            { iconType: "walk", text: "Transporte a Palccoyo" },
-            { iconType: "walk", text: "Caminata y recorrido por la montaña de colores" },
-            { iconType: "photo", text: "Tiempo libre para fotos" },
-            { iconType: "bus", text: "Retorno a Cusco" },
+            { iconType: "bus", text: "04:30 – 05:00 hrs – Recojo del hotel en Cusco" },
+            { iconType: "walk", text: "Desayuno en ruta – Cusipata o Checacupe" },
+            { iconType: "walk", text: "Llegada a Palcoyo (4,900 m s.n.m.)" },
+            { iconType: "photo", text: "Retorno" },
+            { iconType: "bus", text: "Llegada a Cusco." },
           ],
         },
       ],
@@ -85,15 +85,17 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Tour de un Día: Cusco - Palccoyo - Cusco",
         text: (
           <>
-            <p>El día inicia con el recogido en tu hotel en Cusco. Luego, un cómodo transporte te llevará a Palccoyo, donde te espera un paisaje natural de intensos colores y formaciones geológicas sorprendentes.</p>
-            <p>Disfruta de una caminata guiada por senderos andinos, aprende sobre la mineralogía que da origen a estos vibrantes colores y aprovecha el tiempo para capturar fotos impresionantes. Finalmente, regresa a Cusco con recuerdos inolvidables.</p>
+            <p>Partimos rumbo al sur de Cusco, pasando por bellos paisajes andinos y pueblos tradicionales.</p>
+            <p>Disfrutamos un desayuno típico andino antes de continuar hacia Palcoyo.</p>
+            <p>Iniciamos una caminata suave de 45 minutos aprox., durante la cual admiraremos: 1.Las Montañas de Colores (3 formaciones multicolores únicas), 2.El enigmático Bosque de Piedras. 3.Vistas al nevado Ausangate</p>
+            <p>Tiempo libre para fotografías y disfrutar del entorno. Finalmente, descenso tranquilo, almuerzo en ruta y retorno a Cusco.</p>
           </>
         ),
         services: [
-          "Recogida en el hotel",
-          "Transporte ida y vuelta",
+          "Transporte turístico ida y vuelta",
           "Guía profesional bilingüe",
-          "Tiempo libre para explorar y fotografiar",
+          "Desayuno y almuerzo",
+          "Asistencia permanente",
         ],
       },
     ],
@@ -103,13 +105,17 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Servicios Incluidos:",
     notIncluded: [
-      "Entrada a sitios adicionales",
+      "Entradas a Palcoyo",
       "Propinas",
+      "Snacks y bebidas extras",
+      "Otros gastos no mencionados"
     ],
     recommendations: [
-      "Usa ropa cómoda",
+      "Llevar ropa abrigadora (temperaturas bajas)",
       "Zapatos de trekking",
-      "Lleva protector solar, agua y snacks",
+      "Sombrero, bloqueador solar y gafas de sol",
+      "Agua, snacks y cámara fotográfica",
+      "Pastillas para el mal de altura (opcional)"
     ],
     groupServices: {
       daysAndNights: "1D",
@@ -124,7 +130,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Trip Overview",
       content:
-        "Experience a unique tour through the colorful Palccoyo Mountain. Discover the vibrant hues of the earth as you walk along Andean trails and create unforgettable memories in close contact with nature.",
+        "The Palcoyo Rainbow Mountain is a less crowded alternative to the famous Vinicunca, perfect for those who want to enjoy spectacular landscapes without long hikes. Palcoyo amazes with its natural beauty: three colorful mountains, the Stone Forest, and panoramic views of the Andes, all accessible with a gentle and pleasant walk.",
     },
     itinerarySummary: {
       title: "Itinerary Overview",
@@ -132,11 +138,11 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "One Day Tour: Cusco - Palccoyo - Cusco",
           steps: [
-            { iconType: "bus", text: "Hotel pickup in Cusco" },
-            { iconType: "walk", text: "Transport to Palccoyo" },
-            { iconType: "walk", text: "Guided hike through the color mountain" },
-            { iconType: "photo", text: "Free time for photos" },
-            { iconType: "bus", text: "Return to Cusco" },
+            { iconType: "bus", text: "04:30 – 05:00 hrs – Hotel pickup in Cusco" },
+            { iconType: "walk", text: "Breakfast on the way – Cusipata or Checacupe" },
+            { iconType: "walk", text: "Arrival at Palcoyo (4,900 m.a.s.l.)" },
+            { iconType: "photo", text: "	Return" },
+            { iconType: "bus", text: "Arrival in Cusco." },
           ],
         },
       ],
@@ -146,15 +152,17 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "One Day Tour: Cusco - Palccoyo - Cusco",
         text: (
           <>
-            <p>Your day begins with a hotel pickup in Cusco. Enjoy a comfortable ride to Palccoyo, where you will be greeted by a natural landscape bursting with vibrant colors and stunning geological formations.</p>
-            <p>Join a guided hike along Andean trails, learn about the minerals that create these vivid hues, and take plenty of photos. Finally, return to Cusco with unforgettable memories.</p>
+            <p>We depart south of Cusco, passing through beautiful Andean landscapes and traditional villages.</p>
+            <p>We enjoy a traditional Andean breakfast before continuing to Palcoyo.</p>
+            <p>We start a gentle 45-minute hike, during which we will admire: 1.The Rainbow Mountains (3 unique multicolored formations), 2.The enigmatic Stone Forest, 3.Views of the Ausangate snow-capped mountain.</p>
+            <p>Free time for photos and to enjoy the surroundings. Finally, a gentle descent, lunch on the way, and return to Cusco.</p>
           </>
         ),
         services: [
-          "Hotel pickup",
-          "Round-trip transport",
+          "Round-trip tourist transportation",
           "Professional bilingual guide",
-          "Free time to explore and photograph",
+          "Breakfast and lunch",
+          "Permanent assistance",
         ],
       },
     ],
@@ -164,13 +172,17 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Included Services:",
     notIncluded: [
-      "Additional site entry",
+      "Entrance fees to Palcoyo",
       "Tips",
+      "Extra snacks and drinks",
+      "Other expenses not mentioned"
     ],
     recommendations: [
-      "Wear comfortable clothing",
+      "Wear warm clothing (low temperatures)",
       "Trekking shoes",
-      "Bring sunscreen, water, and snacks",
+      "Hat, sunscreen, and sunglasses",
+      "Water, snacks, and a camera",
+      "Altitude sickness pills (optional)"
     ],
     groupServices: {
       daysAndNights: "1D",

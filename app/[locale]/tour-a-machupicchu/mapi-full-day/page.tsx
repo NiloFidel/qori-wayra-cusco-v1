@@ -63,13 +63,13 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Tour",
       content:
-        "Disfruta de un día completo en Machu Picchu, con transporte desde Cusco, visita guiada por la ciudadela y tiempo libre para explorar este icónico sitio arqueológico.",
+        "Embárcate en un viaje mágico a Machu Picchu, una de las Nuevas Siete Maravillas del Mundo y Patrimonio de la Humanidad por la UNESCO.\nEste tour de un día te llevará a través de paisajes impresionantes, desde los valles sagrados hasta las montañas nubladas, para descubrir la majestuosidad de la ciudadela inca y su rica historia.",
     },
     itinerarySummary: {
       title: "Itinerario Resumido",
       days: [
         {
-          title: "Día Único: Cusco - Machu Picchu - Cusco",
+          title: "Machu Picchu - Aventura Full Day",
           steps: [
             { iconType: "bus", text: "Transporte desde Cusco a Machu Picchu" },
             { iconType: "walk", text: "Tour guiado en Machu Picchu" },
@@ -84,29 +84,27 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Mañana: Salida y Llegada a Machu Picchu",
         text: (
           <>
-            <p>
-              Salida temprana desde Cusco en autobús hacia Machu Picchu. Durante el viaje, disfrutarás de paisajes impresionantes y la emoción de acercarte a uno de los destinos más icónicos del mundo.
-            </p>
-            <p>
-              A tu llegada, un guía experto te conducirá por los principales puntos de interés de la ciudadela.
-            </p>
+            <p>Recojo en su hotel en Cusco. Nuestro transporte privado y guía bilingüe lo recogerán para aprovechar al máximo el día.</p>
+            <p>Viaje en autobús hacia la estación de tren de Ollantaytambo.</p>
+            <p>Abordaremos el tren turístico que nos llevará a través del Valle Sagrado de los Incas, con vistas espectaculares de montañas, ríos y pueblos pintorescos.</p>
+            <p>Llegada a la estación de tren de Aguas Calientes, la puerta de entrada a Machu Picchu.</p>
+            <p>Traslado en autobús a la ciudadela de Machu Picchu. El viaje en autobús ofrece vistas panorámicas del río Urubamba y las montañas circundantes.</p>
+            <p>Tour guiado por Machu Picchu. Nuestro guía experto lo llevará a través de los lugares más emblemáticos de la ciudadela, como la Plaza Principal, el Templo del Sol, el Intihuatana y el sector residencial. Aprenderá sobre la historia, la cultura y los misterios de Machu Picchu.</p>
+            <p>Tiempo libre en Machu Picchu. Explore la ciudadela por su cuenta, tome fotografías impresionantes y disfrute de la energía mágica del lugar.</p>
+            <p>Descenso en autobús a Aguas Calientes.</p>
+            <p>Almuerzo en Aguas Calientes. Pruebe los sabores auténticos de la cocina peruana en un restaurante local.</p>
+            <p>Tiempo libre en Aguas Calientes. Relájese en las aguas termales, visite el mercado de artesanías o simplemente pasee por el pueblo.</p>
+            <p>Regreso en tren a Ollantaytambo.</p>
+            <p>Traslado en autobús a Cusco.</p>
+            <p>Llegada a Cusco.</p>
           </>
         ),
-        services: ["Transporte", "Guía profesional", "Entrada a Machu Picchu"],
-      },
-      {
-        title: "Tarde: Exploración y Retorno",
-        text: (
-          <>
-            <p>
-              Tras el tour guiado, tendrás tiempo libre para explorar Machu Picchu a tu propio ritmo, tomar fotos y disfrutar del entorno.
-            </p>
-            <p>
-              Finalmente, se te trasladará de regreso a Cusco en autobús.
-            </p>
-          </>
-        ),
-        services: ["Tiempo libre", "Retorno en autobús"],
+        services: ["Transporte turístico de ida y vuelta desde su hotel en Cusco.", 
+          "Guía bilingüe profesional (español/inglés).", 
+          "Boletos de tren de ida y vuelta a Aguas Calientes.",
+          "Boletos de autobús de subida y bajada a Machu Picchu.",
+          "Entrada a Machu Picchu."
+        ],
       },
     ],
     additionalInfo: {
@@ -114,12 +112,12 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Baja a Moderada",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Alimentación", "Propinas", "Bebidas"],
+    notIncluded: ["Alimentación en Machu Picchu."],
     recommendations: ["Llevar ropa cómoda", "Protector solar", "Agua"],
     groupServices: {
       daysAndNights: "Full Day",
       price: "USD $250",
-      quote: "Consulta más detalles",
+      quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Es este tour para mí?",
     },
@@ -129,7 +127,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Tour Overview",
       content:
-        "Experience a full day at Machu Picchu with transportation from Cusco, a guided tour of the citadel, and free time to explore this iconic archaeological site.",
+        "Embark on a magical journey to Machu Picchu, one of the New Seven Wonders of the World and a UNESCO World Heritage Site.\nThis one-day tour will take you through breathtaking landscapes, from sacred valleys to misty mountains, to discover the majesty of the Inca citadel and its rich history.",
     },
     itinerarySummary: {
       title: "Itinerary Summary",
@@ -147,32 +145,30 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     itinerary: [
       {
-        title: "Morning: Departure and Arrival at Machu Picchu",
+        title: "Machu Picchu - Full Day Adventure",
         text: (
           <>
-            <p>
-              Early departure from Cusco by bus to Machu Picchu. Enjoy breathtaking views and the anticipation of reaching one of the world’s most iconic destinations.
-            </p>
-            <p>
-              Upon arrival, a professional guide will take you through the main highlights of the citadel.
-            </p>
+            <p>Pickup from your hotel in Cusco. Our private transportation and bilingual guide will pick you up to make the most of the day.</p>
+            <p>Bus trip to the Ollantaytambo train station.</p>
+            <p>We will board the tourist train that will take us through the Sacred Valley of the Incas, offering spectacular views of mountains, rivers, and picturesque villages.</p>
+            <p>Arrival at the Aguas Calientes train station, the gateway to Machu Picchu.</p>
+            <p>Bus transfer to the Machu Picchu citadel. The bus ride offers panoramic views of the Urubamba River and the surrounding mountains.</p>
+            <p>Guided tour of Machu Picchu. Our expert guide will take you through the most iconic sites of the citadel, such as the Main Square, the Temple of the Sun, the Intihuatana, and the residential sector. You will learn about the history, culture, and mysteries of Machu Picchu.</p>
+            <p>Free time in Machu Picchu. Explore the citadel on your own, take stunning photographs, and soak in the magical energy of the place.</p>
+            <p>Bus descent to Aguas Calientes.</p>
+            <p>Lunch in Aguas Calientes. Taste the authentic flavors of Peruvian cuisine in a local restaurant.</p>
+            <p>Free time in Aguas Calientes. Relax in the hot springs, visit the handicraft market, or simply stroll through the town.</p>
+            <p>Return train to Ollantaytambo.</p>
+            <p>Bus transfer to Cusco.</p>
+            <p>Arrival in Cusco.</p>
           </>
         ),
-        services: ["Transportation", "Professional guide", "Entrance ticket"],
-      },
-      {
-        title: "Afternoon: Exploration and Return",
-        text: (
-          <>
-            <p>
-              After the guided tour, you’ll have free time to explore Machu Picchu at your own pace—take photos and soak in the environment.
-            </p>
-            <p>
-              Finally, you’ll be transported back to Cusco by bus.
-            </p>
-          </>
-        ),
-        services: ["Free time", "Return transportation"],
+        services: ["Round-trip tourist transportation from your hotel in Cusco.",
+           "Professional bilingual guide (Spanish/English).",
+           "Round-trip train tickets to Aguas Calientes.",
+            "Bus tickets for the ascent and descent to Machu Picchu.",
+            "Entrance ticket to Machu Picchu."
+          ],
       },
     ],
     additionalInfo: {
@@ -180,12 +176,12 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Low to Moderate",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Meals", "Tips", "Drinks"],
+    notIncluded: ["Meals in Machu Picchu."],
     recommendations: ["Wear comfortable clothing", "Sunscreen", "Water"],
     groupServices: {
       daysAndNights: "Full Day",
       price: "USD $250",
-      quote: "More details available",
+      quote: "Additional Info",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",
     },

@@ -62,7 +62,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Explora la misteriosa fortaleza de Waqrapukara, un impresionante sitio arqueológico en las alturas de Cusco. Disfruta de vistas panorámicas y conoce su fascinante historia en un tour guiado que te conectará con el legado inca.",
+        "Vive una experiencia inolvidable en los Andes peruanos con nuestro tour de un día completo a Waqrapukara, un impresionante complejo arqueológico inca ubicado en lo alto de un escarpado cañón.\nSu nombre, que significa “Fortaleza de los Cuernos”, hace referencia a las imponentes formaciones rocosas que rodean el sitio, asemejando los cuernos de un toro sagrado.",
     },
     itinerarySummary: {
       title: "Resumen del Itinerario",
@@ -83,11 +83,20 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Itinerario del Tour",
         text: (
           <>
-            <p>El tour comienza con la recogida en Cusco y el traslado a Waqrapukara. Una vez allí, un guía experto te llevará a través de las ruinas y las impresionantes vistas panorámicas del valle. Tendrás tiempo para tomar fotografías y conocer los secretos de esta fortaleza incaica.</p>
-            <p>Al finalizar el recorrido, regresarás a Cusco con recuerdos inolvidables.</p>
+            <p>Con el acompañamiento de un guía profesional, conocerás las leyendas que envuelven este santuario y apreciarás sus terrazas, recintos ceremoniales y muros ciclópeos.</p>
+            <p>Es un día lleno de cultura, paisajes inolvidables y momentos que perdurarán en tu memoria.</p>
+             <p>Salida temprano desde Cusco con traslado a Cusipata, donde disfrutaremos de un desayuno andino antes de iniciar la caminata.</p>
+             <p>Caminata hacia Waqrapukara, explorando el sitio arqueológico con una visita guiada y tiempo libre para fotos.</p>
+             <p>Descenso a Cusipata para un almuerzo tradicional antes de regresar a Cusco. Finalmente, llegada a Cusco por la tarde y fin del tour.</p>
+             
           </>
         ),
-        services: ["Transporte", "Guía profesional"],
+        services: ["Transporte turístico ida y vuelta.", 
+          "Guía profesional bilingüe.",
+        "Desayuno y almuerzo en restaurante local.",
+        "Bastones de trekking (opcional).",
+        "Botiquín de primeros auxilios."
+        ],
       },
     ],
     additionalInfo: {
@@ -95,7 +104,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Baja",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Boleto de entrada", "Propinas"],
+    notIncluded: ["Boleto de ingreso a Waqrapukara (tarifa comunitaria).", 
+      "Bebidas adicionales y snacks.", "Propinas"],
     recommendations: ["Llevar ropa cómoda", "Calzado adecuado", "Protector solar y agua"],
     groupServices: {
       daysAndNights: "1D",
@@ -110,7 +120,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Trip Overview",
       content:
-        "Discover the mysterious fortress of Waqrapukara, an impressive archaeological site high above Cusco. Enjoy breathtaking panoramic views and learn about its fascinating Inca history on a guided tour that connects you with the ancient legacy.",
+        "Experience an unforgettable adventure in the Peruvian Andes with our full-day tour to Waqrapukara, an impressive Inca archaeological complex perched atop a steep canyon. \nIts name, meaning Fortress of the Horns, refers to the imposing rock formations surrounding the site, resembling the horns of a sacred bull.",
     },
     itinerarySummary: {
       title: "Itinerary Overview",
@@ -131,11 +141,20 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Tour Itinerary",
         text: (
           <>
-            <p>The tour starts with a pickup in Cusco and a transfer to Waqrapukara. Once there, an expert guide will take you through the ruins and the stunning panoramic views of the valley. You will have time to take photos and uncover the secrets of this Inca fortress.</p>
-            <p>After the tour, you will return to Cusco with unforgettable memories.</p>
+            <p>With the guidance of a professional tour guide, you will learn about the legends surrounding this sanctuary and admire its terraces, ceremonial enclosures, and cyclopean walls.</p>
+            <p>A day full of culture, breathtaking landscapes, and unforgettable moments.</p>
+            <p>Early departure from Cusco with transfer to Cusipata, where we will enjoy an Andean breakfast before starting the hike.</p>
+            <p>Hike to Waqrapukara, exploring the archaeological site with a guided tour and free time for photos.</p>
+            <p>Descent to Cusipata for a traditional lunch before returning to Cusco. Finally, arrival in Cusco in the afternoon and end of the tour.</p>
           </>
         ),
-        services: ["Transport", "Professional guide"],
+        services: ["Round-trip tourist transportation.",
+           "Professional bilingual guide.",
+           "Breakfast and lunch at a local restaurant.",
+           "Trekking poles (optional).",
+           "First-aid kit.",
+
+          ],
       },
     ],
     additionalInfo: {
@@ -143,7 +162,9 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Low",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Entrance ticket", "Tips"],
+    notIncluded: ["Entrance ticket to Waqrapukara (community fee).",
+      "Additional drinks and snacks.",
+       "Tips"],
     recommendations: ["Wear comfortable clothing", "Wear appropriate shoes", "Sunscreen and water"],
     groupServices: {
       daysAndNights: "1D",
