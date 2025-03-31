@@ -107,7 +107,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     recommendations: ["Protector solar.", "Sombrero.", "Protector solar", "Poncho de lluvia por temporada."],
     groupServices: {
       daysAndNights: "1D",
-      price: "USD $20",
+      price: "USD $10",
       quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
@@ -159,7 +159,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     recommendations: ["Sunscreen.", "Hat.", "Sunglasses.", "Rain poncho (seasonal)."],
     groupServices: {
       daysAndNights: "1D",
-      price: "USD $90",
+      price: "USD $10",
       quote: "Check availability and schedules",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",

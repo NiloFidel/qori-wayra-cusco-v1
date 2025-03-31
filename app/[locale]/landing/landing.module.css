@@ -310,10 +310,6 @@
     position: relative;
   }
   
-  .mapImage {
-    /* Las propiedades fill y objectFit: cover se definen inline en el componente */
-  }
-  
   .imagePosition1,
   .imagePosition2,
   .imagePosition3,

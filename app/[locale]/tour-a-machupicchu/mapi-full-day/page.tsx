@@ -117,7 +117,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     recommendations: ["Llevar ropa cómoda", "Protector solar", "Agua"],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $250",
+      price: "USD $260",
       quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Es este tour para mí?",
@@ -181,7 +181,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     recommendations: ["Wear comfortable clothing", "Sunscreen", "Water"],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $250",
+      price: "USD $260",
       quote: "Additional Info",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",

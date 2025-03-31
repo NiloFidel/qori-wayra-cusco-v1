@@ -120,7 +120,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     ],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $20",
+      price: "USD $17",
       quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
@@ -187,7 +187,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     ],
     groupServices: {
       daysAndNights: "Full Day",
-      price: "USD $20",
+      price: "USD $17",
       quote: "Additional Info",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",
