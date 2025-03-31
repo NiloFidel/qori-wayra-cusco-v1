@@ -7,7 +7,7 @@ import img2 from "@/public/images/OneDayTour/Siete Lagunas/lake2.jpg";
 import img3 from "@/public/images/OneDayTour/Siete Lagunas/lake3.jpg";
 import img4 from "@/public/images/OneDayTour/Siete Lagunas/lake4.jpg";
 import img5 from "@/public/images/OneDayTour/Siete Lagunas/lake5.jpg";
-import mainImg from "@/public/images/OneDayTour/Siete Lagunas/lake main.jpg";
+import mainImg from "@/public/images/OneDayTour/Siete Lagunas/lake main.webp";
 import { useParams } from "next/navigation";
 
 /* 🔹 Definir la Interfaz */

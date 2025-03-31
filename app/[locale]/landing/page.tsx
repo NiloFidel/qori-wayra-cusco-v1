@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import styles from "./landing.module.css";
 import {
   FaLeaf,
   FaStar,
@@ -13,9 +13,8 @@ import {
   FaHeart,
   FaLightbulb,
 } from "react-icons/fa";
-import styles from "./landing.module.css";
 
-// Imágenes Misión y Visión
+// Imágenes para las secciones "Misión" y "Visión"
 import imgMission from "@/public/images/Landing/Mision.jpeg";
 import imgVision from "@/public/images/Landing/Vision.jpeg";
 
@@ -24,7 +23,7 @@ import hero1 from "@/public/images/Macchu Picchu/Machu Picchu - Full day/machupi
 import hero2 from "@/public/images/Valle/ValleVIP/valle main.jpg";
 import hero3 from "@/public/images/OneDayTour/CityTour/Qorikancha-Cusco.jpg";
 import hero4 from "@/public/images/CaminoInca/camino2D/main.jpg";
-import hero5 from "@/public/images/OneDayTour/Humantay/main.jpg";
+import hero5 from "@/public/images/OneDayTour/Humantay/humantay main.webp";
 
 const heroSlides = [
   {
@@ -94,7 +93,6 @@ const heroSlides = [
   },
 ];
 
-/** Interfaz de traducciones */
 interface TranslationContent {
   mission: {
     title: string;
@@ -114,7 +112,6 @@ interface TranslationContent {
   };
 }
 
-/** Definición de traducciones para el resto */
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     mission: {
@@ -162,13 +159,12 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         },
       ],
     },
-    
     about: {
       title: "Nosotros",
       content: `Somos una agencia de viajes comprometida con brindar experiencias inolvidables en Cusco y sus alrededores. Nuestro enfoque se centra en el turismo responsable y sostenible, conectando a los viajeros con la riqueza cultural y natural de la región.
-
+      
 Nuestra misión es ofrecer servicios de calidad, adaptados a las necesidades de cada cliente, garantizando seguridad y excelencia en cada viaje.
-
+      
 Con un equipo apasionado y profesional, nos esforzamos por ser el puente entre el mundo y el Perú, transformando cada aventura en una experiencia única y enriquecedora.`,
     },
   },
@@ -218,13 +214,12 @@ Con un equipo apasionado y profesional, nos esforzamos por ser el puente entre e
         },
       ],
     },
-    
     about: {
       title: "About Us",
       content: `We are a travel agency committed to providing unforgettable experiences in Cusco and its surroundings. Our focus is on responsible and sustainable tourism, connecting travelers with the cultural and natural richness of the region.
-
+      
 Our mission is to offer quality services, tailored to the needs of each client, ensuring safety and excellence in every journey.
-
+      
 With a passionate and professional team, we strive to be the bridge between the world and Peru, turning every adventure into a unique and enriching experience.`,
     },
   },
@@ -237,10 +232,18 @@ export default function LandingPage() {
 
   const [currentHero, setCurrentHero] = useState(0);
 
+  const nextSlide = () => {
+    setCurrentHero((prev) => (prev + 1) % heroSlides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentHero((prev) => (prev === 0 ? heroSlides.length - 1 : prev - 1));
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroSlides.length);
-    }, 3000);
+    }, 5000); // Cada slide se muestra durante 5 segundos
     return () => clearInterval(interval);
   }, []);
 
@@ -274,6 +277,12 @@ export default function LandingPage() {
             </div>
           </div>
         ))}
+        <button className={styles.prevArrow} onClick={prevSlide}>
+          &#10094;
+        </button>
+        <button className={styles.nextArrow} onClick={nextSlide}>
+          &#10095;
+        </button>
       </div>
 
       {/* Contenedor principal */}
@@ -290,7 +299,7 @@ export default function LandingPage() {
             ))}
           </div>
 
-          {/* Misión y Visión en 100% de ancho */}
+          {/* Misión y Visión en una misma columna */}
           <div className={styles.missionVisionContainer}>
             {/* Tarjeta de Misión */}
             <div className={styles.card}>
@@ -328,7 +337,6 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Columna Derecha: Valores */}

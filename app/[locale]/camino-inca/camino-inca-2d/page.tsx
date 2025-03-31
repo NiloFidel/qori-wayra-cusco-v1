@@ -3,9 +3,9 @@
 import React from "react";
 import ComponentePrincipal from "@/app/components/utils/principal/pricipal";
 import img1 from "@/public/images/CaminoInca/camino2D/short1.jpg";
-import img2 from "@/public/images/CaminoInca/camino2D/short2.jpg";
+import img2 from "@/public/images/CaminoInca/camino2D/short2.webp";
 import img3 from "@/public/images/CaminoInca/camino2D/short3.jpg";
-import img4 from "@/public/images/CaminoInca/camino2D/short4.jpg";
+import img4 from "@/public/images/CaminoInca/camino2D/short4.webp";
 import img5 from "@/public/images/CaminoInca/camino2D/short5.jpg";
 import mainImg from "@/public/images/CaminoInca/camino2D/short main.jpg";
 import { useParams } from "next/navigation";

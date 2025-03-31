@@ -1,9 +1,8 @@
+/* social.module.css */
 .socialContainer {
   position: fixed;
-  bottom: auto;
+  bottom: 20px; /* Ubicado en la parte inferior */
   left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -27,7 +26,7 @@
   opacity: 0.9;
 }
 
-/* Botón de Facebook, se puede aplicar con nth-child o asignar una clase extra si se prefiere */
+/* Botón de Facebook */
 .socialButton:nth-child(2) {
   background: #3b5998;
 }

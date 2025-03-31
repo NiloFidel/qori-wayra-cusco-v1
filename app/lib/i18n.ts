@@ -5,8 +5,14 @@ export const defaultLocale: Locale = "es";
 
 export const translations = {
   en: {        
+    wppMessage1: "https://wa.me/51924377454?text=Hello%2C%20I%20would%20like%20more%20details%20about%20the%20Machu%20Picchu%20%2B%20Sacred%20Valley%20tour%20package",
+    wppMessage2: "https://wa.me/51924377454?text=Hello%2C%20I%20would%20like%20more%20details%20about%20the%20Machu%20Picchu%20%2B%20City%20Tour%20package",
+    //Paquetes
+    mapi_valle: "Machu Pichhu + Sacred Valley",
+    mapi_city: "Machu Pichu + City Tour",
+    //navbar
     machuPicchuTour: "Machu Picchu Tour",
-    sacredValley: "Sacred Valley",
+    sacredValley: "South Valley",
     oneDayTour: "One Day Tour",
     incaTrail: "Inca Trail",
     packages: "Complete Packages",
@@ -31,8 +37,14 @@ export const translations = {
     montana7Colores: "7 Colors Mountain",
   },
   es: {    
+    wppMessage1: "https://wa.me/51924377454?text=Hola%2C%20quisiera%20m%C3%A1s%20detalles%20sobre%20el%20paquete%20tur%C3%ADstico%20de%20Macchu%20Picchu%20%2B%20Valle%20Sagrado",
+    wppMessage2: "https://wa.me/51924377454?text=Hola%2C%20quisiera%20m%C3%A1s%20detalles%20sobre%20el%20paquete%20tur%C3%ADstico%20de%20Macchu%20Picchu%20%2B%20City%20Tour",
+    //Paquetes
+    mapi_valle: "Machu Pichhu + Valle Sagrado",
+    mapi_city: "Machu Pichu + City Tour",
+    //navbar
     machuPicchuTour: "Tour a Machu Picchu",
-    sacredValley: "Valle Sagrado",
+    sacredValley: "Valle Sur",
     oneDayTour: "Tour de un día",
     incaTrail: "Camino Inca",
     packages: "Paquetes Completos",

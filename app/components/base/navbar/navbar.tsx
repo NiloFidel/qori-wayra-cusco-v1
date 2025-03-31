@@ -294,48 +294,29 @@ export default function Navbar({ locale }: { locale: string }) {
                 <ul className={styles.dropdown}>
                   <li>
                     <Link
-                      href={`/${locale}/paquete-cusco`}
+                      href={t.wppMessage1}
+                      target="_blank"
                       onClick={() => {
                         closeDropdown();
                         setMobileMenuOpen(false);
                       }}
                     >
-                      Paquete Cusco
+                      {t.mapi_valle}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href={`/${locale}/paquete-valle`}
+                      href={t.wppMessage2}
+                      target="_blank"
                       onClick={() => {
                         closeDropdown();
                         setMobileMenuOpen(false);
                       }}
                     >
-                      Paquete Valle
+                      {t.mapi_city}
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href={`/${locale}/paquete-machupicchu`}
-                      onClick={() => {
-                        closeDropdown();
-                        setMobileMenuOpen(false);
-                      }}
-                    >
-                      Paquete Machu Picchu
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={`/${locale}/paquete-lima`}
-                      onClick={() => {
-                        closeDropdown();
-                        setMobileMenuOpen(false);
-                      }}
-                    >
-                      Paquete Lima
-                    </Link>
-                  </li>
+                  
                 </ul>
               )}
             </li>

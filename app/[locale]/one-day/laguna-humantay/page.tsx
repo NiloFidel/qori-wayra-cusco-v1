@@ -5,9 +5,9 @@ import ComponentePrincipal from "@/app/components/utils/principal/pricipal";
 import img1 from "@/public/images/OneDayTour/Humantay/humantay1.jpg";
 import img2 from "@/public/images/OneDayTour/Humantay/humantay2.jpg";
 import img3 from "@/public/images/OneDayTour/Humantay/humantay3.jpg";
-import img4 from "@/public/images/OneDayTour/Humantay/humantay4.jpg";
+import img4 from "@/public/images/OneDayTour/Humantay/humantay4.webp";
 import img5 from "@/public/images/OneDayTour/Humantay/humantay5.jpg";
-import mainImg from "@/public/images/OneDayTour/Humantay/humantay main.jpg";
+import mainImg from "@/public/images/OneDayTour/Humantay/humantay main.webp";
 import { useParams } from "next/navigation";
 
 /* 🔹 Definir la Interfaz */

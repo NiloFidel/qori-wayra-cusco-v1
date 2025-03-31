@@ -7,7 +7,7 @@ import img2 from "@/public/images/OneDayTour/Waqrapukara/waqra2.jpg";
 import img3 from "@/public/images/OneDayTour/Waqrapukara/waqra3.jpg";
 import img4 from "@/public/images/OneDayTour/Waqrapukara/waqra4.jpg";
 import img5 from "@/public/images/OneDayTour/Waqrapukara/waqra5.jpg";
-import mainImg from "@/public/images/OneDayTour/Waqrapukara/waqra main.jpg";
+import mainImg from "@/public/images/OneDayTour/Waqrapukara/waqra main.webp";
 import { useParams } from "next/navigation";
 /* 🔹 Definir la Interfaz */
 interface TranslationContent {
