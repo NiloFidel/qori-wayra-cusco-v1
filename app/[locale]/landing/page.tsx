@@ -243,7 +243,7 @@ export default function LandingPage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHero((prev) => (prev + 1) % heroSlides.length);
-    }, 5000); // Cada slide se muestra durante 5 segundos
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -263,6 +263,7 @@ export default function LandingPage() {
               alt={`Slide ${index + 1}`}
               fill
               className={styles.heroImage}
+              priority={index === 0}
             />
             <div className={styles.heroTopLeft}>
               <span className={styles.bestSeller}>Best Seller</span>
@@ -311,6 +312,7 @@ export default function LandingPage() {
                   height={1000}
                   quality={100}
                   className={styles.image}
+                  priority
                 />
               </div>
               <div className={styles.cardContent}>
@@ -329,6 +331,7 @@ export default function LandingPage() {
                   height={1000}
                   quality={100}
                   className={styles.image}
+                  priority
                 />
               </div>
               <div className={styles.cardContent}>

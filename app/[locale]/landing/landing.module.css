@@ -4,9 +4,18 @@
    .container {
     width: 100%;
     margin: 0 auto;
-    margin-top: 60px; /* Ajuste superior si lo deseas */
+    margin-top: 60px;
     font-family: sans-serif;
     transition: all 0.2s ease-in-out;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* Selectores anidados dentro del contenedor principal */
+  .container *,
+  .container *::before,
+  .container *::after {
+    box-sizing: inherit;
   }
   
   /* ================================
@@ -27,8 +36,6 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    /* Cada slide se muestra durante 5 segundos (intervalo en landing.tsx)
-       Transición calmada: */
     transition: opacity 1s ease-in-out;
   }
   
@@ -91,7 +98,7 @@
     background-color: #c5a216;
   }
   
-  /* Flechas de navegación en el slider */
+  /* Flechas de navegación */
   .prevArrow,
   .nextArrow {
     position: absolute;
@@ -116,7 +123,7 @@
   }
   
   /* ================================
-     CONTENEDOR PRINCIPAL DEL CONTENIDO
+     CONTENEDOR PRINCIPAL
      ================================ */
   .contentContainer {
     background-color: #fafafa;
@@ -126,10 +133,12 @@
     gap: 30px;
     margin-bottom: 2rem;
     border-radius: 10px;
+    width: 100%;
+    max-width: 100vw;
   }
   
   /* ================================
-     COLUMNA IZQUIERDA (Nosotros, Misión y Visión)
+     COLUMNA IZQUIERDA
      ================================ */
   .leftColumn {
     flex: 1 1 40%;
@@ -283,128 +292,177 @@
   }
   
   /* ================================
-     SECCIÓN DE IMÁGENES DEBAJO (Mapa + Imágenes Pequeñas)
-     ================================ */
-  .imageContainerBelow {
-    margin-top: 30px;
-  }
-  
-  .imageGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 200px);
-    gap: 8px;
-    margin-bottom: 20px;
-    background: #fff;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    position: relative;
-  }
-  
-  .mapImageWrapper {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    overflow: hidden;
-    border-radius: 8px;
-    position: relative;
-  }
-  
-  .imagePosition1,
-  .imagePosition2,
-  .imagePosition3,
-  .imagePosition4,
-  .imagePosition5 {
-    overflow: hidden;
-    border-radius: 8px;
-    position: relative;
-  }
-  
-  /* Hover en imágenes */
-  .mapImageWrapper:hover .mapImage,
-  .imagePosition1:hover img,
-  .imagePosition2:hover img,
-  .imagePosition3:hover img,
-  .imagePosition4:hover img,
-  .imagePosition5:hover img {
-    transform: scale(1.03);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* ================================
      RESPONSIVE
      ================================ */
   @media (max-width: 768px) {
     .container {
-      flex-direction: column;
-      padding-top: 20px;
+      margin-top: 50px;
     }
-    .leftColumn {
-      position: static;
-      width: 100%;
-      margin-left: 0;
-      margin-bottom: 20px;
+    
+    .heroSlider {
+      height: 70vh;
     }
+  
+    .contentContainer {
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .leftColumn,
     .rightColumn {
+      flex: 1 1 100%;
+      margin-left: 0;
+      padding: 0 10px;
+      min-width: 0;
+    }
+  
+    .missionVisionContainer {
       width: 100%;
-      padding-right: 0;
     }
-    .imageGrid {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 150px);
-      gap: 10px;
+  
+    .card {
+      flex-direction: column;
+      padding: 10px;
+      width: calc(100% - 20px);
     }
-    .mapImageWrapper {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
+  
+    .imageContainer {
+      width: 100%;
+      max-height: 200px;
     }
-    .imagePosition1 {
-      grid-column: 1;
-      grid-row: 2;
+  
+    .cardContent {
+      width: 100%;
+      padding: 10px 0;
     }
-    .imagePosition2 {
-      grid-column: 2;
-      grid-row: 2;
-    }
-    .imagePosition3 {
-      grid-column: 1;
-      grid-row: 3;
-    }
-    .imagePosition4 {
-      grid-column: 2;
-      grid-row: 3;
-    }
-    .imagePosition5 {
-      grid-column: 1 / 3;
-      grid-row: 4;
+  
+    .valuesList {
+      padding: 10px 0;
     }
   }
   
   @media (max-width: 480px) {
-    .bookButton {
-      font-size: 1rem;
-      padding: 8px 15px;
+    .heroSlider {
+      height: 60vh;
     }
-    .priceSection h3 {
-      font-size: 1.3rem;
+  
+    .bestSeller {
+      font-size: 1.5rem;
+      left: 15px;
+      top: 15px;
     }
-    .leftColumn {
-      padding: 15px 10px 0;
+  
+    .heroTitle {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
     }
-    .imageGrid {
-      grid-template-rows: repeat(4, 120px);
+  
+    .heroButton {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
     }
-    .mapImageWrapper {
-      grid-row: 1 / 2;
+  
+    .prevArrow,
+    .nextArrow {
+      font-size: 2rem;
+      padding: 0.3rem 0.8rem;
     }
-    .entradaContainer h1 {
+  
+    .contentContainer {
+      padding: 15px;
+      gap: 15px;
+      margin: 0 -5px;
+      width: 100vw;
+    }
+  
+    .aboutTitle,
+    .subtitle {
       font-size: 1.5rem;
     }
-    .timelineDay h3 {
+  
+    .aboutText,
+    .text {
+      font-size: 0.9rem;
+    }
+  
+    .title {
+      font-size: 1.1rem;
+    }
+  
+    .valueItem {
+      padding: 10px;
+      margin: 0 5px 0.8rem;
+      width: calc(100% - 10px);
+    }
+  
+    .valueIcon {
+      font-size: 1.2rem;
+    }
+  
+    .valueTitle {
       font-size: 1rem;
     }
-    .timelineStep {
-      font-size: 0.9rem;
+  
+    .valueText {
+      font-size: 0.85rem;
     }
   }
   
+  @media (max-width: 400px) {
+    .heroSlider {
+      height: 55vh;
+    }
+  
+    .bestSeller {
+      font-size: 1.3rem;
+    }
+  
+    .heroTitle {
+      font-size: 1.3rem;
+    }
+  
+    .contentContainer {
+      padding: 10px;
+    }
+  
+    .aboutTitle,
+    .subtitle {
+      font-size: 1.4rem;
+    }
+  
+    .valueText {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .heroSlider {
+      height: 50vh;
+    }
+  
+    .bestSeller {
+      font-size: 1.2rem;
+    }
+  
+    .heroTitle {
+      font-size: 1.2rem;
+    }
+  
+    .aboutTitle,
+    .subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .aboutText,
+    .text {
+      font-size: 0.85rem;
+    }
+  
+    .valueItem {
+      padding: 8px;
+    }
+  
+    .valueText {
+      font-size: 0.78rem;
+    }
+  }
