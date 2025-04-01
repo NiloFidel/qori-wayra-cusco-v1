@@ -64,7 +64,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Resumen del Viaje",
       content:
-        "Disfruta de un tour VIP por el Valle Sagrado, recorriendo Moray, las Salineras de Maras en un día lleno de historia, cultura y paisajes impresionantes.",
+        "Explora los asombrosos paisajes del Valle Sagrado en un tour inolvidable que te llevará a Maras, Moray y las impresionantes Salineras. Adéntrate en el misterio de Moray, un innovador centro agrícola inca con terrazas concéntricas que desafían el tiempo. Déjate sorprender por las Salineras de Maras, un espectáculo natural donde la extracción de sal sigue realizándose como en la época ancestral. Sumérgete en la magia de los Andes y vive la perfecta armonía entre historia, cultura y naturaleza en este fascinante recorrido por el corazón de los incas.",
     },
     itinerarySummary: {
       title: "Resumen del Itinerario",
@@ -72,10 +72,10 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Itinerario del Tour Valle Sagrado VIP",
           steps: [
-            { iconType: "bus", text: "Recojo en el hotel y traslado a Maras" },
-            { iconType: "walk", text: "Recorrido por Moray y sus terrazas circulares" },
-            { iconType: "walk", text: "Parada en las Salineras de Maras" },
-            { iconType: "bus", text: "Retorno a Cusco" },
+            { iconType: "bus", text: "Recojo en tu hotel en Cusco." },
+            { iconType: "walk", text: "Viaje en transporte privado hacia Maras." },
+            { iconType: "walk", text: "Visita guiada a las Salineras de Maras, donde aprenderás proceso de extracción de sal." },
+            { iconType: "bus", text: "Continuación hacia Moray, donde explorarás las terrazas circulares utilizadas como laboratorio agrícola inca." },
           ],
         },
       ],
@@ -85,22 +85,14 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Itinerario del Tour Valle Sagrado VIP",
         text: (
           <>
-            <p>
-              Comenzamos nuestro tour en Chinchero, donde exploramos ruinas incas, una iglesia colonial y un vibrante mercado de artesanías.
-            </p>
-            <p>
-              Luego nos dirigimos a Moray para admirar sus inusuales terrazas agrícolas circulares, seguidas de una visita a las impresionantes Salineras de Maras.
-            </p>
-            <p>
-              Finalizamos el recorrido en Ollantaytambo y Pisac, donde descubrimos antiguas fortificaciones y el encanto de los mercados locales.
-            </p>
+            <p>Embárcate en un tour inolvidable por el Valle Sagrado y déjate cautivar por la magia de sus paisajes. Este recorrido te sumerge en la belleza natural de Perú, donde cada rincón cuenta una historia milenaria y la tierra se funde con la tradición ancestral.</p>
+            <p>Descubre el enigmático complejo de Moray, un laboratorio agrícola inca formado por terrazas circulares que demuestran la avanzada ingeniería de esta civilización. Sus escalas naturales y patrones únicos te invitan a explorar y a imaginar el conocimiento que los incas tenían sobre la agricultura y el clima.</p>
+            <p>Maravíllate con las Salineras de Maras, un paisaje impresionante donde cientos de pozas de sal se extienden sobre la ladera de la montaña. Aquí, la extracción tradicional de sal se une a la fuerza de la naturaleza, creando un escenario que combina historia, color y tradición en uno de los lugares más pintorescos del país.</p>
           </>
         ),
         services: [
-          "Recojo en el hotel",
-          "Transporte turístico VIP",
+          "Transporte turístico de ida y vuelta.",
           "Guía profesional bilingüe",
-          "Almuerzo Buffet en Urubamba",
         ],
       },
     ],
@@ -131,7 +123,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     tripOverview: {
       title: "Trip Overview",
       content:
-        "Enjoy a VIP tour of the Sacred Valley, visiting Moray, the Salineras of Maras City and a rich history of the Inkas, culture, and breathtaking landscapes.",
+        "Explore the stunning landscapes of the Sacred Valley on an unforgettable tour that will take you to Maras, Moray, and the impressive Salt Mines. Delve into the mystery of Moray, an innovative Inca agricultural center with concentric terraces that defy time. Be amazed by the Maras Salt Mines, a natural spectacle where salt extraction continues as it did in ancient times. Immerse yourself in the magic of the Andes and experience the perfect harmony between history, culture, and nature on this fascinating tour through the heart of the Incas.",
     },
     itinerarySummary: {
       title: "Itinerary Overview",
@@ -139,10 +131,10 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Moray - Salineras",
           steps: [
-            { iconType: "bus", text: "Hotel pickup and transfer to Maras City" },
-            { iconType: "walk", text: "Explore Moray and its circular terraces" },
-            { iconType: "walk", text: "Stop at the Salineras de Maras" },
-            { iconType: "bus", text: "Return to Cusco City" },
+            { iconType: "bus", text: "Pickup from your hotel in Cusco." },
+            { iconType: "walk", text: "Private transportation to Maras." },
+            { iconType: "walk", text: "Guided visit to the Salineras of Maras, where you will learn about salt extraction process." },
+            { iconType: "bus", text: "Continue to Moray, where you will explore the circular terraces used as an Inca agricultural laboratory." },
           ],
         },
       ],
@@ -152,22 +144,14 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         title: "Moray - Salineras",
         text: (
           <>
-            <p>
-              Our tour begins in Chinchero, where we explore Inca ruins, a colonial church, and a vibrant local market.
-            </p>
-            <p>
-              Next, we visit Moray to admire its unique circular terraces, followed by a stop at the breathtaking Salineras de Maras.
-            </p>
-            <p>
-              The journey concludes with visits to Ollantaytambo and Pisac, where you’ll discover ancient fortifications and charming local markets.
-            </p>
+            <p>Embark on an unforgettable adventure through the breathtaking landscapes of the Sacred Valley. Explore the mystical region of Maras, Moray, and the Maras Salt Mines, where nature blends with history to offer a unique and magical experience.</p>
+            <p>Discover the enigmatic Moray complex, an Inca agricultural laboratory famous for its circular terraces that defy the passage of time. Here, ancient engineering meets natural beauty, revealing the secrets and innovation of an ancient civilization.</p>
+            <p>Marvel at the spectacular landscape of the salt mines, where salt is extracted traditionally amidst a setting that evokes the grandeur of the Andes. This tour is a celebration of the fusion of nature and Andean culture, inviting you to immerse yourself in one of Peru most picturesque corners.</p>
           </>
         ),
         services: [
-          "Hotel pickup",
-          "VIP transportation",
+          "Round-trip tourist transportation.",
           "Professional bilingual guide",
-          "Buffet lunch in Urubamba",
         ],
       },
     ],
