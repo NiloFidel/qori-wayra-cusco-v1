@@ -94,6 +94,17 @@ export default function Navbar({ locale }: { locale: string }) {
                   </li>
                   <li>
                     <Link
+                      href={`/${locale}/tour-a-machupicchu/mapi-by-train`}
+                      onClick={() => {
+                        closeDropdown();
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {t.machupicchuByTrain}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href={`/${locale}/tour-a-machupicchu/mapi-by-car`}
                       onClick={() => {
                         closeDropdown();
@@ -108,24 +119,13 @@ export default function Navbar({ locale }: { locale: string }) {
               )}
             </li>
 
-            {/* Valle Sagrado */}
+            {/* Tour de un día */}
             <li className={styles.navItem}>
-              <button onClick={() => toggleDropdown("valle")}>
-                {t.sacredValley}
+              <button onClick={() => toggleDropdown("oneday")}>
+                {t.oneDayTour}
               </button>
-              {openDropdown === "valle" && (
+              {openDropdown === "oneday" && (
                 <ul className={styles.dropdown}>
-                  <li>
-                    <Link
-                      href={`/${locale}/valle-sagrado/valle-sagrado-lite`}
-                      onClick={() => {
-                        closeDropdown();
-                        setMobileMenuOpen(false);
-                      }}
-                    >
-                      {t.sacredValleyLite}
-                    </Link>
-                  </li>
                   <li>
                     <Link
                       href={`/${locale}/valle-sagrado/valle-sagrado-vip`}
@@ -139,37 +139,16 @@ export default function Navbar({ locale }: { locale: string }) {
                   </li>
                   <li>
                     <Link
-                      href={`/${locale}/valle-sagrado/maras-moray`}
+                      href={`/${locale}/valle-sagrado/valle-sagrado-tradicional`}
                       onClick={() => {
                         closeDropdown();
                         setMobileMenuOpen(false);
                       }}
                     >
-                      {t.marasMoray}
+                      {t.traditionalSacredValley}
                     </Link>
                   </li>
-                </ul>
-              )}
-            </li>
-
-            {/* Tour de un día */}
-            <li className={styles.navItem}>
-              <button onClick={() => toggleDropdown("oneday")}>
-                {t.oneDayTour}
-              </button>
-              {openDropdown === "oneday" && (
-                <ul className={styles.dropdown}>
-                  <li>
-                    <Link
-                      href={`/${locale}/one-day/city-tour-cusco`}
-                      onClick={() => {
-                        closeDropdown();
-                        setMobileMenuOpen(false);
-                      }}
-                    >
-                      {t.cityTourCusco}
-                    </Link>
-                  </li>
+                  
                   <li>
                     <Link
                       href={`/${locale}/one-day/siete-lagunas`}
@@ -181,17 +160,7 @@ export default function Navbar({ locale }: { locale: string }) {
                       {t.sieteLagunas}
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href={`/${locale}/one-day/tour-mistico`}
-                      onClick={() => {
-                        closeDropdown();
-                        setMobileMenuOpen(false);
-                      }}
-                    >
-                      {t.tourMistico}
-                    </Link>
-                  </li>
+                  
                   <li>
                     <Link
                       href={`/${locale}/one-day/waqrapukara`}
@@ -234,6 +203,61 @@ export default function Navbar({ locale }: { locale: string }) {
                       }}
                     >
                       {t.montana7Colores}
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
+
+            {/* Part Time Tour */}
+            <li className={styles.navItem}>
+              <button onClick={() => toggleDropdown("valle")}>
+                {t.partTimeTour}
+              </button>
+              {openDropdown === "valle" && (
+                <ul className={styles.dropdown}>
+                  <li>
+                    <Link
+                      href={`/${locale}/one-day/city-tour-cusco`}
+                      onClick={() => {
+                        closeDropdown();
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {t.cityTourCusco}
+                    </Link>
+                  </li>                  
+                  <li>
+                    <Link
+                      href={`/${locale}/valle-sagrado/maras-moray`}
+                      onClick={() => {
+                        closeDropdown();
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {t.marasMoray}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`/${locale}/valle-sagrado/valle-sagrado-sur`}
+                      onClick={() => {
+                        closeDropdown();
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {t.sacredValleyLite}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`/${locale}/one-day/tour-mistico`}
+                      onClick={() => {
+                        closeDropdown();
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {t.tourMistico}
                     </Link>
                   </li>
                 </ul>

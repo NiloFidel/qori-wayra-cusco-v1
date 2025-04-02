@@ -12,7 +12,7 @@ export const translations = {
     mapi_city: "Machu Pichu + City Tour",
     //navbar
     machuPicchuTour: "Machu Picchu Tour",
-    sacredValley: "South Valley",
+    partTimeTour: "Part Time Tour",
     oneDayTour: "One Day Tour",
     incaTrail: "Inca Trail",
     packages: "Complete Packages",
@@ -21,9 +21,11 @@ export const translations = {
     incaTrail4d: "Inca Trail 4 Days",
     salkantayTrek: "Trek Salkantay to Machu Picchu",
     // Dropdown Machu Picchu Tour
+    machupicchuByTrain: "Machupicchu By Train (2D/1N)",
     machupicchuFullDay: "Machupicchu Full Day",
-    machupicchuByCar: "Machupicchu 2D/1N",    
+    machupicchuByCar: "Machupicchu By Hidroeléctrica (2D/1N))",    
     // Dropdown Sacred Valley
+    traditionalSacredValley: "Traditional Sacred Valley",
     sacredValleyLite: "South Valley Tour",
     sacredValleyVip: "Sacred Valley VIP",
     marasMoray: "Maras Moray - Salt Mines",
@@ -44,7 +46,7 @@ export const translations = {
     mapi_city: "Machu Pichu + City Tour",
     //navbar
     machuPicchuTour: "Tour a Machu Picchu",
-    sacredValley: "Valle Sur",
+    partTimeTour: "Tour de Medio Día",
     oneDayTour: "Tour de un día",
     incaTrail: "Camino Inca",
     packages: "Paquetes Completos",
@@ -53,9 +55,11 @@ export const translations = {
     incaTrail4d: "Camino Inca 4 Días",
     salkantayTrek: "Salkantay hacia Machu Picchu",
     // Dropdown Machu Picchu Tour
+    machupicchuByTrain: "Machupicchu por Tren (2D/1N)",
     machupicchuFullDay: "Machupicchu Día Completo",
-    machupicchuByCar: "Machupicchu 2D/1N",
+    machupicchuByCar: "Machupicchu por Hidroeléctrica (2D/1N)",
     // Dropdown Valle Sagrado
+    traditionalSacredValley: "Valle Sagrado Tradicional",
     sacredValleyLite: "Tour del Valle Sur",
     sacredValleyVip: "Valle Sagrado VIP",
     marasMoray: "Maras Moray - Salineras",

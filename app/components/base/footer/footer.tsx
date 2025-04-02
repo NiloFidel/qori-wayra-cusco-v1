@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./footer.module.css";
 
+// Textos para cada idioma
 const texts = {
   es: {
     contact: "CONTÁCTENOS",
@@ -19,6 +20,7 @@ const texts = {
     formTitle: "Escríbenos",
     fullName: "Nombres Completos",
     nationality: "Nacionalidad",
+    mail: "Correo",
     message: "Mensaje",
     submit: "Enviar Mensaje",
     successMessage: "Mensaje enviado con éxito!",
@@ -37,6 +39,7 @@ const texts = {
     formTitle: "Write to Us",
     fullName: "Full Name",
     nationality: "Nationality",
+    mail: "Email",
     message: "Message",
     submit: "Send Message",
     successMessage: "Message sent successfully!",
@@ -44,9 +47,10 @@ const texts = {
   },
 };
 
+// Texto de la política de privacidad
 const privacyPolicyText = {
   es: `POLÍTICA DE PRIVACIDAD...`, // Texto original
-  en: `PRIVACY POLICY...`, // Texto original
+  en: `PRIVACY POLICY...`,         // Texto original
 };
 
 interface FooterProps {
@@ -54,7 +58,10 @@ interface FooterProps {
 }
 
 const Footer: FC<FooterProps> = ({ locale }) => {
+  // Selección de textos según el idioma
   const t = texts[locale];
+  
+  // Estados para modales y formulario
   const [showNoTraeModal, setShowNoTraeModal] = useState(false);
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
   const [formData, setFormData] = useState({
@@ -65,7 +72,7 @@ const Footer: FC<FooterProps> = ({ locale }) => {
   });
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
-  // Handlers para modales
+  // Función para abrir modales, reutilizando el setter
   const openModal = (setter: React.Dispatch<React.SetStateAction<boolean>>) => (
     e: React.MouseEvent<HTMLAnchorElement>
   ) => {
@@ -73,10 +80,11 @@ const Footer: FC<FooterProps> = ({ locale }) => {
     setter(true);
   };
 
+  // Función para cerrar modales
   const closeModal = (setter: React.Dispatch<React.SetStateAction<boolean>>) => () =>
     setter(false);
 
-  // Manejo del formulario
+  // Manejo del envío del formulario
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitStatus("idle");
@@ -93,17 +101,19 @@ const Footer: FC<FooterProps> = ({ locale }) => {
 
       if (response.ok) {
         setSubmitStatus("success");
+        // Reiniciar datos del formulario
         setFormData({ full_name: "", nacionality: "", email: "", message: "" });
         setTimeout(() => setSubmitStatus("idle"), 3000);
       } else {
         setSubmitStatus("error");
       }
     } catch (error) {
-      console.log(error)
+      console.error("Error al enviar formulario:", error);
       setSubmitStatus("error");
     }
   };
 
+  // Manejo de cambios en los inputs
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -112,7 +122,7 @@ const Footer: FC<FooterProps> = ({ locale }) => {
     <>
       <footer className={styles.footer}>
         <div className={styles.footerContainer}>
-          {/* Columna 1: Contacto y Avalados */}
+          {/* Columna 1: Información de contacto y avales */}
           <div className={styles.contactColumn}>
             <h3 className={styles.header}>{t.contact}</h3>
             <p className={styles.text}>{t.office}</p>
@@ -140,7 +150,7 @@ const Footer: FC<FooterProps> = ({ locale }) => {
             </div>
           </div>
 
-          {/* Columna 2: Enlaces y Medios de Pago */}
+          {/* Columna 2: Enlaces y medios de pago */}
           <div className={styles.linksColumn}>
             <div className={styles.linksGroup}>
               <Link href={`/${locale}/terminos-condiciones`} className={styles.linkButton}>
@@ -189,15 +199,15 @@ const Footer: FC<FooterProps> = ({ locale }) => {
             </div>
           </div>
 
-          {/* Columna 3: Formulario */}
+          {/* Columna 3: Formulario de contacto */}
           <div className={styles.formColumn}>
             <h3 className={styles.formHeader}>{t.formTitle}</h3>
             <form onSubmit={handleSubmit} className={styles.contactForm}>
               <div className={styles.formGroup}>
+                <label className={styles.inputLabel}>{t.fullName}</label>
                 <input
                   type="text"
                   name="full_name"
-                  placeholder={t.fullName}
                   value={formData.full_name}
                   onChange={handleChange}
                   required
@@ -205,10 +215,10 @@ const Footer: FC<FooterProps> = ({ locale }) => {
               </div>
 
               <div className={styles.formGroup}>
+                <label className={styles.inputLabel}>{t.nationality}</label>
                 <input
                   type="text"
                   name="nacionality"
-                  placeholder={t.nationality}
                   value={formData.nacionality}
                   onChange={handleChange}
                   required
@@ -216,10 +226,10 @@ const Footer: FC<FooterProps> = ({ locale }) => {
               </div>
 
               <div className={styles.formGroup}>
+                <label className={styles.inputLabel}>{t.mail}</label>
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email"
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -227,9 +237,9 @@ const Footer: FC<FooterProps> = ({ locale }) => {
               </div>
 
               <div className={styles.formGroup}>
+                <label className={styles.inputLabel}>{t.message}</label>
                 <textarea
                   name="message"
-                  placeholder={t.message}
                   value={formData.message}
                   onChange={handleChange}
                   required
@@ -251,6 +261,7 @@ const Footer: FC<FooterProps> = ({ locale }) => {
           </div>
         </div>
 
+        {/* Sección de copyright centrada */}
         <div className={styles.copy}>
           <p>
             © 2025 Qori Wayra.{" "}
@@ -259,7 +270,7 @@ const Footer: FC<FooterProps> = ({ locale }) => {
         </div>
       </footer>
 
-      {/* Modales */}
+      {/* Modal para "No Trata de Personas" */}
       {showNoTraeModal && (
         <div className={styles.modalOverlay} onClick={closeModal(setShowNoTraeModal)}>
           <div className={styles.modalContent}>
@@ -277,6 +288,7 @@ const Footer: FC<FooterProps> = ({ locale }) => {
         </div>
       )}
 
+      {/* Modal para Política de Privacidad */}
       {showPrivacyModal && (
         <div className={styles.modalOverlay} onClick={closeModal(setShowPrivacyModal)}>
           <div className={styles.modalContentText}>

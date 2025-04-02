@@ -60,7 +60,7 @@ const globalImages = {
 /* 🔹 Definir objeto de traducciones */
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
-    generalTitle: "Camino Inca vía Hidroeléctrica (2D/1N)",
+    generalTitle: "Machupicchu vía Hidroeléctrica (2D/1N)",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
