@@ -70,10 +70,9 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       title: "Resumen del Itinerario",
       days: [
         {
-          title: "Itinerario del Tour Valle Sagrado VIP",
+          title: "Itinerario del Tour Maras - Moray - Salineras",
           steps: [
             { iconType: "bus", text: "Recojo en tu hotel en Cusco." },
-            { iconType: "walk", text: "Viaje en transporte privado hacia Maras." },
             { iconType: "walk", text: "Visita guiada a las Salineras de Maras, donde aprenderás proceso de extracción de sal." },
             { iconType: "bus", text: "Continuación hacia Moray, donde explorarás las terrazas circulares utilizadas como laboratorio agrícola inca." },
           ],
@@ -82,7 +81,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     itinerary: [
       {
-        title: "Itinerario del Tour Valle Sagrado VIP",
+        title: "Itinerario del Tour Maras - Moray - Salineras",
         text: (
           <>
             <p>Embárcate en un tour inolvidable por el Valle Sagrado y déjate cautivar por la magia de sus paisajes. Este recorrido te sumerge en la belleza natural de Perú, donde cada rincón cuenta una historia milenaria y la tierra se funde con la tradición ancestral.</p>
@@ -129,10 +128,9 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       title: "Itinerary Overview",
       days: [
         {
-          title: "Moray - Salineras",
+          title: "Maras - Moray - Salineras Tour Itinerary",
           steps: [
             { iconType: "bus", text: "Pickup from your hotel in Cusco." },
-            { iconType: "walk", text: "Private transportation to Maras." },
             { iconType: "walk", text: "Guided visit to the Salineras of Maras, where you will learn about salt extraction process." },
             { iconType: "bus", text: "Continue to Moray, where you will explore the circular terraces used as an Inca agricultural laboratory." },
           ],
