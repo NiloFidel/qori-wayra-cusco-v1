@@ -115,7 +115,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Moderada",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Boleto Turístico Parcial", "Alimentación", "Propinas"],
+    notIncluded: ["Gastos o itens no mencionados"],
     recommendations: ["Llevar ropa cómoda y abrigo", "Protector solar y agua", "Cámara fotográfica"],
     groupServices: {
       daysAndNights: "2D/1N",
@@ -190,7 +190,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Moderate",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Partial Tourist Ticket", "Meals", "Tips"],
+    notIncluded: ["Expenses or items not mentioned"],
     recommendations: ["Bring comfortable clothing", "Sunscreen and water", "Camera"],
     groupServices: {
       daysAndNights: "2D/1N",

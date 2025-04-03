@@ -163,7 +163,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Moderada",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Alimentación", "Propinas", "Bebidas"],
+    notIncluded: ["Gastos o itens no mencionados"],
     recommendations: ["Ropa cómoda y abrigo", "Protector solar y agua", "Calzado adecuado"],
     groupServices: {
       daysAndNights: "4D/3N",
@@ -278,7 +278,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Moderate",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Meals", "Tips", "Drinks"],
+    notIncluded: ["Expenses or items not mentioned"],
     recommendations: ["Wear comfortable clothing", "Sunscreen and water", "Proper footwear"],
     groupServices: {
       daysAndNights: "4D/3N",

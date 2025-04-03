@@ -158,7 +158,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       meals: "Desayunos, almuerzos y cenas incluidos",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Boleto Turístico Parcial", "Seguro de viaje", "Propinas"],
+    notIncluded: ["Gastos o itens no mencionados"],
     recommendations: [
       "Ropa y calzado adecuado",
       "Protector solar",
@@ -270,7 +270,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       meals: "Includes all meals (breakfast, lunch, dinner)",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Partial Tourist Ticket", "Travel Insurance", "Tips"],
+    notIncluded: ["Expenses or items not mentioned"],
     recommendations: [
       "Proper hiking attire",
       "Sunscreen",

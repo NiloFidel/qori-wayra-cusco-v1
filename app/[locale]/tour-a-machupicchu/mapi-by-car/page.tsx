@@ -126,7 +126,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     recommendations: ["Llevar ropa cómoda", "Protector solar y agua", "Calzado adecuado"],
     groupServices: {
       daysAndNights: "2D/1N",
-      price: "USD $310",
+      price: "USD $170",
       quote: "Consulta más información",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
@@ -199,7 +199,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     recommendations: ["Wear comfortable clothing", "Sunscreen and water", "Proper footwear"],
     groupServices: {
       daysAndNights: "2D/1N",
-      price: "USD $310",
+      price: "USD $170",
       quote: "More details available",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",

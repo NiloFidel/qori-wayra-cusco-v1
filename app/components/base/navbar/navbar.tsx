@@ -180,7 +180,7 @@ export default function Navbar({ locale }: { locale: string }) {
                         setMobileMenuOpen(false);
                       }}
                     >
-                      {t.tourPallcoyo}
+                      {t.tourPalccoyo}
                     </Link>
                   </li>
                   <li>
