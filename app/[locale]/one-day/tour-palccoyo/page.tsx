@@ -97,6 +97,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           "Guía profesional bilingüe",
           "Desayuno y almuerzo",
           "Asistencia permanente",
+          "Bastones Artesanales"
         ],
       },
     ],
@@ -164,6 +165,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           "Professional bilingual guide",
           "Breakfast and lunch",
           "Permanent assistance",
+          "Handmade walking sticks"
         ],
       },
     ],

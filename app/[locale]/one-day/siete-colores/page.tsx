@@ -169,7 +169,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           "Professional guide.", 
           "Buffet breakfast and lunch.",
           "First aid equipment.",
-          "Handmade trekking poles"],
+          "Handmade walking sticks"
+        ],
       },
     ],
     additionalInfo: {

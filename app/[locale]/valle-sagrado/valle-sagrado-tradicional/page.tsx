@@ -70,7 +70,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       title: "Resumen del Itinerario",
       days: [
         {
-          title: "Itinerario del Tour Valle Sagrado VIP",
+          title: "Itinerario del Tour Valle Sagrado Tradicional",
           steps: [
             { iconType: "bus", text: "Visita al centro arqueológico de PISAC" },
             { iconType: "bus", text: "Visita al mercado de PISAC" },
@@ -83,7 +83,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     itinerary: [
       {
-        title: "Itinerario del Tour Valle Sagrado VIP",
+        title: "Itinerario del Tour Valle Sagrado Tradicional",
         text: (
           <>
             <p>Descubre la majestuosidad del Valle Sagrado de los Incas, un recorrido inolvidable por antiguos centros arqueológicos, paisajes impresionantes y cultura viva. Este tour de un día te llevará a conocer los principales atractivos del valle, donde la historia y la naturaleza se fusionan en un escenario único.</p>
@@ -132,7 +132,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       title: "Itinerary Overview",
       days: [
         {
-          title: "Sacred Valley VIP Tour Itinerary",
+          title: "Traditional Sacred Valley Tour Itinerary",
           steps: [
             { iconType: "bus", text: "Visit to the PISAC Archaeological Site" },
             { iconType: "bus", text: "Visit to the PISAC Market" },
@@ -145,7 +145,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     itinerary: [
       {
-        title: "Sacred Valley VIP Tour Itinerary",
+        title: "Traditional Sacred Valley Tour Itinerary",
         text: (
           <>
             <p>Discover the majesty of the Sacred Valley of the Incas, an unforgettable journey through ancient archaeological sites, stunning landscapes, and living culture. This one-day tour will take you to explore the main attractions of the valley, where history and nature merge in a unique setting.</p>

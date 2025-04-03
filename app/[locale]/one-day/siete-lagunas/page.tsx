@@ -91,7 +91,14 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
             <p>Durante el día, visitaremos estas siete lagunas, cada una con características únicas, donde podrás disfrutar de la tranquilidad del agua y el impresionante entorno natural.</p>
           </>
         ),
-        services: ["Recojo en el hotel", "Transporte turístico", "Guía profesional bilingüe", "Desayuno", "Almuerzo", "Primeros Auxilios", "Balon de Oxigeno"],
+        services: ["Recojo en el hotel", 
+          "Transporte turístico", 
+          "Guía profesional bilingüe", 
+          "Desayuno", "Almuerzo", 
+          "Primeros Auxilios", 
+          "Balon de Oxigeno",
+          "Bastones Artesanales"
+        ],
       },
     ],
     additionalInfo: {
@@ -147,7 +154,16 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
             <p>Throughout the day, we will visit these seven unique lagoons where you can relax and admire the serene beauty of the high Andes.</p>
           </>
         ),
-        services: ["Hotel pickup", "Tour transportation", "Professional bilingual guide", "Break Fast", "Lunch", "First Aid", "Oxygen Cylinder"],
+        services: [
+          "Hotel pickup", 
+          "Tour transportation", 
+          "Professional bilingual guide", 
+          "Break Fast", 
+          "Lunch", 
+          "First Aid", 
+          "Oxygen Cylinder",
+        "Handmade walking sticks"
+        ],
       },
     ],
     additionalInfo: {

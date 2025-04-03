@@ -72,17 +72,17 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Día 1: Cusco - Hidroeléctrica - Aguas Calientes",
           steps: [
-            { iconType: "bus", text: "Transporte desde Cusco a Hidroeléctrica" },
-            { iconType: "walk", text: "Caminata o taxi hasta Aguas Calientes" },
-            { iconType: "hotel", text: "Pernocte en Aguas Calientes" },
+            { iconType: "bus", text: "Transporte  turístico ida y retorno." },
+            { iconType: "walk", text: "Hospedaje u Hotel en Aguas Calientes." },
+            
           ],
         },
         {
           title: "Día 2: Machu Picchu - Cusco",
           steps: [
-            { iconType: "bus", text: "Subida en bus a Machu Picchu" },
-            { iconType: "walk", text: "Tour guiado en Machu Picchu" },
-            { iconType: "train", text: "Retorno a Cusco" },
+            { iconType: "hotel", text: "Tikeck bus de subida y bajada a Machupicchu." },
+            { iconType: "train", text: "Ticket de ingreso a Machupicchu." },
+            { iconType: "walk", text: "Guía profesional." },            
           ],
         },
       ],
@@ -145,18 +145,18 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
         {
           title: "Day 1: Cusco - Hidroeléctrica - Aguas Calientes",
           steps: [
-            { iconType: "bus", text: "Bus from Cusco to Hidroeléctrica" },
-            { iconType: "walk", text: "Walk or taxi to Aguas Calientes" },
-            { iconType: "hotel", text: "Overnight stay in Aguas Calientes" },
-          ],
+            { iconType: "bus", text: "Round-trip tourist transportation." },
+            { iconType: "walk", text: "Lodging or hotel in Aguas Calientes." },
+            
+            ],
         },
         {
           title: "Day 2: Machu Picchu - Cusco",
           steps: [
-            { iconType: "bus", text: "Bus ride to Machu Picchu" },
-            { iconType: "walk", text: "Guided tour at Machu Picchu" },
-            { iconType: "train", text: "Return to Cusco" },
-          ],
+            { iconType: "hotel", text: "Bus ticket up and down to Machu Picchu." },
+            { iconType: "train", text: "Admission ticket to Machu Picchu." },
+            { iconType: "walk", text: "Professional bilingual guide." },
+            ],
         },
       ],
     },
