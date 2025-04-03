@@ -104,7 +104,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Fácil",
     },
     includedServices: "Servicios Incluidos:",
-    notIncluded: ["Boleto Turístico Parcial", "Alimentación adicional", "Propinas"],
+    notIncluded: ["Alimentación adicional", "Propinas"],
     recommendations: [
       "Usar ropa cómoda",
       "Protector solar",
@@ -112,8 +112,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       "Calzado para caminar",
     ],
     groupServices: {
-      daysAndNights: "1D/0N",
-      price: "USD $17",
+      daysAndNights: "Part Time",
+      price: "USD $28",
       quote: "Info Adicional",
       bookNow: "Reservar Ahora",
       tourForMe: "¿Este tour es para mí?",
@@ -163,7 +163,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       physicalRating: "Easy",
     },
     includedServices: "Included Services:",
-    notIncluded: ["Partial Tourist Ticket", "Additional Meals", "Tips"],
+    notIncluded: ["Additional Meals", "Tips"],
     recommendations: [
       "Comfortable clothing",
       "Bring sunscreen",
@@ -171,8 +171,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       "Wear walking shoes",
     ],
     groupServices: {
-      daysAndNights: "1D/0N",
-      price: "USD $17",
+      daysAndNights: "Part Time",
+      price: "USD $28",
       quote: "Additional Info",
       bookNow: "Book Now",
       tourForMe: "Is this tour for me?",
