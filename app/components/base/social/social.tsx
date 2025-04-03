@@ -26,7 +26,7 @@ export default function SocialButtons() {
         <FaFacebook />
       </a>
       <a
-        href="https://www.facebook.com/profile.php?id=61565691627315"
+        href="https://www.instagram.com/qoriwayratravel?igsh=NjRweG5wd3hqZXB2"
         target="_blank"
         rel="noopener noreferrer"
         className={`${styles.socialButton} ${styles.instagram}`}
