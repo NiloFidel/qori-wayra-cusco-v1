@@ -16,6 +16,7 @@
   .container *::before,
   .container *::after {
     box-sizing: inherit;
+    
   }
   
   /* ================================
@@ -79,14 +80,14 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #BFB8AA;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   }
   
   .heroButton {
     padding: 0.8rem 1.2rem;
     background-color: #ffcc00;
-    color: #114d3c;
+    color: #236967;
     border: none;
     border-radius: 6px;
     font-weight: bold;
@@ -95,7 +96,7 @@
   }
   
   .heroButton:hover {
-    background-color: #c5a216;
+    background-color: #ffcc00;
   }
   
   /* Flechas de navegación */
@@ -105,7 +106,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
-    color: #fff;
+    color: #BFB8AA;
     background: rgba(0, 0, 0, 0.3);
     border: none;
     padding: 0.5rem 1rem;
@@ -126,7 +127,7 @@
      CONTENEDOR PRINCIPAL
      ================================ */
   .contentContainer {
-    background-color: #fafafa;
+    background-color: #ffffff;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -150,7 +151,7 @@
   }
   
   .aboutSection {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 5px 10px;
   }
@@ -160,7 +161,7 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 1.2rem;
-    color: #114d3c;
+    color: #236967;
   }
   
   .aboutText {
@@ -183,7 +184,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     gap: 20px;
@@ -203,7 +204,7 @@
     object-fit: contain;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: #ffffff;
     border-radius: 10px;
   }
   
@@ -216,7 +217,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0.3rem;
-    color: #114d3c;
+    color: #236967;
   }
   
   .text {
@@ -243,7 +244,7 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 1.2rem;
-    color: #114d3c;
+    color: #236967;
   }
   
   .valuesList {
@@ -257,7 +258,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 3px #000;
     margin-bottom: 1rem;
@@ -273,13 +274,13 @@
   
   .valueIcon {
     font-size: 1.5rem;
-    color: #114d3c;
+    color: #236967;
   }
   
   .valueTitle {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #114d3c;
+    color: #236967;
     margin-bottom: 0.3rem;
   }
   

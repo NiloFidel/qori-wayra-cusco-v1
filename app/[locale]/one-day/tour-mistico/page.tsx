@@ -95,7 +95,6 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           "Traslado desde Cusco",
           "Guía profesional bilingüe",
           "Entrada a los sitios místicos",
-          "Degustación de gastronomía local",
         ],
       },
     ],
@@ -110,6 +109,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       "Protector solar",
       "Agua y snacks",
       "Calzado para caminar",
+      "Lentes de sol",
+      "Poncho de lluvia  (según temporada)"
     ],
     groupServices: {
       daysAndNights: "Part Time",
@@ -154,7 +155,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           "Transfer from Cusco",
           "Professional bilingual guide",
           "Entrance fees to the mystical sites",
-          "Local culinary tasting",
+          "Sunglasses",
+          "Rain umbrella (seasonal)"
         ],
       },
     ],

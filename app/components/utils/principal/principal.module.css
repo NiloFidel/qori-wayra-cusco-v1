@@ -39,7 +39,7 @@
   
   .priceSection h3 {
     font-size: 1.5rem;
-    color: #114d3c;
+    color: #236967;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -50,12 +50,12 @@
   
   .bigIcon {
     font-size: 32px;
-    color: #c29c04;
+    color: #ffcc00;
   }
   
   .bookButton {
     background: linear-gradient(45deg, #ffcc00, #c29c04);
-    color: #114d3c;
+    color: #236967;
     font-size: 1.2rem;
     margin: auto;
     padding: 12px 24px;
@@ -78,7 +78,7 @@
   .quote {
     margin: 30px 0 5px;
     font-size: 1.2rem;
-    color: #114d3c;
+    color: #236967;
     font-weight: bold;
   }
   
@@ -109,8 +109,8 @@
     padding: 0.8rem 1rem;
     font-size: 1rem;
     font-weight: 600;
-    background: #114d3c;
-    color: #ffffff;
+    background: #236967;
+    color: #BFB8AA;
     border: none;
     display: flex;
     justify-content: space-between;
@@ -165,7 +165,7 @@
   
   .mainTitle {
     font-size: 2rem;
-    color: #114d3c;
+    color: #236967;
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
@@ -177,7 +177,7 @@
   }
   
   .tripOverview {
-    background: #eef9f1;
+    background: #f0efed;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -187,7 +187,7 @@
   
   .sectionSubtitleInfo {
     font-size: 1.5rem;
-    color: #114d3c;
+    color: #236967;
     margin-bottom: 10px;
     font-weight: bold;
   }
@@ -215,8 +215,8 @@
     padding: 18px 20px;
     font-size: 1.1rem;
     font-weight: 600;
-    background: #114d3c;
-    color: #fff;
+    background: #236967;
+    color: #BFB8AA;
     border: none;
     display: flex;
     justify-content: space-between;
@@ -252,7 +252,7 @@
   .accordionServices h4 {
     margin-bottom: 8px;
     font-size: 1.2rem;
-    color: #114d3c;
+    color: #236967;
   }
   
   .accordionServices ul {
@@ -271,7 +271,7 @@
   }
   
   .icon {
-    color: #114d3c;
+    color: #236967;
   }
   
   .arrowIcon {
@@ -296,7 +296,7 @@
   .sectionSubtitleTimeLine {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #114d3c;
+    color: #236967;
     margin-left: 20px;
     margin-bottom: 10px;
   }
@@ -324,7 +324,7 @@
   
   .timelineDay h3 {
     font-size: 1.2rem;
-    color: #114d3c;
+    color: #236967;
     font-weight: bold;
     margin-bottom: 8px;
   }

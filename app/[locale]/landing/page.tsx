@@ -15,8 +15,8 @@ import {
 } from "react-icons/fa";
 
 // Imágenes para las secciones "Misión" y "Visión"
-import imgMission from "@/public/images/Landing/hola1.jpeg";
-import imgVision from "@/public/images/Landing/hola3.jpeg";
+import imgMission from "@/public/images/Landing/mision.jpeg";
+import imgVision from "@/public/images/Landing/vision.jpeg";
 
 // Imágenes del hero slider
 import hero1 from "@/public/images/Macchu Picchu/Machu Picchu - Full day/machupichu.jpg";

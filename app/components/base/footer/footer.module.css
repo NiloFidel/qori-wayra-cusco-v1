@@ -1,6 +1,6 @@
 /* Estilos generales del footer */
 .footer {
-  background: #114d3c;
+  background: #236967;
   color: white;
   padding: 2rem 1rem;
   margin-top: auto;
@@ -33,14 +33,14 @@
 .header {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #e2e8f0;
+  color: #BFB8AA;
 }
 
 .text {
   margin: 0.5rem 0;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: #cbd5e0;
+  color: #BFB8AA;
 }
 
 /* Grupos de logos y enlaces */
@@ -51,7 +51,7 @@
 .groupTitle {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: #e2e8f0;
+  color: #BFB8AA;
 }
 
 .logoItems {
@@ -84,7 +84,7 @@
 }
 
 .linkButton {
-  color: #cbd5e0;
+  color: #BFB8AA;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -115,7 +115,7 @@
 .formHeader {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
-  color: #e2e8f0;
+  color: #BFB8AA;
 }
 
 .contactForm {
@@ -134,14 +134,14 @@
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #BFB8AA;
 }
 
 .formGroup input,
 .formGroup textarea {
   width: 90%;
   padding: 0.2rem 0.5rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #BFB8AA;
   border-radius: 6px;
   background: #ffffff;
   color: rgb(0, 0, 0);
@@ -155,7 +155,7 @@
 
 .submitButton {
   background: #c5a216;
-  color: white;
+  color: #ffffff;
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 6px;
@@ -188,7 +188,7 @@
   padding-top: 1rem;
   border-top: 1px solid #4a5568;
   font-size: 0.8rem;
-  color: #a0aec0;
+  color: #BFB8AA;
 }
 
 /* Estilos para modales */
