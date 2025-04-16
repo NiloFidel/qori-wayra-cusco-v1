@@ -12,6 +12,7 @@ import { useParams } from "next/navigation";
 /* 🔹 Definir la Interfaz */
 interface TranslationContent {
   generalTitle: string;
+  whatsapp: string;
   tripOverview: {
     title: string;
     content: string;
@@ -60,6 +61,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Trek Salkantay (4D/3N)",
+    whatsapp: "Hola, quiero reserva el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
@@ -164,7 +166,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Servicios Incluidos:",
     notIncluded: ["Gastos o itens no mencionados"],
-    recommendations: ["Ropa cómoda y abrigo", "Protector solar y agua", "Calzado adecuado"],
+    recommendations: ["Ropa cómoda y abrigo", "Protector solar y agua", "Calzado adecuado", "Sombrero"],
     groupServices: {
       daysAndNights: "4D/3N",
       price: "USD $600",
@@ -175,6 +177,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
   },
   en: {
     generalTitle: "Salkantay Trek (4D/3N)",
+    whatsapp: "Hello, I want to book the package ",
     tripOverview: {
       title: "Trip Overview",
       content:
@@ -279,7 +282,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Included Services:",
     notIncluded: ["Expenses or items not mentioned"],
-    recommendations: ["Wear comfortable clothing", "Sunscreen and water", "Proper footwear"],
+    recommendations: ["Wear comfortable clothing", "Sunscreen and water", "Proper footwear", "Hat"],
     groupServices: {
       daysAndNights: "4D/3N",
       price: "USD $600",

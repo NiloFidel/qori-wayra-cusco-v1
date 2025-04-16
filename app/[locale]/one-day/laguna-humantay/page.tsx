@@ -13,6 +13,7 @@ import { useParams } from "next/navigation";
 /* 🔹 Definir la Interfaz */
 interface TranslationContent {
   generalTitle: string;
+  whatsapp: string;
   tripOverview: {
     title: string;
     content: string;
@@ -61,6 +62,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Tour a la Laguna Humantay (Full Day)",
+    whatsapp: "Hola, quiero reserva el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
@@ -119,6 +121,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       "Calzado adecuado para trekking",
       "Protector solar y agua",
       "Cámara fotográfica",
+      "Sombrero"
     ],
     groupServices: {
       daysAndNights: "Full Day",
@@ -130,6 +133,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
   },
   en: {
     generalTitle: "Laguna Humantay Tour (Full Day)",
+    whatsapp: "Hello, I want to book the package ",
     tripOverview: {
       title: "Trip Overview",
       content:
@@ -187,6 +191,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       "Use proper trekking shoes",
       "Bring sunscreen and water",
       "Carry a camera",
+      "Hat"
     ],
     groupServices: {
       daysAndNights: "Full Day",

@@ -13,6 +13,7 @@ import { useParams } from "next/navigation";
 /* 🔹 Definir la Interfaz */
 interface TranslationContent {
   generalTitle: string;
+  whatsapp: string;
   tripOverview: {
     title: string;
     content: string;
@@ -62,6 +63,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Tour Místico 4 en 1",
+    whatsapp: "Hola, quiero reserva el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
@@ -110,7 +112,8 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       "Agua y snacks",
       "Calzado para caminar",
       "Lentes de sol",
-      "Poncho de lluvia  (según temporada)"
+      "Poncho de lluvia  (según temporada)",
+      "Sombrero"
     ],
     groupServices: {
       daysAndNights: "Part Time",
@@ -122,6 +125,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
   },
   en: {
     generalTitle: "Mystical 4-in-1 Tour",
+    whatsapp: "Hello, I want to book the package ",
     tripOverview: {
       title: "Trip Overview",
       content:
@@ -171,6 +175,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
       "Bring sunscreen",
       "Water and snacks",
       "Wear walking shoes",
+      "Hat"
     ],
     groupServices: {
       daysAndNights: "Part Time",

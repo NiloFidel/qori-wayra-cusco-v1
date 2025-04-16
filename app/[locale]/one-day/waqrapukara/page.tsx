@@ -12,6 +12,7 @@ import { useParams } from "next/navigation";
 /* 🔹 Definir la Interfaz */
 interface TranslationContent {
   generalTitle: string;
+  whatsapp: string;
   tripOverview: {
     title: string;
     content: string;
@@ -60,6 +61,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Tour Waqrapukara (Full Day)",
+    whatsapp: "Hola, quiero reserva el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
@@ -107,7 +109,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     includedServices: "Servicios Incluidos:",
     notIncluded: ["Boleto de ingreso a Waqrapukara (tarifa comunitaria).", 
       "Bebidas adicionales y snacks.", "Propinas"],
-    recommendations: ["Llevar ropa cómoda", "Calzado adecuado", "Protector solar y agua"],
+    recommendations: ["Llevar ropa cómoda", "Calzado adecuado", "Protector solar y agua", "Sombrero"],
     groupServices: {
       daysAndNights: "1D",
       price: "USD $41",
@@ -118,6 +120,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
   },
   en: {
     generalTitle: "Waqrapukara Tour (Full Day)",
+    whatsapp: "Hello, I want to book the package ",
     tripOverview: {
       title: "Trip Overview",
       content:
@@ -166,7 +169,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     notIncluded: ["Entrance ticket to Waqrapukara (community fee).",
       "Additional drinks and snacks.",
        "Tips"],
-    recommendations: ["Wear comfortable clothing", "Wear appropriate shoes", "Sunscreen and water"],
+    recommendations: ["Wear comfortable clothing", "Wear appropriate shoes", "Sunscreen and water", "Hat"],
     groupServices: {
       daysAndNights: "1D",
       price: "USD $41",

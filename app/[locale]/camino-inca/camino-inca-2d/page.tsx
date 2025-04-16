@@ -12,6 +12,7 @@ import { useParams } from "next/navigation";
 
 interface TranslationContent {
   generalTitle: string;
+  whatsapp: string;
   tripOverview: {
     title: string;
     content: string;
@@ -52,6 +53,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Camino Inca Corto (2D/1N)",
+    whatsapp: "Hola, quiero reserva el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
@@ -116,7 +118,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Servicios Incluidos:",
     notIncluded: ["Gastos o itens no mencionados"],
-    recommendations: ["Llevar ropa cómoda y abrigo", "Protector solar y agua", "Cámara fotográfica"],
+    recommendations: ["Llevar ropa cómoda y abrigo", "Protector solar y agua", "Cámara fotográfica", "Sombrero"],
     groupServices: {
       daysAndNights: "2D/1N",
       price: "USD $450",
@@ -127,6 +129,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
   },
   en: {
     generalTitle: "Short Inca Trail (2D/1N)",
+    whatsapp: "Hello, I want to book the package ",
     tripOverview: {
       title: "Trip Overview",
       content:
@@ -191,7 +194,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Included Services:",
     notIncluded: ["Expenses or items not mentioned"],
-    recommendations: ["Bring comfortable clothing", "Sunscreen and water", "Camera"],
+    recommendations: ["Bring comfortable clothing", "Sunscreen and water", "Camera", "Hat"],
     groupServices: {
       daysAndNights: "2D/1N",
       price: "USD $450",

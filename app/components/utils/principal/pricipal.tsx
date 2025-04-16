@@ -49,6 +49,7 @@ interface GroupServices {
 
 interface EntradaProps {
   generalTitle: string;
+  whatsapp: string;
   mapImage: string;
   smallImages: string[];
 }
@@ -68,6 +69,7 @@ interface ComponentePrincipalProps extends EntradaProps, InfoProps {}
 
 export default function ComponentePrincipal({
   generalTitle,
+  whatsapp,
   mapImage,
   smallImages,
   tripOverview,
@@ -129,7 +131,7 @@ export default function ComponentePrincipal({
 
   /** Función para abrir WhatsApp */
   const handleBookNow = () => {
-    window.open("https://wa.me/51924377454", "_blank");
+    window.open(`https://wa.me/51924377454?text=${whatsapp}${generalTitle}`, "_blank");
   };
 
   /** useEffect para actualizar la altura dinámica del contenido en el acordeón principal */

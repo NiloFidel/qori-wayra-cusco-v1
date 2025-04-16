@@ -13,6 +13,7 @@ import { useParams } from "next/navigation";
 /* 🔹 Definir la Interfaz */
 interface TranslationContent {
   generalTitle: string;
+  whatsapp: string;
   tripOverview: {
     title: string;
     content: string;
@@ -61,6 +62,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Machu Picchu Full Day",
+    whatsapp: "Hola, quiero reserva el paquete ",
     tripOverview: {
       title: "Resumen del Tour",
       content:
@@ -114,7 +116,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Servicios Incluidos:",
     notIncluded: ["Alimentación en Machu Picchu."],
-    recommendations: ["Llevar ropa cómoda", "Protector solar", "Agua"],
+    recommendations: ["Llevar ropa cómoda", "Protector solar", "Agua", "Sombrero"],
     groupServices: {
       daysAndNights: "Full Day",
       price: "USD $260",
@@ -125,6 +127,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
   },
   en: {
     generalTitle: "Machu Picchu Full Day",
+    whatsapp: "Hello, I want to book the package ",
     tripOverview: {
       title: "Tour Overview",
       content:
@@ -178,7 +181,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Included Services:",
     notIncluded: ["Meals in Machu Picchu."],
-    recommendations: ["Wear comfortable clothing", "Sunscreen", "Water"],
+    recommendations: ["Wear comfortable clothing", "Sunscreen", "Water", "Hat"],
     groupServices: {
       daysAndNights: "Full Day",
       price: "USD $260",

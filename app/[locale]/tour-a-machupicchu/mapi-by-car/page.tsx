@@ -13,6 +13,7 @@ import { useParams } from "next/navigation";
 /* 🔹 Definir la Interfaz */
 interface TranslationContent {
   generalTitle: string;
+  whatsapp: string;
   tripOverview: {
     title: string;
     content: string;
@@ -61,6 +62,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Machupicchu vía Hidroeléctrica (2D/1N)",
+    whatsapp: "Hola, quiero reserva el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
@@ -123,7 +125,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Servicios Incluidos:",
     notIncluded: ["Alimentación", "Propinas", "Bebidas"],
-    recommendations: ["Llevar ropa cómoda", "Protector solar y agua", "Calzado adecuado"],
+    recommendations: ["Llevar ropa cómoda", "Protector solar y agua", "Calzado adecuado", "Sombrero"],
     groupServices: {
       daysAndNights: "2D/1N",
       price: "USD $170",
@@ -134,6 +136,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
   },
   en: {
     generalTitle: "Hidroeléctrica Route to Machu Picchu (2D/1N)",
+    whatsapp: "Hello, I want to book the package ",
     tripOverview: {
       title: "Trip Overview",
       content:
@@ -196,7 +199,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Included Services:",
     notIncluded: ["Meals", "Tips", "Drinks"],
-    recommendations: ["Wear comfortable clothing", "Sunscreen and water", "Proper footwear"],
+    recommendations: ["Wear comfortable clothing", "Sunscreen and water", "Proper footwear", "Hat"],
     groupServices: {
       daysAndNights: "2D/1N",
       price: "USD $170",

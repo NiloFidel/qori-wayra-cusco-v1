@@ -14,6 +14,7 @@ import { useParams } from "next/navigation";
 /* 🔹 Definir la Interfaz para los textos de traducción */
 interface TranslationContent {
   generalTitle: string;
+  whatsapp: string;
   tripOverview: {
     title: string;
     content: string;
@@ -62,6 +63,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Tour en Tren a Machu Picchu (2D/1N)",
+    whatsapp: "Hola, quiero reserva el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:
@@ -132,7 +134,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Servicios Incluidos:",
     notIncluded: ["Almuerzos y cenas.", "Gastos personales."],
-    recommendations: ["Llevar ropa cómoda", "Protector solar y agua", "Calzado adecuado"],
+    recommendations: ["Llevar ropa cómoda", "Protector solar y agua", "Calzado adecuado", "Sombrero"],
     groupServices: {
       daysAndNights: "2D/1N",
       price: "USD $310",
@@ -143,6 +145,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
   },
   en: {
     generalTitle: "Train Tour to Machu Picchu (2D/1N)",
+    whatsapp: "Hello, I want to book the package ",
     tripOverview: {
       title: "Trip Overview",
       content:
@@ -213,7 +216,7 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
     },
     includedServices: "Included Services:",
     notIncluded: ["Lunches and dinners", "Personal expenses"],
-    recommendations: ["Wear comfortable clothing", "Sunscreen and water", "Proper footwear"],
+    recommendations: ["Wear comfortable clothing", "Sunscreen and water", "Proper footwear", "Hat"],
     groupServices: {
       daysAndNights: "2D/1N",
       price: "USD $310",
