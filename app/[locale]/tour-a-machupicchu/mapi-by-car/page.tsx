@@ -62,7 +62,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Machupicchu vía Hidroeléctrica (2D/1N)",
-    whatsapp: "Hola, quiero reserva el paquete ",
+    whatsapp: "Hola, quiero reservar el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:

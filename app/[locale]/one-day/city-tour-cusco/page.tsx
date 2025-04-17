@@ -63,7 +63,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "City Tour Cusco (1D)",
-    whatsapp: "Hola, quiero reserva el paquete ",
+    whatsapp: "Hola, quiero reservar el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:

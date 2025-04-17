@@ -61,7 +61,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Trek Salkantay (4D/3N)",
-    whatsapp: "Hola, quiero reserva el paquete ",
+    whatsapp: "Hola, quiero reservar el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:

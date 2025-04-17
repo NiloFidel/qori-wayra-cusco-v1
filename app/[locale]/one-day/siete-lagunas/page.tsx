@@ -62,7 +62,7 @@ const globalImages = {
 const translations: { es: TranslationContent; en: TranslationContent } = {
   es: {
     generalTitle: "Tour 7 Lagunas (Full Day)",
-    whatsapp: "Hola, quiero reserva el paquete ",
+    whatsapp: "Hola, quiero reservar el paquete ",
     tripOverview: {
       title: "Resumen del Viaje",
       content:

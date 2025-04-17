@@ -195,6 +195,8 @@
   /* ACORDEÓN PRINCIPAL */
   .accordionContainer {
     margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
   }
   
   .accordionItem {
@@ -204,6 +206,7 @@
     overflow: hidden;
     background: #fdfdfd;
     transition: box-shadow 0.3s ease;
+    padding-bottom: 20px;
   }
   
   .accordionItem:hover {
@@ -288,9 +291,11 @@
     background: #fff;
     padding-top: 25px;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     position: relative;
     margin-top: 20px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
   }
   
   .sectionSubtitleTimeLine {
@@ -298,19 +303,8 @@
     font-weight: bold;
     color: #236967;
     margin-left: 20px;
-    margin-bottom: 10px;
   }
   
-  /* Línea vertical */
-  .timelineLine {
-    position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: #007bff;
-    border-radius: 2px;
-  }
   
   /* Contenido a la derecha de la línea */
   .timelineContent {
@@ -340,17 +334,7 @@
     align-items: center;
     gap: 8px;
   }
-  
-  .stepIndicator {
-    width: 14px;
-    height: 14px;
-    background: #007bff;
-    border-radius: 50%;
-    position: absolute;
-    left: -30px;
-    top: 5px;
-  }
-  
+
   /* ================================
      SECCIÓN DE IMÁGENES DEBAJO
      ================================ */
