@@ -31,12 +31,12 @@ const heroSlides = [
     es: {
       title: "Machu Picchu Full Day",
       buttonText: "Ver más",
-      link: "/es/one-day/machupicchu-full-day",
+      link: "/es/tour-a-machupicchu/mapi-full-day",
     },
     en: {
       title: "Machu Picchu Full Day",
       buttonText: "View more",
-      link: "/en/one-day/machupicchu-full-day",
+      link: "/en/tour-a-machupicchu/mapi-full-day",
     },
   },
   {
@@ -44,12 +44,12 @@ const heroSlides = [
     es: {
       title: "Valle Sagrado VIP",
       buttonText: "Ver más",
-      link: "/es/one-day/valle-sagrado-vip",
+      link: "/es/valle-sagrado/valle-sagrado-vip",
     },
     en: {
       title: "Sacred Valley VIP",
       buttonText: "View more",
-      link: "/en/one-day/valle-sagrado-vip",
+      link: "/en/valle-sagrado/valle-sagrado-vip",
     },
   },
   {
@@ -70,12 +70,12 @@ const heroSlides = [
     es: {
       title: "Camino Inca 2D/1N",
       buttonText: "Ver más",
-      link: "/es/one-day/camino-inca-2d",
+      link: "/es/camino-inca/camino-inca-2d",
     },
     en: {
       title: "Inca Trail 2D/1N",
       buttonText: "View more",
-      link: "/en/one-day/inca-trail-2d",
+      link: "/en/camino-inca/camino-inca-2d",
     },
   },
   {
@@ -88,7 +88,7 @@ const heroSlides = [
     en: {
       title: "Humantay Lagoon",
       buttonText: "View more",
-      link: "/en/one-day/humantay-lagoon",
+      link: "/en/one-day/laguna-humantay",
     },
   },
 ];
