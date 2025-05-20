@@ -10,7 +10,7 @@ const texts = {
   es: {
     contact: "CONTÁCTENOS",
     office: "Oficina: PP.JJ. Construcción Civil L-3 Ruta Qapacñan, Cusco - PERÚ.",
-    cellphone: "Celular: +51 924377454, +51 977608581",
+    cellphone: "Contactanos: +51 924377454, +51 977608581",
     email: "Correo: qoriwayra.cuscotravel@gmail.com",
     privacyPolicy: "Políticas de Privacidad",
     terms: "Términos y Condiciones",
@@ -25,11 +25,15 @@ const texts = {
     submit: "Enviar Mensaje",
     successMessage: "Mensaje enviado con éxito!",
     errorMessage: "Error al enviar el mensaje. Intente nuevamente.",
+
+    companyName: "QORI WAYRA TRAVEL",
+    ruc: "RUC: 20613386484",
+    rSocial: "Razón Social: QORI WAYRA TRAVEL EIRL",
   },
   en: {
     contact: "CONTACT US",
     office: "Office: PP.JJ. Civil Construction L-3 Ruta Qapacñan, Cusco - PERU.",
-    cellphone: "Mobile: +51 924377454, +51 977608581",
+    cellphone: "Contact us: +51 924377454, +51 977608581",
     email: "Email: qoriwayra.cuscotravel@gmail.com",
     privacyPolicy: "Privacy Policy",
     terms: "Terms & Conditions",
@@ -44,13 +48,19 @@ const texts = {
     submit: "Send Message",
     successMessage: "Message sent successfully!",
     errorMessage: "Error sending message. Please try again.",
+
+    companyName: "QORI WAYRA TRAVEL",
+    ruc: "RUC: 20613386484",
+    rSocial: "Razón Social: QORI WAYRA TRAVEL EIRL",
   },
 };
 
 // Texto de la política de privacidad
 const privacyPolicyText = {
-  es: `POLÍTICA DE PRIVACIDAD...`, // Texto original
-  en: `PRIVACY POLICY...`,         // Texto original
+  es: `QORI WAYRA TRAVEL protege tu información de tus datos personales. Recopilamos datos como nombre, contacto y preferencias de viaje para procesar reservas y mejorar nuestros servicios. No compartimos tu información con terceros, salvo cuando sea necesario para tu viaje. 
+Nos reservamos el derecho de actualizar esta política.`, // Texto original
+  en: `QORI WAYRA TRAVEL protects your personal information. We collect information such as your name, contact information, and travel preferences to process reservations and improve our services. We do not share your information with third parties except when necessary for your trip.
+We reserve the right to update this policy.`,         // Texto original
 };
 
 interface FooterProps {
@@ -129,6 +139,8 @@ const Footer: FC<FooterProps> = ({ locale }) => {
             <p className={styles.text}>{t.cellphone}</p>
             <p className={styles.text}>{t.email}</p>
 
+            
+
             <div className={styles.logoGroup}>
               <h4 className={styles.groupTitle}>{t.endorsedBy}</h4>
               <div className={styles.logoItems}>
@@ -196,6 +208,11 @@ const Footer: FC<FooterProps> = ({ locale }) => {
                   className={styles.paymentLogo}
                 />
               </div>
+            </div>
+            <div>
+              <p className={styles.text}>{t.companyName}</p>
+            <p className={styles.text}>{t.ruc}</p>
+            <p className={styles.text}>{t.rSocial}</p>
             </div>
           </div>
 
