@@ -128,6 +128,22 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
           </>
         ),
       },
+      {
+        sectionTitle: "Adicional",
+        content: (
+          <>
+            <p className={styles.text}>
+              1. Aceptación: Al utilizar nuestros canales digitales, aceptas estos términos.
+            </p>
+            <p className={styles.text}>
+              2. Uso adecuado: Prohibido el uso con fines ilegales, fraudulentos o dañinos.
+            </p>
+            <p className={styles.text}>
+              3. Propiedad: Todo el contenido de QORI WAYRA TRAVEL es de su propiedad. No se permite su uso sin autorización.
+            </p>
+          </>
+        ),
+      },
     ],
   },
   en: {
@@ -238,6 +254,22 @@ const translations: { es: TranslationContent; en: TranslationContent } = {
             </p>
             <p className={styles.text}>
               Claims must be submitted via email within 5 days after the tour.
+            </p>
+          </>
+        ),
+      },
+      {
+        sectionTitle: "Additional",
+        content: (
+          <>
+            <p className={styles.text}>
+              1. Acceptance: By using our digital channels, you agree to these terms.
+            </p>
+            <p className={styles.text}>
+              2. Appropriate Use: Use for illegal, fraudulent, or harmful purposes is prohibited.
+            </p>
+            <p className={styles.text}>
+              3. Ownership: All QORI WAYRA TRAVEL content is its property. Unauthorized use is prohibited.
             </p>
           </>
         ),

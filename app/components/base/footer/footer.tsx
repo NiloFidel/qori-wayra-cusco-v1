@@ -144,13 +144,7 @@ const Footer: FC<FooterProps> = ({ locale }) => {
             <div className={styles.logoGroup}>
               <h4 className={styles.groupTitle}>{t.endorsedBy}</h4>
               <div className={styles.logoItems}>
-                <Image
-                  src="/images/dircetur.png"
-                  alt="Dircetur"
-                  width={80}
-                  height={80}
-                  className={styles.logoImage}
-                />
+                
                 <Image
                   src="/images/gercetur.png"
                   alt="Gercetur"
@@ -189,6 +183,13 @@ const Footer: FC<FooterProps> = ({ locale }) => {
                 <Image
                   src="/images/masterCard.jpg"
                   alt="MasterCard"
+                  width={60}
+                  height={40}
+                  className={styles.paymentLogo}
+                />
+                <Image
+                  src="/images/aExpress.png"
+                  alt="aExpress"
                   width={60}
                   height={40}
                   className={styles.paymentLogo}
